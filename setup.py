@@ -9,7 +9,7 @@ from os.path import abspath, dirname, join
 from setuptools import setup, find_packages
 
 BASE_DIR = dirname(abspath(__file__))
-VERSION_FILE = join(BASE_DIR, 'stix', 'version.py')
+VERSION_FILE = join(BASE_DIR, 'stix111', 'version.py')
 
 def get_version():
     with open(VERSION_FILE) as f:
@@ -47,7 +47,7 @@ install_requires = [
 
 
 setup(
-    name="stix",
+    name="stix111",
     version=get_version(),
     author="STIX Project, MITRE Corporation",
     author_email="stix@mitre.org",
