@@ -8,11 +8,11 @@ from StringIO import StringIO
 from lxml import etree
 
 # internal
-import stix
-import stix.utils.parser as parser
-import stix.indicator.test_mechanism
-from stix.indicator.test_mechanism import _BaseTestMechanism
-import stix.bindings.extensions.test_mechanism.open_ioc_2010 as open_ioc_tm_binding
+import stix111
+import stix111.utils.parser as parser
+import stix111.indicator.test_mechanism
+from stix111.indicator.test_mechanism import _BaseTestMechanism
+import stix111.bindings.extensions.test_mechanism.open_ioc_2010 as open_ioc_tm_binding
 
 
 class OpenIOCTestMechanism(_BaseTestMechanism):

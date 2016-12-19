@@ -9,8 +9,8 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.ttp as ttp_binding
+from stix111.bindings import *
+import stix111.bindings.ttp as ttp_binding
 
 XML_NS = "http://stix.mitre.org/extensions/AP#CAPEC2.7-1"
 

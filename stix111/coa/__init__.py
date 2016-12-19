@@ -5,10 +5,10 @@
 from cybox.core import Observables
 
 # internal
-import stix
-from stix.data_marking import Marking
-from stix.common import vocabs, related, VocabString, Statement
-import stix.bindings.course_of_action as coa_binding
+import stix111
+from stix111.data_marking import Marking
+from stix111.common import vocabs, related, VocabString, Statement
+import stix111.bindings.course_of_action as coa_binding
 
 # relative
 from .objective import Objective

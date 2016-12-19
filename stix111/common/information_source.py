@@ -7,9 +7,9 @@ from __future__ import absolute_import
 import cybox.common
 
 # internal
-import stix
-import stix.utils as utils
-import stix.bindings.stix_common as stix_common_binding
+import stix111
+import stix111.utils as utils
+import stix111.bindings.stix_common as stix_common_binding
 
 # relative
 from . import vocabs, VocabString

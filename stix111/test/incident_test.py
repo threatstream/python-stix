@@ -6,18 +6,18 @@ import StringIO
 
 from cybox.common import StructuredText
 
-from stix.test import EntityTestCase, TypedListTestCase, data_marking_test
-from stix.test.common import (
+from stix111.test import EntityTestCase, TypedListTestCase, data_marking_test
+from stix111.test.common import (
     confidence_test, information_source_test, statement_test, related_test
 )
 
-import stix.common.vocabs as vocabs
-import stix.incident as incident
-import stix.incident.history as history
-import stix.incident.property_affected as property_affected
-import stix.incident.impact_assessment as impact_assessment
-import stix.incident.affected_asset as affected_asset
-import stix.bindings.incident as incident_binding
+import stix111.common.vocabs as vocabs
+import stix111.incident as incident
+import stix111.incident.history as history
+import stix111.incident.property_affected as property_affected
+import stix111.incident.impact_assessment as impact_assessment
+import stix111.incident.affected_asset as affected_asset
+import stix111.bindings.incident as incident_binding
 
 
 INCIDENT_CATEGORIES = """<?xml version="1.0" encoding="UTF-8"?>
@@ -494,7 +494,7 @@ class IncidentTest(EntityTestCase, unittest.TestCase):
 
     def test_add_related_observable(self):
         from cybox.core import Observable
-        from stix.common.related import RelatedObservable
+        from stix111.common.related import RelatedObservable
 
         i = self.klass()
 
@@ -515,8 +515,8 @@ class IncidentTest(EntityTestCase, unittest.TestCase):
         )
 
     def test_add_related_indicator(self):
-        from stix.indicator import Indicator
-        from stix.common.related import RelatedIndicator
+        from stix111.indicator import Indicator
+        from stix111.common.related import RelatedIndicator
 
         i = self.klass()
 

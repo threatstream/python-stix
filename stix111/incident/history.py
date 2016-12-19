@@ -2,10 +2,10 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.utils as utils
-import stix.bindings.incident as incident_binding
-from stix.common.datetimewithprecision import DATETIME_PRECISION_VALUES
+import stix111
+import stix111.utils as utils
+import stix111.bindings.incident as incident_binding
+from stix111.common.datetimewithprecision import DATETIME_PRECISION_VALUES
 
 # relative
 from .coa import COATaken

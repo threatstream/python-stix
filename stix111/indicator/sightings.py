@@ -1,13 +1,13 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.utils as utils
-from stix.common import (
+import stix111
+import stix111.utils as utils
+from stix111.common import (
     GenericRelationshipList, RelatedObservable, StructuredText, Confidence,
     InformationSource
 )
-import stix.bindings.indicator as indicator_binding
+import stix111.bindings.indicator as indicator_binding
 
 
 class Sighting(stix.Entity):

@@ -1,9 +1,9 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix.bindings.extensions.marking.ais as ais_binding
-import stix.data_marking
-from stix.data_marking import MarkingStructure
+import stix111.bindings.extensions.marking.ais as ais_binding
+import stix111.data_marking
+from stix111.data_marking import MarkingStructure
 
 
 class AISConsentType(stix.Entity):
@@ -395,7 +395,7 @@ SCHEMALOCATIONS = {
 
 def _update_namespaces():
     # Update the python-stix namespace dictionary
-    import stix.utils.nsparser as nsparser
+    import stix111.utils.nsparser as nsparser
 
     # Register the extension namespaces
     nsparser.DEFAULT_EXT_TO_PREFIX.update(NAMESPACES)
@@ -406,7 +406,7 @@ def _update_namespaces():
 
 def _update_schemalocations():
     # Update the python-stix schemalocation dictionary
-    import stix.utils.nsparser as nsparser
+    import stix111.utils.nsparser as nsparser
 
     # Register the extension schemalocations
     nsparser.EXT_NS_TO_SCHEMALOCATION.update(SCHEMALOCATIONS)
@@ -523,12 +523,12 @@ def add_ais_marking(stix_package, proprietary, consent, color, **kwargs):
     .. _AIS:
         https://www.us-cert.gov/ais
     """
-    from stix.common import InformationSource
-    from stix.extensions.identity.ciq_identity_3_0 import (
+    from stix111.common import InformationSource
+    from stix111.extensions.identity.ciq_identity_3_0 import (
         CIQIdentity3_0Instance, STIXCIQIdentity3_0, PartyName, Address,
         Country, NameElement, OrganisationInfo, AdministrativeArea)
-    from stix.core.stix_header import STIXHeader
-    from stix.data_marking import MarkingSpecification, Marking
+    from stix111.core.stix_header import STIXHeader
+    from stix111.data_marking import MarkingSpecification, Marking
 
     args = ('country_name_code', 'country_name_code_type', 'industry_type',
             'admin_area_name_code', 'admin_area_name_code_type',

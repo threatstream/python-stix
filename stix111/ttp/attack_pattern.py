@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import StructuredText
-import stix.bindings.ttp as ttp_binding
+import stix111
+from stix111.common import StructuredText
+import stix111.bindings.ttp as ttp_binding
 
 
 class AttackPattern(stix.Entity):

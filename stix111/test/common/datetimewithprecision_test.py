@@ -4,8 +4,8 @@
 import unittest
 import datetime
 
-from stix.test import EntityTestCase, round_trip
-from stix.common import DateTimeWithPrecision
+from stix111.test import EntityTestCase, round_trip
+from stix111.common import DateTimeWithPrecision
 
 
 class DateTimeWithPrecisionTests(EntityTestCase, unittest.TestCase):

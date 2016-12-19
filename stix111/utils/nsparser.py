@@ -13,7 +13,7 @@ import cybox.common
 import cybox.utils
 
 # internal
-import stix
+import stix111
 
 # relative
 from . import ignored, idgen

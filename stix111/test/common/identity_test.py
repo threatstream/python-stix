@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common import Identity
+from stix111.common import Identity
 
 
 class IdentityTests(EntityTestCase, unittest.TestCase):

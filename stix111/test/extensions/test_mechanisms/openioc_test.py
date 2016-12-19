@@ -6,9 +6,9 @@ import StringIO
 
 import lxml
 
-from stix import utils
-from stix.test import EntityTestCase
-from stix.extensions.test_mechanism.open_ioc_2010_test_mechanism import OpenIOCTestMechanism
+from stix111 import utils
+from stix111.test import EntityTestCase
+from stix111.extensions.test_mechanism.open_ioc_2010_test_mechanism import OpenIOCTestMechanism
 
 
 class OpenIOCTestMechanismTests(EntityTestCase, unittest.TestCase):

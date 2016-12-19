@@ -3,13 +3,13 @@
 
 import unittest
 
-from stix.test import EntityTestCase, data_marking_test
-from stix.test.common import (
+from stix111.test import EntityTestCase, data_marking_test
+from stix111.test.common import (
     confidence_test, information_source_test, statement_test, related_test,
 )
-from stix.test.extensions.structured_coa import generic_test
-import stix.coa as coa
-import stix.coa.objective as objective
+from stix111.test.extensions.structured_coa import generic_test
+import stix111.coa as coa
+import stix111.coa.objective as objective
 
 
 class RelatedCOAsTests(EntityTestCase, unittest.TestCase):
@@ -82,7 +82,7 @@ class COATests(EntityTestCase, unittest.TestCase):
             should_fail
         )
 
-        from stix.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA
+        from stix111.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA
 
         struct_coa = GenericStructuredCOA()
         struct_coa.description = "SUCCESS"

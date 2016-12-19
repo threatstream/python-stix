@@ -2,9 +2,9 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-from stix.common import ToolInformation, Identity
-import stix.bindings.ttp as ttp_binding
+import stix111
+from stix111.common import ToolInformation, Identity
+import stix111.bindings.ttp as ttp_binding
 
 # relative
 from .infrastructure import Infrastructure

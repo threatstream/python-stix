@@ -1,9 +1,9 @@
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.core import STIXPackage
-from stix.extensions.marking import ais
+from stix111.core import STIXPackage
+from stix111.extensions.marking import ais
 
 
 class AISMarkingStructureNotProprietaryTests(EntityTestCase, unittest.TestCase):

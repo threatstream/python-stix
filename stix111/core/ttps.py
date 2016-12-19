@@ -1,10 +1,10 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.ttp import TTP
-from stix.bindings import stix_core as core_binding
-from stix.common.kill_chains import KillChains
+import stix111
+from stix111.ttp import TTP
+from stix111.bindings import stix_core as core_binding
+from stix111.common.kill_chains import KillChains
 
 
 class TTPs(stix.EntityList):

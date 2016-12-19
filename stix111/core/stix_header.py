@@ -1,11 +1,11 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.stix_core as stix_core_binding
-from stix.common import vocabs, InformationSource, StructuredText, VocabString
-from stix.data_marking import Marking
+import stix111
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.stix_core as stix_core_binding
+from stix111.common import vocabs, InformationSource, StructuredText, VocabString
+from stix111.data_marking import Marking
 
 
 class STIXHeader(stix.Entity):

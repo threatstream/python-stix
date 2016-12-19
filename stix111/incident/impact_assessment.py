@@ -2,9 +2,9 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.bindings.incident as incident_binding
-from stix.common import vocabs, VocabString
+import stix111
+import stix111.bindings.incident as incident_binding
+from stix111.common import vocabs, VocabString
 
 # relative
 from .direct_impact_summary import DirectImpactSummary

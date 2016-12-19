@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common import Confidence
+from stix111.common import Confidence
 
 
 class ConfidenceTests(EntityTestCase, unittest.TestCase):

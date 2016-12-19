@@ -3,9 +3,9 @@
 
 from __future__ import absolute_import
 
-import stix
-import stix.utils as utils
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.utils as utils
+import stix111.bindings.stix_common as common_binding
 
 from .confidence import Confidence
 from .structured_text import StructuredText

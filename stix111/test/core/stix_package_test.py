@@ -5,13 +5,13 @@ import copy
 import StringIO
 import unittest
 
-from stix.test import EntityTestCase
-from stix.test.common import kill_chains_test
+from stix111.test import EntityTestCase
+from stix111.test.common import kill_chains_test
 
 from . import stix_header_test
 
-from stix import core
-from stix.core import stix_package
+from stix111 import core
+from stix111.core import stix_package
 
 
 class CampaignsTests(EntityTestCase, unittest.TestCase):

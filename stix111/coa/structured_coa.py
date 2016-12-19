@@ -1,8 +1,8 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.bindings import course_of_action as coa_binding
+import stix111
+from stix111.bindings import course_of_action as coa_binding
 
 
 class _BaseStructuredCOA(stix.Entity):
@@ -19,7 +19,7 @@ class _BaseStructuredCOA(stix.Entity):
         if not obj:
             return None
 
-        from stix.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA   # noqa
+        from stix111.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA   # noqa
 
         if not return_obj:
             klass = _BaseStructuredCOA.lookup_class(obj.xml_type)
@@ -62,7 +62,7 @@ class _BaseStructuredCOA(stix.Entity):
         if not d:
             return None
 
-        from stix.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA   # noqa
+        from stix111.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA   # noqa
 
         if not return_obj:
             klass = _BaseStructuredCOA.lookup_class(d.get('xsi:type'))

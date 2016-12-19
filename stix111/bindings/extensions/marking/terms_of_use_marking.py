@@ -9,8 +9,8 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.data_marking as data_marking_binding
+from stix111.bindings import *
+import stix111.bindings.data_marking as data_marking_binding
 
 XML_NS = "http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1"
 

@@ -1,8 +1,8 @@
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.extensions.marking.simple_marking import SimpleMarkingStructure
+from stix111.extensions.marking.simple_marking import SimpleMarkingStructure
 
 
 class SimpleMarkingStructureTests(EntityTestCase, unittest.TestCase):

@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import DateTimeWithPrecision
-import stix.bindings.indicator as indicator_binding
+import stix111
+from stix111.common import DateTimeWithPrecision
+import stix111.bindings.indicator as indicator_binding
 
 
 class ValidTime(stix.Entity):

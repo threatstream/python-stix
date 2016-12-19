@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import StructuredText, Confidence
-import stix.bindings.course_of_action as coa_binding
+import stix111
+from stix111.common import StructuredText, Confidence
+import stix111.bindings.course_of_action as coa_binding
 
 
 class Objective(stix.Entity):

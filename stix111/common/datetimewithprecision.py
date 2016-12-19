@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.utils as utils
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.utils as utils
+import stix111.bindings.stix_common as common_binding
 
 
 DATE_PRECISION_VALUES = ("year", "month", "day")

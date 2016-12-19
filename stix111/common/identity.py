@@ -3,8 +3,8 @@
 
 from __future__ import absolute_import
 
-import stix
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.bindings.stix_common as common_binding
 
 
 class Identity(stix.Entity):
@@ -89,7 +89,7 @@ class Identity(stix.Entity):
 
     @classmethod
     def from_obj(cls, obj, return_obj=None):
-        import stix.extensions.identity.ciq_identity_3_0  # noqa
+        import stix111.extensions.identity.ciq_identity_3_0  # noqa
         
         if not obj:
             return None
@@ -114,7 +114,7 @@ class Identity(stix.Entity):
 
     @classmethod
     def from_dict(cls, dict_repr, return_obj=None):
-        import stix.extensions.identity.ciq_identity_3_0  # noqa
+        import stix111.extensions.identity.ciq_identity_3_0  # noqa
         
         if not dict_repr:
             return None
@@ -139,7 +139,7 @@ class Identity(stix.Entity):
 
 
 # We can't import RelatedIdentity until we have defined the Identity class.
-from stix.common.related import RelatedIdentity
+from stix111.common.related import RelatedIdentity
 
 
 class RelatedIdentities(stix.EntityList):

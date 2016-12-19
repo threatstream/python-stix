@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common import InformationSource
+from stix111.common import InformationSource
 
 
 class InformationSourceTests(EntityTestCase, unittest.TestCase):

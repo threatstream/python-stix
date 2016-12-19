@@ -11,8 +11,8 @@
 import sys
 
 # internal
-from stix.bindings import *
-from stix import xmlconst
+from stix111.bindings import *
+from stix111 import xmlconst
 from . import stix_common as stix_common_binding
 
 XML_NS  = "http://data-marking.mitre.org/Marking-1"

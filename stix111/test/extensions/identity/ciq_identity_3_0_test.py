@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 import unittest
-from stix.test import EntityTestCase
-import stix.extensions.identity.ciq_identity_3_0 as ciq
+from stix111.test import EntityTestCase
+import stix111.extensions.identity.ciq_identity_3_0 as ciq
 
 
 class CIQIdentity3_0InstanceTests(EntityTestCase, unittest.TestCase):

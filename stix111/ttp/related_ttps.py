@@ -1,8 +1,8 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix.bindings.ttp as ttp_binding
-from stix.common.related import GenericRelationshipList, RelatedTTP
+import stix111.bindings.ttp as ttp_binding
+from stix111.common.related import GenericRelationshipList, RelatedTTP
 
 
 class RelatedTTPs(GenericRelationshipList):

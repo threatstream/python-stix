@@ -8,8 +8,8 @@ from distutils.version import StrictVersion
 from lxml import etree
 
 # internal
-import stix
-import stix.xmlconst as xmlconst
+import stix111
+import stix111.xmlconst as xmlconst
 
 # relative
 from . import ignored, is_etree, is_element
@@ -215,7 +215,7 @@ class EntityParser(object):
         if check_root:
             self._check_root(root)
 
-        import stix.bindings.stix_core as stix_core_binding 
+        import stix111.bindings.stix_core as stix_core_binding 
         stix_package_obj = stix_core_binding.STIXType().factory()
         stix_package_obj.build(root)
 
@@ -252,7 +252,7 @@ class EntityParser(object):
             encoding=encoding
         )
         
-        from stix.core import STIXPackage  # resolve circular dependencies
+        from stix111.core import STIXPackage  # resolve circular dependencies
         stix_package = STIXPackage().from_obj(stix_package_obj)
 
         self._apply_input_namespaces(root, stix_package)

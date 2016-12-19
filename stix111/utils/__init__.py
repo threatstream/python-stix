@@ -12,8 +12,8 @@ import cybox
 import lxml.etree
 
 # internal
-import stix
-import stix.xmlconst as xmlconst
+import stix111
+import stix111.xmlconst as xmlconst
 
 # relative
 from . import dates

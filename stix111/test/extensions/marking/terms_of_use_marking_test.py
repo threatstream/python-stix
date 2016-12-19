@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.extensions.marking.terms_of_use_marking import TermsOfUseMarkingStructure
+from stix111.extensions.marking.terms_of_use_marking import TermsOfUseMarkingStructure
 
 
 class TermsOfUseMarkingStructureTests(EntityTestCase, unittest.TestCase):

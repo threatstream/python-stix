@@ -1,8 +1,8 @@
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.extensions.marking.tlp import TLPMarkingStructure
+from stix111.extensions.marking.tlp import TLPMarkingStructure
 
 
 class TLPMarkingStructureTests(EntityTestCase, unittest.TestCase):

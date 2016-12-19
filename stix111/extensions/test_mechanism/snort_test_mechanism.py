@@ -1,10 +1,10 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import EncodedCDATA
-from stix.indicator import test_mechanism
-import stix.bindings.extensions.test_mechanism.snort as snort_tm_binding
+import stix111
+from stix111.common import EncodedCDATA
+from stix111.indicator import test_mechanism
+import stix111.bindings.extensions.test_mechanism.snort as snort_tm_binding
 
 
 class SnortTestMechanism(test_mechanism._BaseTestMechanism):

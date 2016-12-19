@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 import unittest
-from stix.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA
-from stix.test import EntityTestCase
+from stix111.extensions.structured_coa.generic_structured_coa import GenericStructuredCOA
+from stix111.test import EntityTestCase
 
 class GenericStructuredCOATests(EntityTestCase, unittest.TestCase):
     klass = GenericStructuredCOA

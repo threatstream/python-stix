@@ -3,8 +3,8 @@
 
 import unittest
 
-from stix.indicator import Indicator
-from stix.test import EntityTestCase, round_trip, round_trip_dict
+from stix111.indicator import Indicator
+from stix111.test import EntityTestCase, round_trip, round_trip_dict
 
 class IndicatorTest(EntityTestCase, unittest.TestCase):
     klass = Indicator

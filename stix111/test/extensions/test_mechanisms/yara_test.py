@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 import unittest
-from stix.test import EntityTestCase
-from stix.extensions.test_mechanism.yara_test_mechanism import YaraTestMechanism
+from stix111.test import EntityTestCase
+from stix111.extensions.test_mechanism.yara_test_mechanism import YaraTestMechanism
 
 class YaraTestMechanismTests(EntityTestCase, unittest.TestCase):
     klass = YaraTestMechanism

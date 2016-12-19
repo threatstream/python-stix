@@ -3,8 +3,8 @@
 
 import unittest
 
-from stix.test import EntityTestCase
-from stix.common import CampaignRef
+from stix111.test import EntityTestCase
+from stix111.common import CampaignRef
 
 
 class CampaignRefTests(EntityTestCase, unittest.TestCase):

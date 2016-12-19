@@ -9,9 +9,9 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.indicator as indicator_binding
-import stix.bindings.stix_common as stix_common_binding
+from stix111.bindings import *
+import stix111.bindings.indicator as indicator_binding
+import stix111.bindings.stix_common as stix_common_binding
 
 XML_NS = "http://stix.mitre.org/extensions/TestMechanism#Generic-1"
 

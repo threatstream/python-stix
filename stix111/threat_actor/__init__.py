@@ -1,11 +1,11 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.data_marking import Marking
-import stix.bindings.threat_actor as threat_actor_binding
-from stix.common import vocabs, Confidence, Identity, Statement
-from stix.common.related import (
+import stix111
+from stix111.data_marking import Marking
+import stix111.bindings.threat_actor as threat_actor_binding
+from stix111.common import vocabs, Confidence, Identity, Statement
+from stix111.common.related import (
     GenericRelationshipList, RelatedCampaign, RelatedPackageRefs, RelatedTTP,
     RelatedThreatActor
 )

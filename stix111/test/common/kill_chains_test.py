@@ -3,8 +3,8 @@
 
 import unittest
 
-from stix.test import EntityTestCase
-from stix.common.kill_chains import (
+from stix111.test import EntityTestCase
+from stix111.common.kill_chains import (
     KillChain, KillChainPhase, KillChainPhaseReference,
     KillChainPhasesReference, KillChains, lmco
 )

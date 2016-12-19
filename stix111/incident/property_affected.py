@@ -2,9 +2,9 @@
 # See LICENSE.txt for complete terms.
 
 
-import stix
-from stix.common import vocabs, VocabString, StructuredText
-import stix.bindings.incident as incident_binding
+import stix111
+from stix111.common import vocabs, VocabString, StructuredText
+import stix111.bindings.incident as incident_binding
 
 
 class NonPublicDataCompromised(VocabString):

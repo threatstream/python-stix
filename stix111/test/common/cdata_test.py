@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix import utils
-from stix.test import EntityTestCase
-from stix.common import EncodedCDATA
+from stix111 import utils
+from stix111.test import EntityTestCase
+from stix111.common import EncodedCDATA
 
 
 class CDATATests(unittest.TestCase):

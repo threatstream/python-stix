@@ -9,9 +9,9 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.data_marking as data_marking_binding
+from stix111.bindings import *
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.data_marking as data_marking_binding
 import cybox.bindings.cybox_core as cybox_core_binding
 
 XML_NS = "http://stix.mitre.org/stix-1"
@@ -561,7 +561,7 @@ class IndicatorsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "IndicatorType":
-                    import stix.bindings.indicator as indicator_binding
+                    import stix111.bindings.indicator as indicator_binding
                     obj_ = indicator_binding.IndicatorType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -649,7 +649,7 @@ class TTPsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "TTPType":
-                    import stix.bindings.ttp as ttp_binding
+                    import stix111.bindings.ttp as ttp_binding
                     obj_ = ttp_binding.TTPType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -735,7 +735,7 @@ class IncidentsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "IncidentType":
-                    import stix.bindings.incident as incident_binding
+                    import stix111.bindings.incident as incident_binding
                     obj_ = incident_binding.IncidentType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -817,7 +817,7 @@ class CoursesOfActionType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CourseOfActionType":
-                    import stix.bindings.course_of_action as coa_binding
+                    import stix111.bindings.course_of_action as coa_binding
                     obj_ = coa_binding.CourseOfActionType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -899,7 +899,7 @@ class CampaignsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CampaignType":
-                    import stix.bindings.campaign as campaign_binding
+                    import stix111.bindings.campaign as campaign_binding
                     obj_ = campaign_binding.CampaignType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -981,7 +981,7 @@ class ThreatActorsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "ThreatActorType":
-                    import stix.bindings.threat_actor as ta_binding
+                    import stix111.bindings.threat_actor as ta_binding
                     obj_ = ta_binding.ThreatActorType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1012,7 +1012,7 @@ def get_root_tag(node):
 
 def parse(inFileName, nsmap=None):
     if not nsmap:
-        from stix.utils.nsparser import DEFAULT_STIX_NS_TO_PREFIX
+        from stix111.utils.nsparser import DEFAULT_STIX_NS_TO_PREFIX
         nsmap = DEFAULT_STIX_NS_TO_PREFIX
 
     doc = parsexml_(inFileName)

@@ -1,8 +1,8 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.bindings.stix_common as common_binding
 
 from .datetimewithprecision import DateTimeWithPrecision
 from .structured_text import StructuredText

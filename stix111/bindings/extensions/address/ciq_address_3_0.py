@@ -9,8 +9,8 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.stix_common as stix_common_binding
+from stix111.bindings import *
+import stix111.bindings.stix_common as stix_common_binding
 
 XML_NS = "http://stix.mitre.org/extensions/Address#CIQAddress3.0-1"
 

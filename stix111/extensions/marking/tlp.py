@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix.bindings.extensions.marking.tlp as tlp_binding
-import stix.data_marking
-from stix.data_marking import MarkingStructure
+import stix111.bindings.extensions.marking.tlp as tlp_binding
+import stix111.data_marking
+from stix111.data_marking import MarkingStructure
 
 
 class TLPMarkingStructure(MarkingStructure):

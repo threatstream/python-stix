@@ -8,11 +8,11 @@
 # Generated Thu Apr 11 15:06:24 2013 by generateDS.py version 2.9a.
 #
 import sys
-from stix.bindings import *
+from stix111.bindings import *
 import cybox.bindings.cybox_core as cybox_core_binding
 import cybox.bindings.cybox_common as cybox_common_binding
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.data_marking as data_marking_binding
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.data_marking as data_marking_binding
 
 XML_NS = "http://stix.mitre.org/Incident-1"
 
@@ -258,7 +258,7 @@ class AffectedAssetType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CIQAddress3.0InstanceType":
-                    import stix.bindings.extensions.address.ciq_address_3_0 as ciq_address_binding
+                    import stix111.bindings.extensions.address.ciq_address_3_0 as ciq_address_binding
                     obj_ = ciq_address_binding.CIQAddress3_0InstanceType.factory()
                 else:
                     raise NotImplementedError('No implementation class found for: ' + type_name_)
@@ -571,7 +571,7 @@ class COATakenType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CourseOfActionType":
-                    import stix.bindings.course_of_action as coa_binding
+                    import stix111.bindings.course_of_action as coa_binding
                     obj_ = coa_binding.CourseOfActionType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -2503,7 +2503,7 @@ class IncidentType(stix_common_binding.IncidentBaseType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CIQIdentity3.0InstanceType":
-                    import stix.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
+                    import stix111.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
                     obj_ = ciq_identity_binding.CIQIdentity3_0InstanceType.factory()
             else:
                 obj_ = stix_common_binding.IdentityType.factory() # IdentityType is not abstract

@@ -1,8 +1,8 @@
 __author__ = 'bworrell'
 
 import unittest
-from stix.test import EntityTestCase
-from stix import common
+from stix111.test import EntityTestCase
+from stix111 import common
 
 
 class ToolInformationTests(EntityTestCase, unittest.TestCase):

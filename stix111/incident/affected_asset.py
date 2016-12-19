@@ -5,9 +5,9 @@
 from cybox.core import Observables
 
 # internal
-import stix
-from stix.common import vocabs, VocabString, StructuredText
-import stix.bindings.incident as incident_binding
+import stix111
+from stix111.common import vocabs, VocabString, StructuredText
+import stix111.bindings.incident as incident_binding
 
 # relative
 from .property_affected import PropertyAffected

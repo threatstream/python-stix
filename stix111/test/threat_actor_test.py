@@ -3,12 +3,12 @@
 
 import unittest
 
-from stix.test import EntityTestCase, TypedListTestCase, data_marking_test
-from stix.test.common import (
+from stix111.test import EntityTestCase, TypedListTestCase, data_marking_test
+from stix111.test.common import (
     confidence_test, information_source_test, related_test,identity_test
 )
 
-import stix.threat_actor as ta
+import stix111.threat_actor as ta
 
 
 class TypesTests(TypedListTestCase, unittest.TestCase):

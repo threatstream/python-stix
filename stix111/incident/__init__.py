@@ -2,17 +2,17 @@
 # See LICENSE.txt for complete terms.
 
 
-import stix
-import stix.bindings.incident as incident_binding
-from stix.common import (
+import stix111
+import stix111.bindings.incident as incident_binding
+from stix111.common import (
     vocabs, Identity, Statement, VocabString,
     InformationSource, Confidence
 )
-from stix.common.related import (
+from stix111.common.related import (
     GenericRelationshipList, RelatedIndicator, RelatedThreatActor, RelatedTTP,
     RelatedObservable, RelatedIncident
 )
-from stix.data_marking import Marking
+from stix111.data_marking import Marking
 
 # relative
 from .affected_asset import AffectedAsset

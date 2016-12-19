@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.bindings.incident as incident_binding
-from stix.common import DateTimeWithPrecision
+import stix111
+import stix111.bindings.incident as incident_binding
+from stix111.common import DateTimeWithPrecision
 
 
 class Time(stix.Entity):

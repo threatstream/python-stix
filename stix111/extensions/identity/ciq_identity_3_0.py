@@ -3,11 +3,11 @@
 
 import lxml.etree as et
 
-import stix
-import stix.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
-import stix.common as common
-import stix.common.identity as identity
-import stix.utils as utils
+import stix111
+import stix111.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
+import stix111.common as common
+import stix111.common.identity as identity
+import stix111.utils as utils
 
 
 XML_NS_XPIL     = "urn:oasis:names:tc:ciq:xpil:3"

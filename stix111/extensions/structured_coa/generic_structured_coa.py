@@ -1,12 +1,12 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.utils
-import stix.coa.structured_coa
-from stix.common import EncodedCDATA, StructuredText, VocabString
-from stix.coa.structured_coa import _BaseStructuredCOA
-import stix.bindings.extensions.structured_coa.generic as generic_structured_coa_binding
+import stix111
+import stix111.utils
+import stix111.coa.structured_coa
+from stix111.common import EncodedCDATA, StructuredText, VocabString
+from stix111.coa.structured_coa import _BaseStructuredCOA
+import stix111.bindings.extensions.structured_coa.generic as generic_structured_coa_binding
 
 
 class GenericStructuredCOA(_BaseStructuredCOA):

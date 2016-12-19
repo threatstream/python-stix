@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.bindings.stix_common as common_binding
 
 # relative
 from .vocabs import VocabString

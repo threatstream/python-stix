@@ -3,9 +3,9 @@
 
 import unittest
 
-import stix.data_marking as dm
-from stix.test import EntityTestCase
-from stix.test.common import information_source_test
+import stix111.data_marking as dm
+from stix111.test import EntityTestCase
+from stix111.test.common import information_source_test
 
 
 class MarkingSpecificationTests(EntityTestCase, unittest.TestCase):

@@ -3,10 +3,10 @@
 
 import unittest
 
-from stix.test import EntityTestCase, data_marking_test
-from stix.test.common import information_source_test
+from stix111.test import EntityTestCase, data_marking_test
+from stix111.test.common import information_source_test
 
-from stix import core
+from stix111 import core
 
 
 class STIXHeaderTests(EntityTestCase, unittest.TestCase):

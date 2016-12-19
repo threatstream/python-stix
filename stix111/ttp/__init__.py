@@ -2,10 +2,10 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.bindings.ttp as ttp_binding
-from stix.common import vocabs, Statement
-from stix.data_marking import Marking
+import stix111
+import stix111.bindings.ttp as ttp_binding
+from stix111.common import vocabs, Statement
+from stix111.data_marking import Marking
 
 # relative
 from .behavior import Behavior

@@ -1,9 +1,9 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import InformationSource
-import stix.bindings.data_marking as stix_data_marking_binding
+import stix111
+from stix111.common import InformationSource
+import stix111.bindings.data_marking as stix_data_marking_binding
 
 
 class Marking(stix.Entity):
@@ -219,9 +219,9 @@ class MarkingStructure(stix.Entity):
 
     @classmethod
     def from_obj(cls, obj, return_obj=None):
-        import stix.extensions.marking.tlp  # noqa
-        import stix.extensions.marking.simple_marking  # noqa
-        import stix.extensions.marking.terms_of_use_marking  # noqa
+        import stix111.extensions.marking.tlp  # noqa
+        import stix111.extensions.marking.simple_marking  # noqa
+        import stix111.extensions.marking.terms_of_use_marking  # noqa
 
         if not obj:
             return None
@@ -244,9 +244,9 @@ class MarkingStructure(stix.Entity):
 
     @classmethod
     def from_dict(cls, d, return_obj=None):
-        import stix.extensions.marking.tlp  # noqa
-        import stix.extensions.marking.simple_marking  # noqa
-        import stix.extensions.marking.terms_of_use_marking  # noqa
+        import stix111.extensions.marking.tlp  # noqa
+        import stix111.extensions.marking.simple_marking  # noqa
+        import stix111.extensions.marking.terms_of_use_marking  # noqa
         
         if not d:
             return None

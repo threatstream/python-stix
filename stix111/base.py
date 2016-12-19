@@ -79,7 +79,7 @@ class Entity(object):
                 and the field value is the value.
 
         """
-        from stix.common import VocabString
+        from stix111.common import VocabString
 
         klass = klass or VocabString
         item  = kwargs.itervalues().next()
@@ -696,7 +696,7 @@ class BaseCoreComponent(Entity):
 
     @description.setter
     def description(self, value):
-        from stix.common import StructuredText
+        from stix111.common import StructuredText
         self._set_var(StructuredText, description=value)
 
     @property
@@ -719,7 +719,7 @@ class BaseCoreComponent(Entity):
 
     @short_description.setter
     def short_description(self, value):
-        from stix.common import StructuredText
+        from stix111.common import StructuredText
         self._set_var(StructuredText, short_description=value)
 
     @property
@@ -742,12 +742,12 @@ class BaseCoreComponent(Entity):
 
     @information_source.setter
     def information_source(self, value):
-        from stix.common import InformationSource
+        from stix111.common import InformationSource
         self._set_var(InformationSource, try_cast=False, information_source=value)
 
     @classmethod
     def from_obj(cls, obj, return_obj=None):
-        from stix.common import StructuredText, InformationSource
+        from stix111.common import StructuredText, InformationSource
 
         if not return_obj:
             raise ValueError("Must provide a return_obj argument")
@@ -799,7 +799,7 @@ class BaseCoreComponent(Entity):
 
     @classmethod
     def from_dict(cls, d, return_obj=None):
-        from stix.common import StructuredText, InformationSource
+        from stix111.common import StructuredText, InformationSource
 
         if not return_obj:
             raise ValueError("Must provide a return_obj argument")

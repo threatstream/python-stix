@@ -6,8 +6,8 @@ import itertools
 
 import cybox.utils
 
-import stix.bindings as bindings
-from stix.utils import NamespaceInfo
+import stix111.bindings as bindings
+from stix111.utils import NamespaceInfo
 
 
 def round_trip_dict(cls, dict_):

@@ -5,8 +5,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from stix.bindings import *
-import stix.bindings.data_marking as data_marking_binding
+from stix111.bindings import *
+import stix111.bindings.data_marking as data_marking_binding
 
 XML_NS = "http://www.us-cert.gov/STIXMarkingStructure#AISConsentMarking-2"
 

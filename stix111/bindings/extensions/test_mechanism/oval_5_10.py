@@ -9,8 +9,8 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.indicator as indicator_binding
+from stix111.bindings import *
+import stix111.bindings.indicator as indicator_binding
 
 XML_NS = "http://stix.mitre.org/extensions/TestMechanism#OVAL5.10-1"
 

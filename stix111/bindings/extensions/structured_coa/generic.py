@@ -9,9 +9,9 @@
 #
 
 import sys
-from stix.bindings import *
-from stix.bindings.course_of_action import StructuredCOAType
-import stix.bindings.stix_common as stix_common_binding
+from stix111.bindings import *
+from stix111.bindings.course_of_action import StructuredCOAType
+import stix111.bindings.stix_common as stix_common_binding
 
 XML_NS = "http://stix.mitre.org/extensions/StructuredCOA#Generic-1"
 

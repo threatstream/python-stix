@@ -5,10 +5,10 @@
 from cybox.core import Observables
 
 # internal
-import stix
-from stix.common import StructuredText, VocabString
-from stix.common.vocabs import AttackerInfrastructureType
-import stix.bindings.ttp as ttp_binding
+import stix111
+from stix111.common import StructuredText, VocabString
+from stix111.common.vocabs import AttackerInfrastructureType
+import stix111.bindings.ttp as ttp_binding
 
 
 class Infrastructure(stix.Entity):

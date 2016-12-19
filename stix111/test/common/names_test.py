@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common import Names
+from stix111.common import Names
 
 class NamesTests(EntityTestCase, unittest.TestCase):
     klass = Names

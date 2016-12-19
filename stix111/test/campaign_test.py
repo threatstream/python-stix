@@ -3,13 +3,13 @@
 
 import unittest
 
-from stix.test import EntityTestCase, TypedListTestCase, data_marking_test
-from stix.test.common import (
+from stix111.test import EntityTestCase, TypedListTestCase, data_marking_test
+from stix111.test.common import (
     confidence_test, information_source_test, statement_test, related_test,
     activity_test
 )
 
-import stix.campaign as campaign
+import stix111.campaign as campaign
 
 
 class NamesTests(EntityTestCase, unittest.TestCase):

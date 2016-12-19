@@ -1,12 +1,12 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-import stix.utils
-import stix.indicator.test_mechanism
-from stix.common import EncodedCDATA
-from stix.indicator.test_mechanism import _BaseTestMechanism
-import stix.bindings.extensions.test_mechanism.yara as yara_tm_binding
+import stix111
+import stix111.utils
+import stix111.indicator.test_mechanism
+from stix111.common import EncodedCDATA
+from stix111.indicator.test_mechanism import _BaseTestMechanism
+import stix111.bindings.extensions.test_mechanism.yara as yara_tm_binding
 
 
 class YaraTestMechanism(_BaseTestMechanism):

@@ -22,15 +22,15 @@ from .related import (   # noqa
 )
 
 # Patch in base types of Related* types
-from stix.core import STIXPackage
+from stix111.core import STIXPackage
 from cybox.core import Observable
-from stix.campaign import Campaign
-from stix.coa import CourseOfAction
-from stix.exploit_target import ExploitTarget
-from stix.incident import Incident
-from stix.indicator import Indicator
-from stix.threat_actor import ThreatActor
-from stix.ttp import TTP
+from stix111.campaign import Campaign
+from stix111.coa import CourseOfAction
+from stix111.exploit_target import ExploitTarget
+from stix111.incident import Incident
+from stix111.indicator import Indicator
+from stix111.threat_actor import ThreatActor
+from stix111.ttp import TTP
 
 
 RelatedCampaign._base_type = Campaign  # noqa
@@ -49,9 +49,9 @@ RelatedCampaignRef._base_type = CampaignRef  # noqa
 RelatedPackages._contained_type = RelatedPackage  # noqa
 
 
-import stix
-import stix.utils as utils
-import stix.bindings.stix_common as common_binding
+import stix111
+import stix111.utils as utils
+import stix111.bindings.stix_common as common_binding
 
 
 class EncodedCDATA(stix.Entity):

@@ -5,9 +5,9 @@
 from cybox.common import Contributor
 
 # internal
-import stix
-import stix.utils
-import stix.bindings.incident as incident_binding
+import stix111
+import stix111.utils
+import stix111.bindings.incident as incident_binding
 
 
 class Contributors(stix.EntityList):

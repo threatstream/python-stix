@@ -5,26 +5,26 @@
 from cybox.core import Observable, Observables
 
 # internal
-import stix
-import stix.utils as utils
-import stix.utils.parser as parser
+import stix111
+import stix111.utils as utils
+import stix111.utils.parser as parser
 
-from stix.campaign import Campaign
-from stix.coa import CourseOfAction
-from stix.exploit_target import ExploitTarget
-from stix.indicator import Indicator
-from stix.incident import Incident
-from stix.threat_actor import ThreatActor
-from stix.ttp import TTP
-from stix.common.related import RelatedPackages
+from stix111.campaign import Campaign
+from stix111.coa import CourseOfAction
+from stix111.exploit_target import ExploitTarget
+from stix111.indicator import Indicator
+from stix111.incident import Incident
+from stix111.threat_actor import ThreatActor
+from stix111.ttp import TTP
+from stix111.common.related import RelatedPackages
 
 # relative imports
 from .stix_header import STIXHeader
 from .ttps import TTPs
 
 # binding imports
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.stix_core as stix_core_binding
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.stix_core as stix_core_binding
 
 
 class STIXPackage(stix.Entity):

@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common import Statement
+from stix111.common import Statement
 
 
 class StatementTests(EntityTestCase, unittest.TestCase):

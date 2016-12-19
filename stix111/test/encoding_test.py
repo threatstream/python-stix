@@ -7,18 +7,18 @@
 import unittest
 from StringIO import StringIO
 
-import stix.bindings as bindings
-from stix.core import STIXHeader, STIXPackage
-from stix.campaign import Campaign
-from stix.indicator import Indicator
-from stix.incident import Incident
-from stix.exploit_target import ExploitTarget
-from stix.threat_actor import ThreatActor
-from stix.ttp import TTP
-from stix.common import StructuredText
-import stix.incident.affected_asset as affected_asset
+import stix111.bindings as bindings
+from stix111.core import STIXHeader, STIXPackage
+from stix111.campaign import Campaign
+from stix111.indicator import Indicator
+from stix111.incident import Incident
+from stix111.exploit_target import ExploitTarget
+from stix111.threat_actor import ThreatActor
+from stix111.ttp import TTP
+from stix111.common import StructuredText
+import stix111.incident.affected_asset as affected_asset
 
-from stix.test import round_trip
+from stix111.test import round_trip
 
 UNICODE_STR = u"❤ ♎ ☀ ★ ☂ ♞ ☯ ☭ ☢ €☎⚑ ❄♫✂"
 

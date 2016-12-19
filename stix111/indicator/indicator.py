@@ -6,20 +6,20 @@ from cybox.core import Observable, ObservableComposition
 from cybox.common import Time
 
 # internal
-import stix
-import stix.utils as utils
-from stix.common import (
+import stix111
+import stix111.utils as utils
+from stix111.common import (
     Identity, InformationSource, VocabString, Confidence,
     RelatedTTP, Statement, CampaignRef
 )
-from stix.common.related import (
+from stix111.common.related import (
     GenericRelationshipList, RelatedCOA, RelatedIndicator, RelatedCampaignRef,
     RelatedPackageRefs
 )
-from stix.data_marking import Marking
-from stix.common.vocabs import IndicatorType
-from stix.common.kill_chains import KillChainPhasesReference
-import stix.bindings.indicator as indicator_binding
+from stix111.data_marking import Marking
+from stix111.common.vocabs import IndicatorType
+from stix111.common.kill_chains import KillChainPhasesReference
+import stix111.bindings.indicator as indicator_binding
 
 # relative
 from .test_mechanism import TestMechanisms
@@ -1090,7 +1090,7 @@ class RelatedCampaignRefs(GenericRelationshipList):
         super(RelatedCampaignRefs, self).__init__(scope, related_campaign_refs)
 
     def _fix_value(self, value):
-        from stix.campaign import Campaign
+        from stix111.campaign import Campaign
 
         if isinstance(value, Campaign) and value.id_:
             return RelatedCampaignRef(CampaignRef(idref=value.id_))
@@ -1114,7 +1114,7 @@ class IndicatorTypes(stix.TypedList):
     Examples:
         Add an instance of :class:`stix.common.vocabs.IndicatorType`:
 
-        >>> from stix.common.vocabs import IndicatorType
+        >>> from stix111.common.vocabs import IndicatorType
         >>> itypes = IndicatorTypes()
         >>> type_ = IndicatorType(IndicatorType.TERM_IP_WATCHLIST)
         >>> itypes.append(type_)
@@ -1123,7 +1123,7 @@ class IndicatorTypes(stix.TypedList):
 
         Add a string value:
 
-        >>> from stix.common.vocabs import IndicatorType
+        >>> from stix111.common.vocabs import IndicatorType
         >>> itypes = IndicatorTypes()
         >>> type(IndicatorType.TERM_IP_WATCHLIST)
         <type 'str'>

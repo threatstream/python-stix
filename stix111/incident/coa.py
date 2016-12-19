@@ -2,11 +2,11 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.utils as utils
-import stix.bindings.incident as incident_binding
-from stix.common import DateTimeWithPrecision
-from stix.coa import CourseOfAction
+import stix111
+import stix111.utils as utils
+import stix111.bindings.incident as incident_binding
+from stix111.common import DateTimeWithPrecision
+from stix111.coa import CourseOfAction
 
 # relative
 from .contributors import Contributors

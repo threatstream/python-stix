@@ -9,10 +9,10 @@
 #
 
 import sys
-from stix.bindings import *
+from stix111.bindings import *
 import cybox.bindings.cybox_core as cybox_core_binding
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.data_marking as data_marking_binding
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.data_marking as data_marking_binding
 
 XML_NS = "http://stix.mitre.org/CourseOfAction-1"
 

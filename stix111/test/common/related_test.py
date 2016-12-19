@@ -3,9 +3,9 @@
 
 import unittest
 
-from stix.test import EntityTestCase
+from stix111.test import EntityTestCase
 
-from stix.common.related import (
+from stix111.common.related import (
     RelatedCampaign, RelatedCampaignRef, RelatedIdentity, RelatedCOA,
     RelatedPackage, RelatedPackageRef, RelatedExploitTarget, RelatedIncident,
     RelatedIndicator, RelatedObservable, RelatedThreatActor, RelatedTTP,

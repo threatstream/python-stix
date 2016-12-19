@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 # internal
-import stix
-import stix.bindings.incident as incident_binding
+import stix111
+import stix111.bindings.incident as incident_binding
 
 # relative
 from .loss_estimation import LossEstimation

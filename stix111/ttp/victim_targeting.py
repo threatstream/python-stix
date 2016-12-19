@@ -5,9 +5,9 @@
 from cybox.core import Observables
 
 # internal
-import stix
-from stix.common import vocabs, VocabString, Identity
-import stix.bindings.ttp as ttp_binding
+import stix111
+from stix111.common import vocabs, VocabString, Identity
+import stix111.bindings.ttp as ttp_binding
 
 
 class VictimTargeting(stix.Entity):

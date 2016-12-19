@@ -1,15 +1,15 @@
 # Copyright (c) 2015, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-import stix
-from stix.common import Activity, Confidence, Statement, VocabString
-from stix.common.related import (
+import stix111
+from stix111.common import Activity, Confidence, Statement, VocabString
+from stix111.common.related import (
     GenericRelationshipList, RelatedCampaign, RelatedIncident, RelatedIndicator,
     RelatedPackageRefs, RelatedThreatActor, RelatedTTP
 )
-from stix.common import vocabs
-from stix.data_marking import Marking
-import stix.bindings.campaign as campaign_binding
+from stix111.common import vocabs
+from stix111.data_marking import Marking
+import stix111.bindings.campaign as campaign_binding
 
 
 class AssociatedCampaigns(GenericRelationshipList):

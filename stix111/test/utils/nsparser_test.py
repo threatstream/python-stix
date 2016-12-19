@@ -10,9 +10,9 @@ import warnings
 import lxml.etree
 
 # internal
-import stix
-from stix.core import STIXPackage
-from stix.utils import nsparser
+import stix111
+from stix111.core import STIXPackage
+from stix111.utils import nsparser
 
 
 NSMAP = {

@@ -9,10 +9,10 @@
 #
 
 import sys
-from stix.bindings import *
+from stix111.bindings import *
 import cybox.bindings.cybox_core as cybox_core_binding
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.data_marking as data_marking_binding
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.data_marking as data_marking_binding
 
 XML_NS  = "http://stix.mitre.org/Indicator-2"
 
@@ -668,19 +668,19 @@ class TestMechanismsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
                     
                 if type_name_ == "OVAL5.10TestMechanismType":
-                    import stix.bindings.extensions.test_mechanism.oval_5_10 as oval_5_10_tm_binding
+                    import stix111.bindings.extensions.test_mechanism.oval_5_10 as oval_5_10_tm_binding
                     obj_ = oval_5_10_tm_binding.OVAL5_10TestMechanismType.factory()
                 elif type_name_ == "YaraTestMechanismType":
-                    import stix.bindings.extensions.test_mechanism.yara as yara_tm_binding
+                    import stix111.bindings.extensions.test_mechanism.yara as yara_tm_binding
                     obj_ = yara_tm_binding.YaraTestMechanismType.factory()
                 elif type_name_ == "SnortTestMechanismType":
-                    import stix.bindings.extensions.test_mechanism.snort as snort_tm_binding
+                    import stix111.bindings.extensions.test_mechanism.snort as snort_tm_binding
                     obj_ = snort_tm_binding.SnortTestMechanismType.factory()
                 elif type_name_ == "OpenIOC2010TestMechanismType":
-                    import stix.bindings.extensions.test_mechanism.open_ioc_2010 as openioc_tm_binding
+                    import stix111.bindings.extensions.test_mechanism.open_ioc_2010 as openioc_tm_binding
                     obj_ = openioc_tm_binding.OpenIOC2010TestMechanismType.factory()
                 elif type_name_ == "GenericTestMechanismType":
-                    import stix.bindings.extensions.test_mechanism.generic as generic_tm_binding
+                    import stix111.bindings.extensions.test_mechanism.generic as generic_tm_binding
                     obj_ = generic_tm_binding.GenericTestMechanismType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for <Test_Mechanism> element: ' + type_name_)

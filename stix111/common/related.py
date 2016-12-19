@@ -4,10 +4,10 @@
 from __future__ import absolute_import
 
 # internal
-import stix
-import stix.utils as utils
-import stix.bindings.stix_common as common_binding
-import stix.bindings.stix_core as core_binding
+import stix111
+import stix111.utils as utils
+import stix111.bindings.stix_common as common_binding
+import stix111.bindings.stix_core as core_binding
 
 # relative
 from .vocabs import VocabString

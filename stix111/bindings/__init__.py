@@ -11,7 +11,7 @@ from datetime import datetime, tzinfo, timedelta
 from lxml import etree as etree_
 import cybox.bindings as cybox_bindings
 
-from stix import xmlconst
+from stix111 import xmlconst
 
 try:
     import maec.bindings as maec_bindings
@@ -63,7 +63,7 @@ def save_encoding(encoding='utf-8'):
 
 
 def parsexml_(*args, **kwargs):
-    from stix.utils.parser import get_xml_parser
+    from stix111.utils.parser import get_xml_parser
 
     if 'parser' not in kwargs:
         # Use the lxml ElementTree compatible parser so that, e.g.,

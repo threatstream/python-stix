@@ -3,11 +3,11 @@
 
 import unittest
 
-from stix.test import EntityTestCase, data_marking_test
-from stix.test.common import related_test, identity_test
+from stix111.test import EntityTestCase, data_marking_test
+from stix111.test.common import related_test, identity_test
 
-import stix.ttp as ttp
-from stix.ttp import (
+import stix111.ttp as ttp
+from stix111.ttp import (
     resource, infrastructure, exploit_targets, malware_instance, exploit,
     attack_pattern, behavior
 )

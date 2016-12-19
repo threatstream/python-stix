@@ -9,9 +9,9 @@
 #
 
 import sys
-from stix.bindings import *
-import stix.bindings.stix_common as stix_common_binding
-import stix.bindings.data_marking as data_marking_binding
+from stix111.bindings import *
+import stix111.bindings.stix_common as stix_common_binding
+import stix111.bindings.data_marking as data_marking_binding
 
 
 XML_NS = "http://stix.mitre.org/Campaign-1"
