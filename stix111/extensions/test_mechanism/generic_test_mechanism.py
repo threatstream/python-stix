@@ -122,4 +122,4 @@ class GenericTestMechanism(_BaseTestMechanism):
         return d
 
     
-stix.indicator.test_mechanism.add_extension(GenericTestMechanism)
+stix111.indicator.test_mechanism.add_extension(GenericTestMechanism)

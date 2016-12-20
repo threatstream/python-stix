@@ -416,7 +416,7 @@ def _update_schemalocations():
 
 
 # Register extension
-stix.data_marking.add_extension(AISMarkingStructure)
+stix111.data_marking.add_extension(AISMarkingStructure)
 _update_namespaces()
 _update_schemalocations()
 

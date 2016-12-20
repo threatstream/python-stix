@@ -62,4 +62,4 @@ class TLPMarkingStructure(MarkingStructure):
 
 
 # Register extension
-stix.data_marking.add_extension(TLPMarkingStructure)
+stix111.data_marking.add_extension(TLPMarkingStructure)

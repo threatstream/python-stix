@@ -62,4 +62,4 @@ class SimpleMarkingStructure(MarkingStructure):
 
 
 # Register extension
-stix.data_marking.add_extension(SimpleMarkingStructure)
+stix111.data_marking.add_extension(SimpleMarkingStructure)

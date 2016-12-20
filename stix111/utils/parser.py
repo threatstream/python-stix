@@ -142,7 +142,7 @@ class EntityParser(object):
 
         """
         document_version = get_document_version(tree)
-        supported = stix.supported_stix_version()
+        supported = stix111.supported_stix_version()
 
         if StrictVersion(supported) == StrictVersion(document_version):
             return

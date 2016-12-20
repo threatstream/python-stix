@@ -98,4 +98,4 @@ class GenericStructuredCOA(_BaseStructuredCOA):
 
 
 # Register the extension
-stix.coa.structured_coa.add_extension(GenericStructuredCOA)
+stix111.coa.structured_coa.add_extension(GenericStructuredCOA)

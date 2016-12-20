@@ -99,7 +99,7 @@ class OpenIOCTestMechanism(_BaseTestMechanism):
             
         super(OpenIOCTestMechanism, cls).from_dict(d, return_obj)
         if 'ioc' in d:
-            parser = stix.utils.parser.get_xml_parser()
+            parser = stix111.utils.parser.get_xml_parser()
             return_obj.ioc = etree.parse(StringIO(d['ioc']), parser=parser)
         
         return return_obj
@@ -112,4 +112,4 @@ class OpenIOCTestMechanism(_BaseTestMechanism):
 
         return d
     
-stix.indicator.test_mechanism.add_extension(OpenIOCTestMechanism)
+stix111.indicator.test_mechanism.add_extension(OpenIOCTestMechanism)

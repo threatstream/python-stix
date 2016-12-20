@@ -63,4 +63,4 @@ class TermsOfUseMarkingStructure(MarkingStructure):
 
 
 # Register extension
-stix.data_marking.add_extension(TermsOfUseMarkingStructure)
+stix111.data_marking.add_extension(TermsOfUseMarkingStructure)

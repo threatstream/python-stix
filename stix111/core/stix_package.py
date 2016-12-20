@@ -38,7 +38,7 @@ class STIXPackage(stix111.Entity):
                  observables=None, incidents=None, threat_actors=None,
                  ttps=None, campaigns=None):
         
-        self.id_ = id_ or stix.utils.create_id("Package")
+        self.id_ = id_ or stix111.utils.create_id("Package")
         self.idref = idref
         self.version = self._version
         self.stix_header = stix_header

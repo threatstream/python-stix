@@ -1,6 +1,6 @@
 import os
 
-import stix
+import stix111 as stix
 
 project = u'python-stix'
 copyright = u'2015, The MITRE Corporation'

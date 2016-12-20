@@ -41,7 +41,7 @@ class ToolInformation(stix111.Entity, cybox.common.ToolInformation):
         if not return_obj:
             return_obj = self._binding_class()
 
-        stix.Entity.to_obj(self, return_obj=return_obj, ns_info=ns_info)
+        stix111.Entity.to_obj(self, return_obj=return_obj, ns_info=ns_info)
         cybox.common.ToolInformation.to_obj(
             self,
             return_obj=return_obj,

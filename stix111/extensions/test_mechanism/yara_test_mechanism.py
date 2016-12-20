@@ -82,4 +82,4 @@ class YaraTestMechanism(_BaseTestMechanism):
         
         return d
     
-stix.indicator.test_mechanism.add_extension(YaraTestMechanism)
+stix111.indicator.test_mechanism.add_extension(YaraTestMechanism)
