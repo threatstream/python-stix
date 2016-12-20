@@ -6,7 +6,7 @@ from stix111.common import DateTimeWithPrecision
 import stix111.bindings.indicator as indicator_binding
 
 
-class ValidTime(stix.Entity):
+class ValidTime(stix111.Entity):
     _namespace = "http://stix.mitre.org/Indicator-2"
     _binding = indicator_binding
     _binding_class = _binding.ValidTimeType
@@ -72,5 +72,5 @@ class ValidTime(stix.Entity):
 
 
 # NOT AN ACTUAL STIX TYPE
-class _ValidTimePositions(stix.TypedList):
+class _ValidTimePositions(stix111.TypedList):
     _contained_type = ValidTime

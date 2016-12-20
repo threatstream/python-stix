@@ -60,7 +60,7 @@ class NonPublicDataCompromised(VocabString):
         return d
 
 
-class PropertyAffected(stix.Entity):
+class PropertyAffected(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = incident_binding.PropertyAffectedType

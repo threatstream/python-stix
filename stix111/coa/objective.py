@@ -6,7 +6,7 @@ from stix111.common import StructuredText, Confidence
 import stix111.bindings.course_of_action as coa_binding
 
 
-class Objective(stix.Entity):
+class Objective(stix111.Entity):
     _binding = coa_binding
     _binding_class = coa_binding.ObjectiveType
     _namespace = "http://stix.mitre.org/CourseOfAction-1"

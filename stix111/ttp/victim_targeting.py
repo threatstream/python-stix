@@ -10,7 +10,7 @@ from stix111.common import vocabs, VocabString, Identity
 import stix111.bindings.ttp as ttp_binding
 
 
-class VictimTargeting(stix.Entity):
+class VictimTargeting(stix111.Entity):
     _binding = ttp_binding
     _binding_class = _binding.VictimTargetingType
     _namespace = "http://stix.mitre.org/TTP-1"
@@ -102,14 +102,14 @@ class VictimTargeting(stix.Entity):
         return return_obj
 
 
-class TargetedSystems(stix.TypedList):
+class TargetedSystems(stix111.TypedList):
     _contained_type = VocabString
 
     def _fix_value(self, value):
         return vocabs.SystemType(value)
 
 
-class TargetedInformation(stix.TypedList):
+class TargetedInformation(stix111.TypedList):
     _contained_type = VocabString
 
     def _fix_value(self, value):

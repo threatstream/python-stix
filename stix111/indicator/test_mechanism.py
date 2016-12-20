@@ -6,7 +6,7 @@ from stix111.common import InformationSource, Statement
 import stix111.bindings.indicator as indicator_binding
 
 
-class _BaseTestMechanism(stix.Entity):
+class _BaseTestMechanism(stix111.Entity):
     _namespace = "http://stix.mitre.org/Indicator-2"
     _binding = indicator_binding
     _binding_class = indicator_binding.TestMechanismType()
@@ -110,7 +110,7 @@ class _BaseTestMechanism(stix.Entity):
         return d
 
 
-class TestMechanisms(stix.EntityList):
+class TestMechanisms(stix111.EntityList):
     _binding = indicator_binding
     _namespace = 'http://stix.mitre.org/Indicator-2'
     _binding_class = _binding.TestMechanismsType

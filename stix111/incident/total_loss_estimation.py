@@ -9,7 +9,7 @@ import stix111.bindings.incident as incident_binding
 from .loss_estimation import LossEstimation
 
 
-class TotalLossEstimation(stix.Entity):
+class TotalLossEstimation(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding  = incident_binding
     _binding_class = incident_binding.TotalLossEstimationType

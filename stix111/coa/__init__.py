@@ -28,7 +28,7 @@ class RelatedCOAs(related.GenericRelationshipList):
     _inner_name = "coas"
 
 
-class CourseOfAction(stix.BaseCoreComponent):
+class CourseOfAction(stix111.BaseCoreComponent):
     _binding = coa_binding
     _binding_class = coa_binding.CourseOfActionType
     _namespace = "http://stix.mitre.org/CourseOfAction-1"

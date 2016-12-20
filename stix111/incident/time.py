@@ -6,7 +6,7 @@ import stix111.bindings.incident as incident_binding
 from stix111.common import DateTimeWithPrecision
 
 
-class Time(stix.Entity):
+class Time(stix111.Entity):
     _binding = incident_binding
     _binding_class = _binding.TimeType
     _namespace = "http://stix.mitre.org/Incident-1"

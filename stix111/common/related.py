@@ -15,7 +15,7 @@ from .information_source import InformationSource
 from .confidence import Confidence
 
 
-class GenericRelationship(stix.Entity):
+class GenericRelationship(stix111.Entity):
     _namespace = "http://stix.mitre.org/common-1"
     _binding = common_binding
     _binding_class = common_binding.GenericRelationshipType
@@ -176,7 +176,7 @@ class RelatedPackageRef(GenericRelationship):
         return return_obj
 
 
-class GenericRelationshipList(stix.EntityList):
+class GenericRelationshipList(stix111.EntityList):
     _namespace = "http://stix.mitre.org/common-1"
     _binding = common_binding
     _binding_class = _binding.GenericRelationshipListType
@@ -267,7 +267,7 @@ class RelatedPackages(GenericRelationshipList):
     _inner_name = "related_packages"
 
 
-class RelatedPackageRefs(stix.EntityList):
+class RelatedPackageRefs(stix111.EntityList):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.RelatedPackageRefsType

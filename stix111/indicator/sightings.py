@@ -10,7 +10,7 @@ from stix111.common import (
 import stix111.bindings.indicator as indicator_binding
 
 
-class Sighting(stix.Entity):
+class Sighting(stix111.Entity):
     _namespace = "http://stix.mitre.org/Indicator-2"
     _binding = indicator_binding
     _binding_class = _binding.SightingType
@@ -114,7 +114,7 @@ class Sighting(stix.Entity):
         return return_obj
 
 
-class Sightings(stix.EntityList):
+class Sightings(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Indicator-2"
     _binding = indicator_binding
     _binding_class = _binding.SightingsType

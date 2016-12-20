@@ -7,7 +7,7 @@ from stix111.common.vocabs import ImpactRating
 import stix111.bindings.incident as incident_binding
 
 
-class DirectImpactSummary(stix.Entity):
+class DirectImpactSummary(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding  = incident_binding
     _binding_class = incident_binding.DirectImpactSummaryType

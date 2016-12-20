@@ -6,7 +6,7 @@ import stix111
 import stix111.bindings.stix_common as common_binding
 
 
-class KillChain(stix.Entity):
+class KillChain(stix111.Entity):
     _binding = common_binding
     _namespace = 'http://stix.mitre.org/common-1'
     _binding_class = _binding.KillChainType
@@ -92,7 +92,7 @@ class KillChain(stix.Entity):
         return return_obj
 
 
-class KillChains(stix.EntityList):
+class KillChains(stix111.EntityList):
     _binding = common_binding
     _namespace = 'http://stix.mitre.org/common-1'
     _binding_class = _binding.KillChainsType
@@ -101,7 +101,7 @@ class KillChains(stix.EntityList):
     _inner_name = "kill_chains"
 
 
-class KillChainPhase(stix.Entity):
+class KillChainPhase(stix111.Entity):
     _binding = common_binding
     _namespace = 'http://stix.mitre.org/common-1'
     _binding_class = _binding.KillChainPhaseType
@@ -236,7 +236,7 @@ class KillChainPhaseReference(KillChainPhase):
         return return_obj
 
 
-class KillChainPhasesReference(stix.EntityList):
+class KillChainPhasesReference(stix111.EntityList):
     _binding = common_binding
     _namespace = 'http://stix.mitre.org/common-1'
     _binding_class = _binding.KillChainPhasesReferenceType
@@ -255,5 +255,5 @@ class KillChainPhasesReference(stix.EntityList):
 
 
 # NOT AN ACTUAL STIX TYPE!
-class _KillChainPhases(stix.TypedList):
+class _KillChainPhases(stix111.TypedList):
     _contained_type = KillChainPhase

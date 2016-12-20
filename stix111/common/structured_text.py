@@ -5,7 +5,7 @@ import stix111
 import stix111.bindings.stix_common as stix_common_binding
 
 
-class StructuredText(stix.Entity):
+class StructuredText(stix111.Entity):
     _binding = stix_common_binding
     _namespace = 'http://stix.mitre.org/common-1'
 

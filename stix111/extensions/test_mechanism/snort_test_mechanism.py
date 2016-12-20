@@ -127,7 +127,7 @@ class SnortTestMechanism(test_mechanism._BaseTestMechanism):
 
 
 # Not an actual STIX data type!
-class _EncodedCDATAs(stix.TypedList):
+class _EncodedCDATAs(stix111.TypedList):
     _contained_type = EncodedCDATA
 
 

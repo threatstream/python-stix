@@ -8,7 +8,7 @@ from .datetimewithprecision import DateTimeWithPrecision
 from .structured_text import StructuredText
 
 
-class Activity(stix.Entity):
+class Activity(stix111.Entity):
     _binding = common_binding
     _binding_class = common_binding.ActivityType
     _namespace = 'http://stix.mitre.org/common-1'

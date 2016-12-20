@@ -11,7 +11,7 @@ import stix111.bindings.stix_common as common_binding
 # relative
 from .structured_text import StructuredText
 
-class ToolInformation(stix.Entity, cybox.common.ToolInformation):
+class ToolInformation(stix111.Entity, cybox.common.ToolInformation):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.ToolInformationType

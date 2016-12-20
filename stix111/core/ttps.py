@@ -7,7 +7,7 @@ from stix111.bindings import stix_core as core_binding
 from stix111.common.kill_chains import KillChains
 
 
-class TTPs(stix.EntityList):
+class TTPs(stix111.EntityList):
     _binding = core_binding
     _binding_class = _binding.TTPsType
     _namespace = 'http://stix.mitre.org/stix-1'

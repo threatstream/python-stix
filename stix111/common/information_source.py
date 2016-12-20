@@ -17,7 +17,7 @@ from .identity import Identity
 from .structured_text import StructuredText
 
 
-class InformationSource(stix.Entity):
+class InformationSource(stix111.Entity):
     _binding = stix_common_binding
     _binding_class = stix_common_binding.InformationSourceType
     _namespace = 'http://stix.mitre.org/common-1'
@@ -186,7 +186,7 @@ class InformationSource(stix.Entity):
         return super(InformationSource, self).to_dict()
 
 
-class ContributingSources(stix.EntityList):
+class ContributingSources(stix111.EntityList):
     _namespace = "http://stix.mitre.org/common-1"
     _binding = stix_common_binding
     _binding_class = stix_common_binding.ContributingSourcesType
@@ -196,7 +196,7 @@ class ContributingSources(stix.EntityList):
 
 
 # NOT AN ACTUAL STIX TYPE!
-class _Roles(stix.TypedList):
+class _Roles(stix111.TypedList):
     _contained_type = VocabString
 
     def _fix_value(self, value):

@@ -155,7 +155,7 @@ class RelatedIndicators(GenericRelationshipList):
         super(RelatedIndicators, self).__init__(scope, related_indicators)
 
 
-class Indicator(stix.BaseCoreComponent):
+class Indicator(stix111.BaseCoreComponent):
     """Implementation of the STIX ``IndicatorType``.
 
     Args:
@@ -974,7 +974,7 @@ class Indicator(stix.BaseCoreComponent):
         return return_obj
 
 
-class CompositeIndicatorExpression(stix.EntityList):
+class CompositeIndicatorExpression(stix111.EntityList):
     """Implementation of the STIX ``CompositeIndicatorExpressionType``.
 
     The ``CompositeIndicatorExpression`` class implements methods found on
@@ -1099,7 +1099,7 @@ class RelatedCampaignRefs(GenericRelationshipList):
 
 
 # NOT ACTUAL STIX TYPES!
-class IndicatorTypes(stix.TypedList):
+class IndicatorTypes(stix111.TypedList):
     """A :class:`stix.common.vocabs.VocabString` collection which defaults to
     :class:`stix.common.vocabs.IndicatorType`. This class implements methods
     found on ``collections.MutableSequence`` and as such can be interacted with
@@ -1143,9 +1143,9 @@ class IndicatorTypes(stix.TypedList):
         return IndicatorType(value)
 
 
-class _IndicatedTTPs(stix.TypedList):
+class _IndicatedTTPs(stix111.TypedList):
     _contained_type = RelatedTTP
 
 
-class _Observables(stix.TypedList):
+class _Observables(stix111.TypedList):
     _contained_type = Observable

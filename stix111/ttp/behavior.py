@@ -8,7 +8,7 @@ from .exploit import Exploit
 from .attack_pattern import AttackPattern
 
 
-class Behavior(stix.Entity):
+class Behavior(stix111.Entity):
     _binding = ttp_binding
     _binding_class = _binding.BehaviorType
     _namespace = "http://stix.mitre.org/TTP-1"
@@ -99,7 +99,7 @@ class Behavior(stix.Entity):
         return return_obj
 
 
-class Exploits(stix.EntityList):
+class Exploits(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = Exploit
     _binding = ttp_binding
@@ -109,7 +109,7 @@ class Exploits(stix.EntityList):
     _dict_as_list = True
 
 
-class MalwareInstances(stix.EntityList):
+class MalwareInstances(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = MalwareInstance
     _binding = ttp_binding
@@ -119,7 +119,7 @@ class MalwareInstances(stix.EntityList):
     _dict_as_list = True
 
 
-class AttackPatterns(stix.EntityList):
+class AttackPatterns(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = AttackPattern
     _binding = ttp_binding

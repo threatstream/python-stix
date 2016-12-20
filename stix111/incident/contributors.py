@@ -10,7 +10,7 @@ import stix111.utils
 import stix111.bindings.incident as incident_binding
 
 
-class Contributors(stix.EntityList):
+class Contributors(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = _binding.ContributorsType

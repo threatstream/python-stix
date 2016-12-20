@@ -5,7 +5,7 @@ import stix111
 from stix111.bindings import course_of_action as coa_binding
 
 
-class _BaseStructuredCOA(stix.Entity):
+class _BaseStructuredCOA(stix111.Entity):
     _namespace = "http://stix.mitre.org/CourseOfAction-1"
     _binding = coa_binding
     _binding_class = coa_binding.StructuredCOAType

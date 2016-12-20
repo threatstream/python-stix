@@ -57,7 +57,7 @@ class RelatedTTPs(GenericRelationshipList):
     _inner_name = "ttps"
 
 
-class Names(stix.EntityList):
+class Names(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Campaign-1"
     _binding = campaign_binding
     _binding_class = campaign_binding.NamesType
@@ -66,7 +66,7 @@ class Names(stix.EntityList):
     _inner_name = "names"
 
 
-class Campaign(stix.BaseCoreComponent):
+class Campaign(stix111.BaseCoreComponent):
     _binding = campaign_binding
     _binding_class = _binding.CampaignType
     _namespace = "http://stix.mitre.org/Campaign-1"
@@ -239,15 +239,15 @@ class Campaign(stix.BaseCoreComponent):
 
 
 # Not Actual STIX Types!
-class _AttributionList(stix.TypedList):
+class _AttributionList(stix111.TypedList):
     _contained_type = Attribution
 
 
-class _Activities(stix.TypedList):
+class _Activities(stix111.TypedList):
     _contained_type = Activity
 
 
-class _IntendedEffects(stix.TypedList):
+class _IntendedEffects(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):

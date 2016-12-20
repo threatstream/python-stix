@@ -12,7 +12,7 @@ from .structured_text import StructuredText
 from .vocabs import VocabString, HighMediumLow
 
 
-class Statement(stix.Entity):
+class Statement(stix111.Entity):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.StatementType

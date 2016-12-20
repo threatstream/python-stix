@@ -9,7 +9,7 @@ import stix111.bindings.stix_common as common_binding
 from .vocabs import VocabString
 
 
-class Names(stix.EntityList):
+class Names(stix111.EntityList):
     _namespace = "http://stix.mitre.org/common-1"
     _binding = common_binding
     _binding_class = _binding.NamesType

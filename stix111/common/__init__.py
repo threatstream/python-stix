@@ -54,7 +54,7 @@ import stix111.utils as utils
 import stix111.bindings.stix_common as common_binding
 
 
-class EncodedCDATA(stix.Entity):
+class EncodedCDATA(stix111.Entity):
     _namespace = "http://stix.mitre.org/common-1"
     _binding = common_binding
     _binding_class = _binding.EncodedCDATAType

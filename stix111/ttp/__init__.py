@@ -13,7 +13,7 @@ from .resource import Resource
 from .victim_targeting import VictimTargeting
 
 
-class TTP(stix.BaseCoreComponent):
+class TTP(stix111.BaseCoreComponent):
     _binding = ttp_binding
     _binding_class = _binding.TTPType
     _namespace = "http://stix.mitre.org/TTP-1"
@@ -176,7 +176,7 @@ class TTP(stix.BaseCoreComponent):
 
 
 # NOT ACTUAL STIX TYPE
-class _IntendedEffects(stix.TypedList):
+class _IntendedEffects(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):

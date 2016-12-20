@@ -7,7 +7,7 @@ import stix111
 import stix111.bindings.stix_common as common_binding
 
 
-class Identity(stix.Entity):
+class Identity(stix111.Entity):
     _binding = common_binding
     _namespace = 'http://stix.mitre.org/common-1'
 
@@ -142,7 +142,7 @@ class Identity(stix.Entity):
 from stix111.common.related import RelatedIdentity
 
 
-class RelatedIdentities(stix.EntityList):
+class RelatedIdentities(stix111.EntityList):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.RelatedIdentitiesType

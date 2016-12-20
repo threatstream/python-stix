@@ -38,7 +38,7 @@ class AssociatedCampaigns(GenericRelationshipList):
     _inner_name = "campaigns"
 
 
-class ThreatActor(stix.BaseCoreComponent):
+class ThreatActor(stix111.BaseCoreComponent):
     _binding = threat_actor_binding
     _binding_class = threat_actor_binding.ThreatActorType
     _namespace = 'http://stix.mitre.org/ThreatActor-1'
@@ -226,7 +226,7 @@ class ThreatActor(stix.BaseCoreComponent):
 
 
 # NOT ACTUAL STIX TYPES!
-class _Sophistications(stix.TypedList):
+class _Sophistications(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):
@@ -234,7 +234,7 @@ class _Sophistications(stix.TypedList):
         return Statement(value=sophistication)
 
 
-class _Motivations(stix.TypedList):
+class _Motivations(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):
@@ -242,7 +242,7 @@ class _Motivations(stix.TypedList):
         return Statement(value=motivation)
 
 
-class _IntendedEffects(stix.TypedList):
+class _IntendedEffects(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):
@@ -250,7 +250,7 @@ class _IntendedEffects(stix.TypedList):
         return Statement(value=intended_effect)
 
 
-class _PlanningAndOperationalSupports(stix.TypedList):
+class _PlanningAndOperationalSupports(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):
@@ -258,7 +258,7 @@ class _PlanningAndOperationalSupports(stix.TypedList):
         return Statement(value=pos)
 
 
-class _Types(stix.TypedList):
+class _Types(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):

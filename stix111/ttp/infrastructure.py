@@ -11,7 +11,7 @@ from stix111.common.vocabs import AttackerInfrastructureType
 import stix111.bindings.ttp as ttp_binding
 
 
-class Infrastructure(stix.Entity):
+class Infrastructure(stix111.Entity):
     _binding = ttp_binding
     _binding_class = _binding.InfrastructureType
     _namespace = "http://stix.mitre.org/TTP-1"
@@ -125,7 +125,7 @@ class Infrastructure(stix.Entity):
         return return_obj
 
 
-class InfraStructureTypes(stix.EntityList):
+class InfraStructureTypes(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = VocabString
     _dict_as_list = True

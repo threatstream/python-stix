@@ -137,7 +137,7 @@ class CIQIdentity3_0Instance(common.Identity):
         return return_obj
 
 
-class STIXCIQIdentity3_0(stix.Entity):
+class STIXCIQIdentity3_0(stix111.Entity):
     _namespace = "http://stix.mitre.org/extensions/Identity#CIQIdentity3.0-1"
     XML_TAG = "{%s}Specification" % _namespace
 
@@ -453,7 +453,7 @@ class STIXCIQIdentity3_0(stix.Entity):
         return d
 
 
-class Address(stix.Entity):
+class Address(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}Address" % _namespace
 
@@ -546,7 +546,7 @@ class Address(stix.Entity):
         return return_obj
 
 
-class AdministrativeArea(stix.Entity):
+class AdministrativeArea(stix111.Entity):
     _namespace = XML_NS_XAL
     XML_TAG = "{%s}AdministrativeArea" % _namespace
 
@@ -618,7 +618,7 @@ class AdministrativeArea(stix.Entity):
         return return_obj
 
 
-class Country(stix.Entity):
+class Country(stix111.Entity):
     _namespace = XML_NS_XAL
     XML_TAG = "{%s}Country" % _namespace
 
@@ -690,7 +690,7 @@ class Country(stix.Entity):
         return return_obj
 
 
-class NameElement(stix.Entity):
+class NameElement(stix111.Entity):
     _namespace = XML_NS_XAL
     XML_TAG = "{%s}NameElement" % XML_NS_XAL
 
@@ -757,7 +757,7 @@ class NameElement(stix.Entity):
         return return_obj
 
 
-class FreeTextAddress(stix.Entity):
+class FreeTextAddress(stix111.Entity):
     _namespace = XML_NS_XAL
     XML_TAG = "{%s}FreeTextAddress" % XML_NS_XAL
 
@@ -825,7 +825,7 @@ class FreeTextAddress(stix.Entity):
         return d
 
 
-class PartyName(stix.Entity):
+class PartyName(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}PartyName" % _namespace
 
@@ -960,7 +960,7 @@ class PartyName(stix.Entity):
         return return_obj
 
 
-class NameLine(stix.Entity):
+class NameLine(stix111.Entity):
     _namespace = XML_NS_XNL
     XML_TAG = "{%s}NameLine" % _namespace
 
@@ -1030,7 +1030,7 @@ class NameLine(stix.Entity):
         return return_obj
 
 
-class PersonName(stix.Entity):
+class PersonName(stix111.Entity):
     _namespace = XML_NS_XNL
     XML_TAG = "{%s}PersonName" % _namespace
 
@@ -1102,7 +1102,7 @@ class PersonName(stix.Entity):
         return return_obj
 
 
-class OrganisationName(stix.Entity):
+class OrganisationName(stix111.Entity):
     _namespace = XML_NS_XNL
     XML_TAG = "{%s}OrganisationName" % _namespace
 
@@ -1227,7 +1227,7 @@ class OrganisationName(stix.Entity):
         return return_obj
 
 
-class _BaseNameElement(stix.Entity):
+class _BaseNameElement(stix111.Entity):
     """Do not instantiate directly: use PersonNameElement or
     OrganisationNameElement
 
@@ -1429,7 +1429,7 @@ class OrganisationNameElement(_BaseNameElement):
         return return_obj
 
 
-class SubDivisionName(stix.Entity):
+class SubDivisionName(stix111.Entity):
     _namespace = XML_NS_XNL
     XML_TAG = "{%s}SubDivisionName" % _namespace
 
@@ -1507,7 +1507,7 @@ class SubDivisionName(stix.Entity):
         return return_obj
 
 
-class Language(stix.Entity):
+class Language(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}Language" % _namespace
 
@@ -1546,7 +1546,7 @@ class Language(stix.Entity):
         return return_obj
 
 
-class ElectronicAddressIdentifier(stix.Entity):
+class ElectronicAddressIdentifier(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}ElectronicAddressIdentifier" % _namespace
 
@@ -1598,7 +1598,7 @@ class ElectronicAddressIdentifier(stix.Entity):
         return return_obj
 
 
-class OrganisationInfo(stix.Entity):
+class OrganisationInfo(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}OrganisationInfo" % _namespace
 
@@ -1643,7 +1643,7 @@ class OrganisationInfo(stix.Entity):
         return return_obj
 
 
-class FreeTextLine(stix.Entity):
+class FreeTextLine(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}FreeTextLine" % _namespace
 
@@ -1695,7 +1695,7 @@ class FreeTextLine(stix.Entity):
         return return_obj
 
 
-class ContactNumber(stix.Entity):
+class ContactNumber(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}ContactNumber" % _namespace
 
@@ -1799,7 +1799,7 @@ class ContactNumber(stix.Entity):
         return return_obj
 
 
-class ContactNumberElement(stix.Entity):
+class ContactNumberElement(stix111.Entity):
     _namespace = XML_NS_XPIL
     XML_TAG = "{%s}ContactNumberElement" % _namespace
 

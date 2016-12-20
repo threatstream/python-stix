@@ -10,7 +10,7 @@ import stix111.bindings.ttp as ttp_binding
 from .infrastructure import Infrastructure
 
 
-class Resource(stix.Entity):
+class Resource(stix111.Entity):
     _binding = ttp_binding
     _binding_class = _binding.ResourceType
     _namespace = "http://stix.mitre.org/TTP-1"
@@ -99,7 +99,7 @@ class Resource(stix.Entity):
         return return_obj
 
 
-class Personas(stix.EntityList):
+class Personas(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = Identity
     _binding = ttp_binding
@@ -112,7 +112,7 @@ class Personas(stix.EntityList):
         return Identity(name=value)
 
 
-class Tools(stix.EntityList):
+class Tools(stix111.EntityList):
     _namespace = "http://stix.mitre.org/TTP-1"
     _contained_type = ToolInformation
     _binding = ttp_binding

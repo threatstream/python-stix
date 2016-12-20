@@ -11,7 +11,7 @@ TIME_PRECISION_VALUES = ("hour", "minute", "second")
 DATETIME_PRECISION_VALUES = DATE_PRECISION_VALUES + TIME_PRECISION_VALUES
 
 
-class DateTimeWithPrecision(stix.Entity):
+class DateTimeWithPrecision(stix111.Entity):
     _binding = common_binding
     _binding_class = _binding.DateTimeWithPrecisionType
     _namespace = 'http://stix.mitre.org/common-1'

@@ -71,7 +71,7 @@ class NamespaceInfo(object):
 
     def _parse_collected_classes(self):
         collected = self._collected_classes
-        entity_klasses = (stix.Entity, cybox.Entity)
+        entity_klasses = (stix111.Entity, cybox.Entity)
 
         # Generator which yields all stix.Entity and cybox.Entity subclasses
         # that were collected.

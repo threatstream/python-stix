@@ -27,7 +27,7 @@ import stix111.bindings.stix_common as stix_common_binding
 import stix111.bindings.stix_core as stix_core_binding
 
 
-class STIXPackage(stix.Entity):
+class STIXPackage(stix111.Entity):
     _binding = stix_core_binding
     _binding_class = _binding.STIXType
     _namespace = 'http://stix.mitre.org/stix-1'
@@ -324,7 +324,7 @@ class STIXPackage(stix.Entity):
         return entity_parser.parse_xml(xml_file, encoding=encoding)
 
 
-class Campaigns(stix.EntityList):
+class Campaigns(stix111.EntityList):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
     _binding_class = _binding.CampaignsType
@@ -334,7 +334,7 @@ class Campaigns(stix.EntityList):
     _dict_as_list = True
 
 
-class CoursesOfAction(stix.EntityList):
+class CoursesOfAction(stix111.EntityList):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
     _binding_class = _binding.CoursesOfActionType
@@ -344,7 +344,7 @@ class CoursesOfAction(stix.EntityList):
     _dict_as_list = True
 
 
-class ExploitTargets(stix.EntityList):
+class ExploitTargets(stix111.EntityList):
     _binding = stix_common_binding
     _namespace = 'http://stix.mitre.org/common-1'
     _binding_class = _binding.ExploitTargetsType
@@ -354,7 +354,7 @@ class ExploitTargets(stix.EntityList):
     _dict_as_list = True
 
 
-class Incidents(stix.EntityList):
+class Incidents(stix111.EntityList):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
     _binding_class = _binding.IncidentsType
@@ -364,7 +364,7 @@ class Incidents(stix.EntityList):
     _dict_as_list = True
 
 
-class Indicators(stix.EntityList):
+class Indicators(stix111.EntityList):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
     _binding_class = _binding.IndicatorsType
@@ -374,7 +374,7 @@ class Indicators(stix.EntityList):
     _dict_as_list = True
 
 
-class ThreatActors(stix.EntityList):
+class ThreatActors(stix111.EntityList):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
     _binding_class = _binding.ThreatActorsType

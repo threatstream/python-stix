@@ -13,7 +13,7 @@ import stix111.bindings.incident as incident_binding
 from .property_affected import PropertyAffected
 
 
-class AffectedAsset(stix.Entity):
+class AffectedAsset(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = incident_binding.AffectedAssetType
@@ -227,7 +227,7 @@ class AssetType(VocabString):
         return d
         
 
-class NatureOfSecurityEffect(stix.EntityList):
+class NatureOfSecurityEffect(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _contained_type = PropertyAffected
     _binding = incident_binding

@@ -6,7 +6,7 @@ from stix111.common import StructuredText
 import stix111.bindings.ttp as ttp_binding
 
 
-class AttackPattern(stix.Entity):
+class AttackPattern(stix111.Entity):
     _binding = ttp_binding
     _binding_class = _binding.AttackPatternType
     _namespace = "http://stix.mitre.org/TTP-1"

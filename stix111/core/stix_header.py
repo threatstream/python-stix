@@ -8,7 +8,7 @@ from stix111.common import vocabs, InformationSource, StructuredText, VocabStrin
 from stix111.data_marking import Marking
 
 
-class STIXHeader(stix.Entity):
+class STIXHeader(stix111.Entity):
     _binding = stix_core_binding
     _namespace = 'http://stix.mitre.org/stix-1'
 
@@ -161,7 +161,7 @@ class STIXHeader(stix.Entity):
 
 
 # NOT AN ACTUAL STIX TYPE!
-class _PackageIntents(stix.TypedList):
+class _PackageIntents(stix111.TypedList):
     _contained_type = VocabString
 
     def _fix_value(self, value):

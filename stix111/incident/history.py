@@ -11,7 +11,7 @@ from stix111.common.datetimewithprecision import DATETIME_PRECISION_VALUES
 from .coa import COATaken
 
 
-class JournalEntry(stix.Entity):
+class JournalEntry(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = incident_binding.JournalEntryType
@@ -90,7 +90,7 @@ class JournalEntry(stix.Entity):
         return return_obj
 
 
-class HistoryItem(stix.Entity):
+class HistoryItem(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = incident_binding.HistoryItemType
@@ -158,7 +158,7 @@ class HistoryItem(stix.Entity):
         return return_obj
 
 
-class History(stix.EntityList):
+class History(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = incident_binding.HistoryType

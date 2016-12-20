@@ -12,7 +12,7 @@ from stix111.coa import CourseOfAction
 from .contributors import Contributors
 
 
-class COATaken(stix.Entity):
+class COATaken(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = _binding.COATakenType
@@ -152,7 +152,7 @@ class COARequested(COATaken):
         return d
 
 
-class COATime(stix.Entity):
+class COATime(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding = incident_binding
     _binding_class = _binding.COATimeType

@@ -6,7 +6,7 @@ import stix111.data_marking
 from stix111.data_marking import MarkingStructure
 
 
-class AISConsentType(stix.Entity):
+class AISConsentType(stix111.Entity):
     _binding = ais_binding
     _binding_class = _binding.AISConsentType
     _namespace = 'http://www.us-cert.gov/STIXMarkingStructure#AISConsentMarking-2'
@@ -67,7 +67,7 @@ class AISConsentType(stix.Entity):
         return return_obj
 
 
-class TLPMarkingType(stix.Entity):
+class TLPMarkingType(stix111.Entity):
     _binding = ais_binding
     _binding_class = _binding.TLPMarkingType
     _namespace = 'http://www.us-cert.gov/STIXMarkingStructure#AISConsentMarking-2'
@@ -127,7 +127,7 @@ class TLPMarkingType(stix.Entity):
         return return_obj
 
 
-class NotProprietary(stix.Entity):
+class NotProprietary(stix111.Entity):
     _binding = ais_binding
     _binding_class = _binding.NotProprietary
     _namespace = 'http://www.us-cert.gov/STIXMarkingStructure#AISConsentMarking-2'
@@ -212,7 +212,7 @@ class NotProprietary(stix.Entity):
         return return_obj
 
 
-class IsProprietary(stix.Entity):
+class IsProprietary(stix111.Entity):
     _binding = ais_binding
     _binding_class = _binding.IsProprietary
     _namespace = 'http://www.us-cert.gov/STIXMarkingStructure#AISConsentMarking-2'

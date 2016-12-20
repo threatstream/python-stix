@@ -12,7 +12,7 @@ from .indirect_impact_summary import IndirectImpactSummary
 from .total_loss_estimation import TotalLossEstimation
 
 
-class ImpactAssessment(stix.Entity):
+class ImpactAssessment(stix111.Entity):
     _namespace = "http://stix.mitre.org/Incident-1"
     _binding  = incident_binding
     _binding_class = incident_binding.ImpactAssessmentType
@@ -123,7 +123,7 @@ class ImpactAssessment(stix.Entity):
         return return_obj
 
 
-class Effects(stix.EntityList):
+class Effects(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _contained_type = VocabString
     _binding = incident_binding

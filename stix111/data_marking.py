@@ -6,7 +6,7 @@ from stix111.common import InformationSource
 import stix111.bindings.data_marking as stix_data_marking_binding
 
 
-class Marking(stix.Entity):
+class Marking(stix111.Entity):
     _binding = stix_data_marking_binding
     _binding_class = stix_data_marking_binding.MarkingType
     _namespace = 'http://data-marking.mitre.org/Marking-1'
@@ -70,7 +70,7 @@ class Marking(stix.Entity):
     from_dict = from_list
 
 
-class MarkingSpecification(stix.Entity):
+class MarkingSpecification(stix111.Entity):
     _binding = stix_data_marking_binding
     _binding_class = stix_data_marking_binding.MarkingSpecificationType
     _namespace = 'http://data-marking.mitre.org/Marking-1'
@@ -159,7 +159,7 @@ class MarkingSpecification(stix.Entity):
         return return_obj
 
 
-class MarkingStructure(stix.Entity):
+class MarkingStructure(stix111.Entity):
     _binding = stix_data_marking_binding
     _binding_class = stix_data_marking_binding.MarkingStructureType
     _namespace = 'http://data-marking.mitre.org/Marking-1'
@@ -268,11 +268,11 @@ class MarkingStructure(stix.Entity):
 
 
 # Not Actual STIX Types!
-class _MarkingSpecifications(stix.TypedList):
+class _MarkingSpecifications(stix111.TypedList):
     _contained_type = MarkingSpecification
 
 
-class _MarkingStructures(stix.TypedList):
+class _MarkingStructures(stix111.TypedList):
     _contained_type = MarkingStructure
 
 

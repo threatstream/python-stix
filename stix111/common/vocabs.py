@@ -9,7 +9,7 @@ import stix111.bindings.stix_common as stix_common_binding
 # from cybox.utils import normalize_to_xml, denormalize_from_xml
 
 
-class VocabString(stix.Entity):
+class VocabString(stix111.Entity):
     _binding = stix_common_binding
     _binding_class = stix_common_binding.ControlledVocabularyStringType
     _namespace = 'http://stix.mitre.org/common-1'

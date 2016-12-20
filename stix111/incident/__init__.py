@@ -24,7 +24,7 @@ from .coa import COATaken, COARequested, COATime # noqa
 from .history import History
 
 
-class Incident(stix.BaseCoreComponent):
+class Incident(stix111.BaseCoreComponent):
     _binding = incident_binding
     _binding_class = _binding.IncidentType
     _namespace = "http://stix.mitre.org/Incident-1"
@@ -491,7 +491,7 @@ class RelatedIncidents(GenericRelationshipList):
     _inner_name = "incidents"
 
 
-class IncidentCategories(stix.EntityList):
+class IncidentCategories(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _contained_type = VocabString
     _binding = incident_binding
@@ -504,7 +504,7 @@ class IncidentCategories(stix.EntityList):
         return vocabs.IncidentCategory(value)
 
 
-class AffectedAssets(stix.EntityList):
+class AffectedAssets(stix111.EntityList):
     _namespace = "http://stix.mitre.org/Incident-1"
     _contained_type = AffectedAsset
     _binding = incident_binding
@@ -516,37 +516,37 @@ class AffectedAssets(stix.EntityList):
 
 # NOT ACTUAL STIX TYPES!
 
-class DiscoveryMethods(stix.TypedList):
+class DiscoveryMethods(stix111.TypedList):
     _contained_type = VocabString
 
     def _fix_value(self, value):
         return vocabs.DiscoveryMethod(value)
 
 
-class _COAsTaken(stix.TypedList):
+class _COAsTaken(stix111.TypedList):
     _contained_type = COATaken
 
 
-class _COAsRequested(stix.TypedList):
+class _COAsRequested(stix111.TypedList):
     _contained_type = COARequested
 
 
-class _ExternalIDs(stix.TypedList):
+class _ExternalIDs(stix111.TypedList):
     _contained_type = ExternalID
 
 
-class _InformationSources(stix.TypedList):
+class _InformationSources(stix111.TypedList):
     _contained_type = InformationSource
 
 
-class _Victims(stix.TypedList):
+class _Victims(stix111.TypedList):
     _contained_type = Identity
 
     def _fix_value(self, value):
         return Identity(name=value)
 
 
-class _IntendedEffects(stix.TypedList):
+class _IntendedEffects(stix111.TypedList):
     _contained_type = Statement
 
     def _fix_value(self, value):

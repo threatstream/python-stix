@@ -29,7 +29,7 @@ SCHEMALOCS = {
 }
 
 
-class A(stix.Entity):
+class A(stix111.Entity):
     _namespace = "test:a"
     _XSI_TYPE = "a:AType"
 

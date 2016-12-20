@@ -11,7 +11,7 @@ from . import vocabs, VocabString
 from .structured_text import StructuredText
 
 
-class Confidence(stix.Entity):
+class Confidence(stix111.Entity):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.ConfidenceType
@@ -128,7 +128,7 @@ class Confidence(stix.Entity):
         return return_obj
 
 
-# class ConfidenceAssertionChain(stix.Entity):
+# class ConfidenceAssertionChain(stix111.Entity):
 #     _namespace = 'http://stix.mitre.org/common-2'
 #     _binding = common_binding
 #
