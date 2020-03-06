@@ -102,7 +102,7 @@ class IsProprietary(stix111.Entity):
         self.tlp_marking = tlp_marking
 
 
-@stix.register_extension
+@stix111.register_extension
 class AISMarkingStructure(MarkingStructure):
     _binding = ais_binding
     _binding_class = _binding.AISMarkingStructure
@@ -228,7 +228,7 @@ def add_ais_marking(stix_package, proprietary, consent, color, **kwargs):
     it to the provided STIX package.
 
     Args:
-        stix_package: A stix.core.STIXPackage object.
+        stix_package: A stix111.core.STIXPackage object.
         proprietary: True if marking uses IsProprietary, False for
             NotProprietary.
         consent: A string with one of the following values: "EVERYONE", "NONE"

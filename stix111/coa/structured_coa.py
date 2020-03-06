@@ -14,7 +14,7 @@ class StructuredCOAFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
         import stix111.extensions.structured_coa.generic_structured_coa  # noqa
-        return stix.lookup_extension(key)
+        return stix111.lookup_extension(key)
 
 
 class _BaseStructuredCOA(stix111.Entity):
@@ -41,4 +41,4 @@ class _BaseStructuredCOA(stix111.Entity):
         return obj
 
 # Backwards compatibility
-add_extension = stix.add_extension
+add_extension = stix111.add_extension

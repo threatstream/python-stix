@@ -15,7 +15,7 @@ class IdentityFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
         import stix111.extensions.identity.ciq_identity_3_0  # noqa
-        return stix.lookup_extension(key, default=Identity)
+        return stix111.lookup_extension(key, default=Identity)
 
 
 class Identity(stix111.Entity):
@@ -46,7 +46,7 @@ class Identity(stix111.Entity):
 
     @staticmethod
     def lookup_class(xsi_type):
-        return stix.lookup_extension(xsi_type, default=Identity)
+        return stix111.lookup_extension(xsi_type, default=Identity)
 
 # We can't import RelatedIdentity until we have defined the Identity class.
 from stix111.common.related import RelatedIdentity
@@ -65,4 +65,4 @@ class RelatedIdentities(stix111.EntityList):
 
 
 # Backwards compatibility
-add_extension = stix.add_extension
+add_extension = stix111.add_extension

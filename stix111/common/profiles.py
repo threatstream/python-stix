@@ -9,7 +9,7 @@ import stix111
 from stix111.bindings import stix_common as stix_common_binding
 
 
-class Profiles(collections.MutableSequence, stix.Entity):
+class Profiles(collections.MutableSequence, stix111.Entity):
     _binding = stix_common_binding
     _binding_class = stix_common_binding.ProfilesType
     _namespace = 'http://stix.mitre.org/common-1'

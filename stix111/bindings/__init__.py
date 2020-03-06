@@ -68,7 +68,7 @@ def lookup_extension(typeinfo, default=None):
     pairing.
 
     Args:
-        typeinfo: An lxml Element node or a stix.bindings.TypeInfo namedtuple.
+        typeinfo: An lxml Element node or a stix111.bindings.TypeInfo namedtuple.
         default: A binding class that will be returned if typeinfo is an
             Element without an xsi:type attribute.
 

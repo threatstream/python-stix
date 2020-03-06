@@ -214,7 +214,7 @@ class RelatedIdentity(_BaseRelated):
     _binding_class = common_binding.RelatedIdentityType
 
     # _BaseRelated requires an "item" field.
-    item = fields.TypedField("Identity", type_="stix111.common.identity.Identity", factory="stix.common.identity.IdentityFactory")
+    item = fields.TypedField("Identity", type_="stix111.common.identity.Identity", factory="stix111.common.identity.IdentityFactory")
 
 
 class RelatedIncident(_BaseRelated):

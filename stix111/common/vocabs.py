@@ -76,7 +76,7 @@ class VocabFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
         try:
-            return stix.lookup_extension(key, default=VocabString)
+            return stix111.lookup_extension(key, default=VocabString)
         except ValueError:
             return VocabString
 
@@ -152,7 +152,7 @@ def add_vocab(cls):
         The :meth:`register_vocab` class decorator has replaced this method.
 
     """
-    stix.add_extension(cls)
+    stix111.add_extension(cls)
 
 
 def register_vocab(cls):

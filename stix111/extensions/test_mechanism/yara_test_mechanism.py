@@ -11,7 +11,7 @@ from stix111.indicator.test_mechanism import _BaseTestMechanism
 import stix111.bindings.extensions.test_mechanism.yara as yara_tm_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class YaraTestMechanism(_BaseTestMechanism):
     _namespace = "http://stix.mitre.org/extensions/TestMechanism#YARA-1"
     _binding = yara_tm_binding

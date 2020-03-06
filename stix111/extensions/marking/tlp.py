@@ -8,7 +8,7 @@ from stix111.data_marking import MarkingStructure
 import stix111.bindings.extensions.marking.tlp as tlp_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class TLPMarkingStructure(MarkingStructure):
     _binding = tlp_binding
     _binding_class = tlp_binding.TLPMarkingStructureType

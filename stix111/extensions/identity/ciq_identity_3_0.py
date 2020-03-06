@@ -22,7 +22,7 @@ et.register_namespace('xal', XML_NS_XAL)
 et.register_namespace('stix-ciqidentity', XML_NS_STIX_EXT)
 
 
-@stix.register_extension
+@stix111.register_extension
 class CIQIdentity3_0Instance(common.Identity):
     _binding = ciq_identity_binding
     _binding_class = _binding.CIQIdentity3_0InstanceType

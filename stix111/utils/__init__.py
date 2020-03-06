@@ -134,7 +134,7 @@ def cdata(text):
 
 def is_stix(entity):
     """Returns true if `entity` is an instance of :class:`.Entity`."""
-    return isinstance(entity, stix.Entity)
+    return isinstance(entity, stix111.Entity)
 
 
 def is_cybox(entity):
@@ -149,7 +149,7 @@ def is_entity(entity):
     """Returns true if `entity` is an instance of :class:`.Entity` or
     :class:`mixbox.Entity`.
     """
-    return isinstance(entity, (Entity, stix.Entity))
+    return isinstance(entity, (Entity, stix111.Entity))
 
 
 def is_entitylist(entity):
@@ -157,14 +157,14 @@ def is_entitylist(entity):
     or :class:`mixbox.entities.EntityList`.
 
     """
-    return isinstance(entity, (EntityList, stix.EntityList))
+    return isinstance(entity, (EntityList, stix111.EntityList))
 
 
 def is_typedlist(entity):
     """Returns true if `entity` is an instance of :class:`.TypedList`
 
     """
-    return isinstance(entity, stix.TypedList)
+    return isinstance(entity, stix111.TypedList)
 
 
 def private_name(name):

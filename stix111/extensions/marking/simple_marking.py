@@ -8,7 +8,7 @@ from stix111.data_marking import MarkingStructure
 import stix111.bindings.extensions.marking.simple_marking as simple_marking_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class SimpleMarkingStructure(MarkingStructure):
     _binding = simple_marking_binding
     _binding_class = simple_marking_binding.SimpleMarkingStructureType

@@ -9,7 +9,7 @@ from stix111.indicator import test_mechanism
 import stix111.bindings.extensions.test_mechanism.snort as snort_tm_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class SnortTestMechanism(test_mechanism._BaseTestMechanism):
     _namespace = "http://stix.mitre.org/extensions/TestMechanism#Snort-1"
     _binding = snort_tm_binding

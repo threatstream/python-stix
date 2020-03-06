@@ -22,7 +22,7 @@ class EntityParser(mixbox.parser.EntityParser):
         return root.attrib.get('version')
 
     def supported_versions(self, tag=TAG_STIX_PACKAGE):
-        return stix.supported_stix_version()
+        return stix111.supported_stix_version()
 
     def get_entity_class(self, tag=TAG_STIX_PACKAGE):
-        return stix.core.STIXPackage
+        return stix111.core.STIXPackage

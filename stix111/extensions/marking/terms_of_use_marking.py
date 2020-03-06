@@ -8,7 +8,7 @@ from stix111.data_marking import MarkingStructure
 import stix111.bindings.extensions.marking.terms_of_use_marking as tou_marking_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class TermsOfUseMarkingStructure(MarkingStructure):
     _binding = tou_marking_binding
     _binding_class = tou_marking_binding.TermsOfUseMarkingStructureType

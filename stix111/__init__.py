@@ -19,7 +19,7 @@ def _lookup_unprefixed(typename):
             without a namespace prefix.
 
     Returns:
-        A stix.Entity implementation class for the `typename`.
+        A stix111.Entity implementation class for the `typename`.
 
     Raises:
         ValueError: If no class has been registered for the input `typename`.
@@ -40,7 +40,7 @@ def _lookup_extension(xsi_type):
         xsi_type: An xsi:type value string.
 
     Returns:
-        A stix.Entity implementation class for the `xsi_type`.
+        A stix111.Entity implementation class for the `xsi_type`.
 
     Raises:
         ValueError: If no class has been registered for the `xsi_type`.
@@ -55,7 +55,7 @@ def _lookup_extension(xsi_type):
 
 
 def lookup_extension(typeinfo, default=None):
-    """Returns a stix.Entity class for that has been registered for the
+    """Returns a stix111.Entity class for that has been registered for the
     `typeinfo` value.
 
     Note:
@@ -63,12 +63,12 @@ def lookup_extension(typeinfo, default=None):
 
     Args:
         typeinfo: An object or string containing type information. This can be
-            either an xsi:type attribute value or a stix.bindings object.
+            either an xsi:type attribute value or a stix111.bindings object.
         default: Return class if typeinfo is None or contains no xml type
             information.
 
     Returns:
-        A stix.Entity implementation class for the `xsi_type`.
+        A stix111.Entity implementation class for the `xsi_type`.
 
     Raises:
         ValueError: If no class has been registered for the `xsi_type`.
@@ -100,7 +100,7 @@ def lookup_extension(typeinfo, default=None):
 
 
 def add_extension(cls):
-    """Registers a stix.Entity class as an implementation of an xml type.
+    """Registers a stix111.Entity class as an implementation of an xml type.
 
     Classes must have an ``_XSI_TYPE`` class attributes to be registered. The
     value of this attribute must be a valid xsi:type.
@@ -113,7 +113,7 @@ def add_extension(cls):
 
 
 def register_extension(cls):
-    """Class decorator for registering a stix.Entity class as an implementation
+    """Class decorator for registering a stix111.Entity class as an implementation
     of an xml type.
 
     Classes must have an ``_XSI_TYPE`` class attributes to be registered.

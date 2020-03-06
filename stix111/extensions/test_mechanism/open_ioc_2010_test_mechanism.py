@@ -13,7 +13,7 @@ from stix111.indicator.test_mechanism import _BaseTestMechanism
 import stix111.bindings.extensions.test_mechanism.open_ioc_2010 as open_ioc_tm_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class OpenIOCTestMechanism(_BaseTestMechanism):
     _namespace = "http://stix.mitre.org/extensions/TestMechanism#OpenIOC2010-1"
     _binding = open_ioc_tm_binding

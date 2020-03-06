@@ -39,7 +39,7 @@ def _iter_vars(obj):
 
 def iterwalk(obj):
     """Returns an generator which 'walks` the input `obj` model. Each
-    iteration yields a stix.Entity or cybox.Entity instance.
+    iteration yields a stix111.Entity or cybox.Entity instance.
 
     This is performed depth-first.
 

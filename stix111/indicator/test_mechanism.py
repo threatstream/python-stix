@@ -48,7 +48,7 @@ class TestMechanismFactory(entities.EntityFactory):
         import stix111.extensions.test_mechanism.open_ioc_2010_test_mechanism  # noqa
         import stix111.extensions.test_mechanism.yara_test_mechanism  # noqa
         import stix111.extensions.test_mechanism.generic_test_mechanism  # noqa
-        return stix.lookup_extension(key)
+        return stix111.lookup_extension(key)
 
 
 class TestMechanisms(stix111.EntityList):
@@ -66,4 +66,4 @@ class TestMechanisms(stix111.EntityList):
 
 
 # Backwards compatibility
-add_extension = stix.add_extension
+add_extension = stix111.add_extension

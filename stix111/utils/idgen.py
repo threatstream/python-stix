@@ -76,12 +76,12 @@ __generator = None
 
 
 def _get_generator():
-    """Return the `stix.utils` module's generator object.
+    """Return the `stix111.utils` module's generator object.
 
     Only under rare circumstances should this function be called by external
     code. More likely, external code should initialize its own IDGenerator or
     use the `set_id_namespace`, `set_id_method`, or `create_id` functions of
-    the `stix.utils` module.
+    the `stix111.utils` module.
     """
     global __generator
     if not __generator:

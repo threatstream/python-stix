@@ -30,7 +30,7 @@ from .valid_time import ValidTime
 
 class SuggestedCOAs(GenericRelationshipList):
     """The ``SuggestedCOAs`` class provides functionality for adding
-    :class:`stix.common.related.RelatedCOA` instances to an :class:`Indicator`
+    :class:`stix111.common.related.RelatedCOA` instances to an :class:`Indicator`
     instance.
 
     The ``SuggestedCOAs`` class implements methods found on
@@ -38,46 +38,46 @@ class SuggestedCOAs(GenericRelationshipList):
     ``list`` (e.g., ``append()``).
 
     The ``append()`` method can accept instances of
-    :class:`stix.common.related.RelatedCOA` or :class:`stix.coa.CourseOfAction`
+    :class:`stix111.common.related.RelatedCOA` or :class:`stix.coa.CourseOfAction`
     as an argument.
 
     Note:
         Calling ``append()`` with an instance of
-        :class:`stix.coa.CourseOfAction` will wrap that instance in a
-        :class:`stix.common.related.RelatedCOA` layer, with the ``item`` set to
-        the :class:`stix.coa.CourseOfAction` instance.
+        :class:`stix111.coa.CourseOfAction` will wrap that instance in a
+        :class:`stix111.common.related.RelatedCOA` layer, with the ``item`` set to
+        the :class:`stix111.coa.CourseOfAction` instance.
 
     Examples:
-        Append an instance of :class:`stix.coa.CourseOfAction` to the
+        Append an instance of :class:`stix111.coa.CourseOfAction` to the
         ``Indicator.suggested_coas`` property. The instance of
-        :class:`stix.coa.CourseOfAction` will be wrapped in an instance of
-        :class:`stix.common.related.RelatedCOA`.
+        :class:`stix111.coa.CourseOfAction` will be wrapped in an instance of
+        :class:`stix111.common.related.RelatedCOA`.
 
         >>> coa = CourseOfAction()
         >>> indicator = Indicator()
         >>> indicator.suggested_coas.append(coa)
         >>> print(type(indicator.suggested_coas[0]))
-        <class 'stix.common.related.RelatedCOA'>
+        <class 'stix111.common.related.RelatedCOA'>
 
         Iterate over the ``suggested_coas`` property of an :class:`Indicator`
         instance and print the ids of each underlying
-        :class:`stix.coa.CourseOfAction` instance.
+        :class:`stix111.coa.CourseOfAction` instance.
 
         >>> for related_coa in indicator.suggested_coas:
         >>>     print(related_coa.item.id_)
 
     Args:
-        suggested_coas(list): A list of :class:`stix.coa.CourseOfAction`
-            or :class:`stix.common.related.RelatedCOA` instances.
+        suggested_coas(list): A list of :class:`stix111.coa.CourseOfAction`
+            or :class:`stix111.common.related.RelatedCOA` instances.
         scope (str): The scope of the items. Can be set to ``"inclusive"``
             or ``"exclusive"``. See
-            :class:`stix.common.related.GenericRelationshipList` documentation
+            :class:`stix111.common.related.GenericRelationshipList` documentation
             for more information.
 
     Attributes:
         scope (str): The scope of the items. Can be set to ``"inclusive"``
             or ``"exclusive"``. See
-            :class:`stix.common.related.GenericRelationshipList` documentation
+            :class:`stix111.common.related.GenericRelationshipList` documentation
             for more information.
     """
 
@@ -93,7 +93,7 @@ class SuggestedCOAs(GenericRelationshipList):
 
 class RelatedIndicators(GenericRelationshipList):
     """The ``RelatedIndicators`` class provides functionality for adding
-    :class:`stix.common.related.RelatedIndicator` instances to an
+    :class:`stix111.common.related.RelatedIndicator` instances to an
     :class:`Indicator` instance.
 
     The ``RelatedIndicators`` class implements methods found on
@@ -101,26 +101,26 @@ class RelatedIndicators(GenericRelationshipList):
     ``list`` (e.g., ``append()``).
 
     The ``append()`` method can accept instances of
-    :class:`stix.common.related.RelatedIndicator` or
+    :class:`stix111.common.related.RelatedIndicator` or
     :class:`Indicator` as an argument.
 
     Note:
         Calling ``append()`` with an instance of
-        :class:`stix.coa.CourseOfAction` will wrap that instance in a
-        :class:`stix.common.related.RelatedIndicator` layer, with ``item``
+        :class:`stix111.coa.CourseOfAction` will wrap that instance in a
+        :class:`stix111.common.related.RelatedIndicator` layer, with ``item``
         set to the :class:`Indicator` instance.
 
     Examples:
         Append an instance of :class:`Indicator` to the
         ``Indicator.related_indicators`` property. The instance of
         :class:`Indicator` will be wrapped in an instance of
-        :class:`stix.common.related.RelatedIndicator`:
+        :class:`stix111.common.related.RelatedIndicator`:
 
         >>> related = Indicator()
         >>> parent_indicator = Indicator()
         >>> parent_indicator.related_indicators.append(related)
         >>> print(type(indicator.related_indicators[0]))
-        <class 'stix.common.related.RelatedIndicator'>
+        <class 'stix111.common.related.RelatedIndicator'>
 
         Iterate over the ``related_indicators`` property of an
         :class:`Indicator` instance and print the ids of each underlying
@@ -131,16 +131,16 @@ class RelatedIndicators(GenericRelationshipList):
 
     Args:
         related_indicators (list, optional): A list of :class:`Indicator` or
-            :class:`stix.common.related.RelatedIndicator` instances.
+            :class:`stix111.common.related.RelatedIndicator` instances.
         scope (str, optional): The scope of the items. Can be set to
             ``"inclusive"`` or ``"exclusive"``. See
-            :class:`stix.common.related.GenericRelationshipList` documentation
+            :class:`stix111.common.related.GenericRelationshipList` documentation
             for more information.
 
     Attributes:
         scope (str): The scope of the items. Can be set to ``"inclusive"``
             or ``"exclusive"``. See
-            :class:`stix.common.related.GenericRelationshipList` documentation
+            :class:`stix111.common.related.GenericRelationshipList` documentation
             for more information.
 
     """
@@ -375,11 +375,11 @@ class Indicator(stix111.BaseCoreComponent):
         list.
 
         Args:
-            value: An instance of :class:`stix.indicator.valid_time.ValidTime`.
+            value: An instance of :class:`stix111.indicator.valid_time.ValidTime`.
 
         Raises:
             ValueError: If the `value` argument is not an instance of
-                :class:`stix.indicator.valid_time.ValidTime`.
+                :class:`stix111.indicator.valid_time.ValidTime`.
 
         """
         self.valid_time_positions.append(value)
@@ -388,21 +388,21 @@ class Indicator(stix111.BaseCoreComponent):
         """Adds a value to the ``indicator_types`` list property.
 
         The `value` parameter can be a ``str`` or an instance of
-        :class:`stix.common.vocabs.VocabString`.
+        :class:`stix111.common.vocabs.VocabString`.
 
         Note:
             If the `value` parameter is a ``str`` instance, an attempt will be
             made to convert it into an instance of
-            :class:`stix.common.vocabs.IndicatorType`
+            :class:`stix111.common.vocabs.IndicatorType`
 
         Args:
-            value: An instance of :class:`stix.common.vocabs.VocabString`
+            value: An instance of :class:`stix111.common.vocabs.VocabString`
                 or ``str``.
 
         Raises:
             ValueError: If the `value` param is a ``str`` instance that cannot
                 be converted into an instance of
-                :class:`stix.common.vocabs.IndicatorType`.
+                :class:`stix111.common.vocabs.IndicatorType`.
         """
         self.indicator_types.append(value)
 
@@ -411,23 +411,23 @@ class Indicator(stix111.BaseCoreComponent):
         of this :class:`Indicator`.
 
         The `v` parameter must be an instance of
-        :class:`stix.common.related.RelatedTTP` or :class:`stix.ttp.TTP`.
+        :class:`stix111.common.related.RelatedTTP` or :class:`stix.ttp.TTP`.
 
         If the `v` parameter is ``None``, no item wil be added to the
         ``indicated_ttps`` list property.
 
         Note:
             If the `v` parameter is not an instance of
-            :class:`stix.common.related.RelatedTTP` an attempt will be made
+            :class:`stix111.common.related.RelatedTTP` an attempt will be made
             to convert it to one.
 
         Args:
-            v: An instance of :class:`stix.common.related.RelatedTTP` or
-                :class:`stix.ttp.TTP`.
+            v: An instance of :class:`stix111.common.related.RelatedTTP` or
+                :class:`stix111.ttp.TTP`.
 
         Raises:
             ValueError: If the `v` parameter cannot be converted into an
-                instance of :class:`stix.common.related.RelatedTTP`
+                instance of :class:`stix111.common.related.RelatedTTP`
 
         """
         self.indicated_ttps.append(v)
@@ -437,7 +437,7 @@ class Indicator(stix111.BaseCoreComponent):
         of this :class:`Indicator`.
 
         The `tm` parameter must be an instance of a
-        :class:`stix.indicator.test_mechanism._BaseTestMechanism`
+        :class:`stix111.indicator.test_mechanism._BaseTestMechanism`
         implementation.
 
         If the `tm` parameter is ``None``, no item will be added to the
@@ -445,16 +445,16 @@ class Indicator(stix111.BaseCoreComponent):
 
         See Also:
             Test Mechanism implementations are found under the
-            :mod:`stix.extensions.test_mechanism` package.
+            :mod:`stix111.extensions.test_mechanism` package.
 
         Args:
             tm: An instance of a
-                :class:`stix.indicator.test_mechanism._BaseTestMechanism`
+                :class:`stix111.indicator.test_mechanism._BaseTestMechanism`
                 implementation.
 
         Raises:
             ValueError: If the `tm` parameter is not an instance of
-                :class:`stix.indicator.test_mechanism._BaseTestMechanism`
+                :class:`stix111.indicator.test_mechanism._BaseTestMechanism`
 
         """
         self.test_mechanisms.append(tm)
@@ -464,7 +464,7 @@ class Indicator(stix111.BaseCoreComponent):
         property of this :class:`Indicator`.
 
         The `indicator` parameter must be an instance of
-        :class:`stix.common.related.RelatedIndicator` or
+        :class:`stix111.common.related.RelatedIndicator` or
         :class:`Indicator`.
 
         If the `indicator` parameter is ``None``, no item wil be added to the
@@ -478,16 +478,16 @@ class Indicator(stix111.BaseCoreComponent):
 
         Note:
             If the `tm` parameter is not an instance of
-            :class:`stix.common.related.RelatedIndicator` an attempt will be
+            :class:`stix111.common.related.RelatedIndicator` an attempt will be
             made to convert it to one.
 
         Args:
             indicator: An instance of :class:`Indicator` or
-                :class:`stix.common.related.RelatedIndicator`.
+                :class:`stix111.common.related.RelatedIndicator`.
 
         Raises:
             ValueError: If the `indicator` parameter cannot be converted into
-                an instance of :class:`stix.common.related.RelatedIndicator`
+                an instance of :class:`stix111.common.related.RelatedIndicator`
 
         """
         self.related_indicators.append(indicator)
@@ -545,7 +545,7 @@ class Indicator(stix111.BaseCoreComponent):
         """Add a new Kill Chain Phase reference to this Indicator.
 
         Args:
-            value: a :class:`stix.common.kill_chains.KillChainPhase` or a `str`
+            value: a :class:`stix111.common.kill_chains.KillChainPhase` or a `str`
                 representing the phase_id of. Note that you if you are defining
                 a custom Kill Chain, you need to add it to the STIX package
                 separately.
@@ -563,20 +563,20 @@ class Indicator(stix111.BaseCoreComponent):
 
         If the ``producer`` property is ``None``, it will be initialized to
         an instance of
-        :class:`stix.common.information_source.InformationSource`.
+        :class:`stix111.common.information_source.InformationSource`.
 
         If the ``identity`` property of the ``producer`` instance is ``None``,
         it will be initialized to an instance of
-        :class:`stix.common.identity.Identity`.
+        :class:`stix111.common.identity.Identity`.
 
         Note:
             if the `identity` parameter is not an instance
-            :class:`stix.common.identity.Identity` an attempt will be made
+            :class:`stix111.common.identity.Identity` an attempt will be made
             to convert it to one.
 
         Args:
             identity: An instance of ``str`` or
-                ``stix.common.identity.Identity``.
+                ``stix111.common.identity.Identity``.
 
         """
         def unset_producer_identity():
@@ -849,19 +849,19 @@ class RelatedCampaignRefs(GenericRelationshipList):
 
 # NOT ACTUAL STIX TYPES!
 class IndicatorTypes(stix111.TypedList):
-    """A :class:`stix.common.vocabs.VocabString` collection which defaults to
-    :class:`stix.common.vocabs.IndicatorType`. This class implements methods
+    """A :class:`stix111.common.vocabs.VocabString` collection which defaults to
+    :class:`stix111.common.vocabs.IndicatorType`. This class implements methods
     found on ``collections.MutableSequence`` and as such can be interacted with
     like a ``list``.
 
     Note:
         The ``append()`` method can accept ``str`` or
-        :class:`stix.common.vocabs.VocabString` instances. If a ``str`` instance
+        :class:`stix111.common.vocabs.VocabString` instances. If a ``str`` instance
         is passed in, an attempt will be made to convert it to an instance of
-        :class:`stix.common.vocabs.IndicatorType`.
+        :class:`stix111.common.vocabs.IndicatorType`.
 
     Examples:
-        Add an instance of :class:`stix.common.vocabs.IndicatorType`:
+        Add an instance of :class:`stix111.common.vocabs.IndicatorType`:
 
         >>> from stix111.common.vocabs import IndicatorType
         >>> itypes = IndicatorTypes()
@@ -882,7 +882,7 @@ class IndicatorTypes(stix111.TypedList):
 
     Args:
         *args: Variable length argument list of strings or
-            :class:`stix.common.vocabs.VocabString` instances.
+            :class:`stix111.common.vocabs.VocabString` instances.
 
     """
     _namespace = "http://stix.mitre.org/Indicator-2"

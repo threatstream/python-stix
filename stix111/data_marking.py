@@ -19,7 +19,7 @@ class MarkingStructureFactory(entities.EntityFactory):
         import stix111.extensions.marking.tlp  # noqa
         import stix111.extensions.marking.simple_marking  # noqa
         import stix111.extensions.marking.terms_of_use_marking  # noqa
-        return stix.lookup_extension(key, default=MarkingStructure)
+        return stix111.lookup_extension(key, default=MarkingStructure)
 
 
 class MarkingStructure(stix111.Entity):
@@ -51,7 +51,7 @@ class MarkingStructure(stix111.Entity):
 
     @staticmethod
     def lookup_class(xsi_type):
-        return stix.lookup_extension(xsi_type, default=MarkingStructure)
+        return stix111.lookup_extension(xsi_type, default=MarkingStructure)
 
 
 class MarkingSpecification(stix111.Entity):
@@ -92,4 +92,4 @@ class Marking(stix111.EntityList):
 
 
 # Backwards compatibility
-add_extension = stix.add_extension
+add_extension = stix111.add_extension

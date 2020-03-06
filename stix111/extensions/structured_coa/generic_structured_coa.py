@@ -14,7 +14,7 @@ from stix111.coa.structured_coa import _BaseStructuredCOA
 import stix111.bindings.extensions.structured_coa.generic as generic_structured_coa_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class GenericStructuredCOA(_BaseStructuredCOA):
     _namespace = "http://stix.mitre.org/extensions/StructuredCOA#Generic-1"
     _binding = generic_structured_coa_binding

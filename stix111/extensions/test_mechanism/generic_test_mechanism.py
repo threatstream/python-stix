@@ -11,7 +11,7 @@ from stix111.indicator.test_mechanism import _BaseTestMechanism
 import stix111.bindings.extensions.test_mechanism.generic as generic_tm_binding
 
 
-@stix.register_extension
+@stix111.register_extension
 class GenericTestMechanism(_BaseTestMechanism):
     _namespace = "http://stix.mitre.org/extensions/TestMechanism#Generic-1"
     _binding = generic_tm_binding

@@ -53,7 +53,7 @@ class StatementField(mixbox.fields.TypedField):
             return None
         elif isinstance(value, Statement):
             return value
-        elif isinstance(value, stix.common.VocabString):
+        elif isinstance(value, stix111.common.VocabString):
             return Statement(value)
         else:
             vocabklass = self._vocab_type
