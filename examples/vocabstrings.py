@@ -7,8 +7,8 @@ File: vocabstrings.py
 
 Demonstrates uses of VocabString for STIX Controlled Vocabularies.
 """
-from stix.core import STIXHeader
-from stix.common.vocabs import VocabString, PackageIntent
+from stix111.core import STIXHeader
+from stix111.common.vocabs import VocabString, PackageIntent
 
 
 def main():

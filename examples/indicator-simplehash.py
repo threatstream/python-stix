@@ -11,7 +11,7 @@ from cybox.common import Hash
 from cybox.objects.file_object import File
 
 # python-stix
-from stix.core import STIXPackage, STIXHeader
+from stix111.core import STIXPackage, STIXHeader
 
 
 def main():

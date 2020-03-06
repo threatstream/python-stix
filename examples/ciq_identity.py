@@ -13,10 +13,10 @@ from pprint import pprint
 from cybox.objects.file_object import File
 
 # python-stix
-import stix.utils as utils
-from stix.core import STIXPackage, STIXHeader
-from stix.indicator import Indicator
-import stix.extensions.identity.ciq_identity_3_0 as stix_ciq
+import stix111.utils as utils
+from stix111.core import STIXPackage, STIXHeader
+from stix111.indicator import Indicator
+import stix111.extensions.identity.ciq_identity_3_0 as stix_ciq
 
 
 def main():

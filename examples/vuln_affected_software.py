@@ -14,9 +14,9 @@ from cybox.core import Observable
 from cybox.objects.product_object import Product
 
 # python-stix
-from stix.core import STIXPackage
-from stix.exploit_target import ExploitTarget
-from stix.exploit_target.vulnerability import Vulnerability
+from stix111.core import STIXPackage
+from stix111.exploit_target import ExploitTarget
+from stix111.exploit_target.vulnerability import Vulnerability
 
 
 # Build a Product Object that characterizes our affected software

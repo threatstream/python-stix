@@ -12,8 +12,8 @@ from pprint import pprint
 from cybox.common import ToolInformationList, ToolInformation
 
 # python-stix
-from stix.core import STIXPackage, STIXHeader
-from stix.common import InformationSource
+from stix111.core import STIXPackage, STIXHeader
+from stix111.common import InformationSource
 
 
 

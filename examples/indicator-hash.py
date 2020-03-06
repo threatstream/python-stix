@@ -11,9 +11,9 @@ an associated hash.
 from cybox.objects.file_object import File
 
 # python-stix
-import stix.utils as utils
-from stix.core import STIXPackage, STIXHeader
-from stix.indicator import Indicator
+import stix111.utils as utils
+from stix111.core import STIXPackage, STIXHeader
+from stix111.indicator import Indicator
 
 
 def main():

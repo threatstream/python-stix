@@ -11,7 +11,7 @@ converted back into an api object, which is then used to generate an XML documen
 from pprint import pprint
 
 # python-stix
-from stix.core import STIXPackage
+from stix111.core import STIXPackage
 
 
 def main():

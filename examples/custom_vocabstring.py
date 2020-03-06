@@ -10,8 +10,8 @@ vocabulary implementations.
 from StringIO import StringIO
 
 # python-stix modules
-from stix.core import STIXPackage
-from stix.common import vocabs
+from stix111.core import STIXPackage
+from stix111.common import vocabs
 
 XML = \
 """

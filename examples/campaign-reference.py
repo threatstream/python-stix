@@ -7,10 +7,10 @@ Demonstrates the methods for adding related Campaign references to an
 Indicator object.
 """
 
-from stix.core import STIXPackage
-from stix.common import CampaignRef
-from stix.campaign import Campaign
-from stix.indicator import Indicator
+from stix111.core import STIXPackage
+from stix111.common import CampaignRef
+from stix111.campaign import Campaign
+from stix111.indicator import Indicator
 
 
 def main():
