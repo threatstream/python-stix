@@ -13,7 +13,7 @@ from stix111.bindings import course_of_action as coa_binding
 class StructuredCOAFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
-        import stix.extensions.structured_coa.generic_structured_coa  # noqa
+        import stix111.extensions.structured_coa.generic_structured_coa  # noqa
         return stix.lookup_extension(key)
 
 

@@ -46,7 +46,7 @@ def _lookup_extension(xsi_type):
         ValueError: If no class has been registered for the `xsi_type`.
 
     """
-    import stix.extensions.malware.maec_4_1_malware
+    import stix111.extensions.malware.maec_4_1_malware
 
     if xsi_type in _EXTENSION_MAP:
         return _EXTENSION_MAP[xsi_type]

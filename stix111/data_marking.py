@@ -16,9 +16,9 @@ import stix111.bindings.data_marking as stix_data_marking_binding
 class MarkingStructureFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
-        import stix.extensions.marking.tlp  # noqa
-        import stix.extensions.marking.simple_marking  # noqa
-        import stix.extensions.marking.terms_of_use_marking  # noqa
+        import stix111.extensions.marking.tlp  # noqa
+        import stix111.extensions.marking.simple_marking  # noqa
+        import stix111.extensions.marking.terms_of_use_marking  # noqa
         return stix.lookup_extension(key, default=MarkingStructure)
 
 

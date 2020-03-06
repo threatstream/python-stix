@@ -14,7 +14,7 @@ from stix111.bindings.stix_common import IdentityType
 class IdentityFactory(entities.EntityFactory):
     @classmethod
     def entity_class(cls, key):
-        import stix.extensions.identity.ciq_identity_3_0  # noqa
+        import stix111.extensions.identity.ciq_identity_3_0  # noqa
         return stix.lookup_extension(key, default=Identity)
 
 

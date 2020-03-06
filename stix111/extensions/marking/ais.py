@@ -14,7 +14,7 @@ program imports this module before beginning to parse any STIX documents:
 
 .. code-block:: python
 
-    import stix.extensions.marking.ais
+    import stix111.extensions.marking.ais
 
 """
 
@@ -247,7 +247,7 @@ def add_ais_marking(stix_package, proprietary, consent, color, **kwargs):
     Note:
         The following line is required to register the AIS extension::
 
-            >>> import stix.extensions.marking.ais
+            >>> import stix111.extensions.marking.ais
 
         Any Markings under STIX Header will be removed. Please follow the
         guidelines for `AIS`_.

@@ -2495,7 +2495,7 @@ class IncidentType(stix_common_binding.IncidentBaseType):
             obj_.build(child_)
             self.Coordinator.append(obj_)
         elif nodeName_ == 'Victim':
-            import stix.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
+            import stix111.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
             obj_ = lookup_extension(child_, stix_common_binding.IdentityType).factory()
             obj_.build(child_)
             self.Victim.append(obj_)

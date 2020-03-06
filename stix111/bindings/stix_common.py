@@ -1490,7 +1490,7 @@ class RelatedCampaignType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CampaignType":
-                    import stix.bindings.campaign as campaign_binding
+                    import stix111.bindings.campaign as campaign_binding
                     obj_ = campaign_binding.CampaignType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1572,7 +1572,7 @@ class RelatedCourseOfActionType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CourseOfActionType":
-                    import stix.bindings.course_of_action as coa_binding
+                    import stix111.bindings.course_of_action as coa_binding
                     obj_ = coa_binding.CourseOfActionType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1655,7 +1655,7 @@ class RelatedExploitTargetType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "ExploitTargetType":
-                    import stix.bindings.exploit_target as et_binding
+                    import stix111.bindings.exploit_target as et_binding
                     obj_ = et_binding.ExploitTargetType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1738,7 +1738,7 @@ class RelatedIncidentType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "IncidentType":
-                    import stix.bindings.incident as incident_binding
+                    import stix111.bindings.incident as incident_binding
                     obj_ = incident_binding.IncidentType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1821,7 +1821,7 @@ class RelatedIndicatorType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "IndicatorType":
-                    import stix.bindings.indicator as indicator_binding
+                    import stix111.bindings.indicator as indicator_binding
                     obj_ = indicator_binding.IndicatorType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -1970,7 +1970,7 @@ class RelatedThreatActorType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "ThreatActorType":
-                    import stix.bindings.threat_actor as ta_binding
+                    import stix111.bindings.threat_actor as ta_binding
                     obj_ = ta_binding.ThreatActorType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -2053,7 +2053,7 @@ class RelatedTTPType(GenericRelationshipType):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "TTPType":
-                    import stix.bindings.ttp as ttp_binding
+                    import stix111.bindings.ttp as ttp_binding
                     obj_ = ttp_binding.TTPType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
@@ -3149,7 +3149,7 @@ class ExploitTargetsType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "ExploitTargetType":
-                    import stix.bindings.exploit_target as exploit_target_binding
+                    import stix111.bindings.exploit_target as exploit_target_binding
                     obj_ = exploit_target_binding.ExploitTargetType.factory()
                 else:
                     raise NotImplementedError('Class not implemented for element type: ' + type_name_)
