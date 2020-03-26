@@ -9,7 +9,7 @@ import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_bundle as bundle_binding
 
-class BundleReference(maec.Entity):
+class BundleReference(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.BundleReferenceType

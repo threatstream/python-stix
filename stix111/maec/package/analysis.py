@@ -15,7 +15,7 @@ from . import _namespace
 import stix111.maec.bindings.maec_package as package_binding
 from stix111.maec.bundle import BundleReference
 
-class Source(maec.Entity):
+class Source(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.SourceType
     _namespace = _namespace
@@ -104,17 +104,17 @@ class Comment(StructuredText):
 
         return comment
 
-class CommentList(maec.EntityList):
+class CommentList(stix111.maec.EntityList):
     _binding_class = package_binding.CommentListType
     _namespace = _namespace
     comment = fields.TypedField("Comment", Comment, multiple=True)
 
-class ToolList(maec.EntityList):
+class ToolList(stix111.maec.EntityList):
     _binding_class = package_binding.ToolListType
     _namespace = _namespace
     tool = fields.TypedField("Tool", ToolInformation, multiple=True)
 
-class DynamicAnalysisMetadata(maec.Entity):
+class DynamicAnalysisMetadata(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.DynamicAnalysisMetadataType
     _namespace = _namespace
@@ -137,7 +137,7 @@ class HypervisorHostSystem(System):
     def __init__(self):
         super(HypervisorHostSystem, self).__init__()
 
-class InstalledPrograms(maec.EntityList):
+class InstalledPrograms(stix111.maec.EntityList):
     _binding_class = package_binding.InstalledProgramsType
     _namespace = _namespace
     program = fields.TypedField("Program", PlatformSpecification, multiple=True)
@@ -153,12 +153,12 @@ class AnalysisSystem(System):
         super(AnalysisSystem, self).__init__()
         self.installed_programs = InstalledPrograms()
 
-class AnalysisSystemList(maec.EntityList):
+class AnalysisSystemList(stix111.maec.EntityList):
     _binding_class = package_binding.AnalysisSystemListType
     _namespace = _namespace
     analysis_system = fields.TypedField("Analysis_System", AnalysisSystem, multiple=True)
 
-class CapturedProtocol(maec.Entity):
+class CapturedProtocol(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.CapturedProtocolType
     _namespace = _namespace
@@ -171,12 +171,12 @@ class CapturedProtocol(maec.Entity):
     def __init__(self):
         super(CapturedProtocol, self).__init__()
 
-class CapturedProtocolList(maec.EntityList):
+class CapturedProtocolList(stix111.maec.EntityList):
     _binding_class = package_binding.CapturedProtocolListType
     _namespace = _namespace
     protocol = fields.TypedField("Protocol", CapturedProtocol, multiple=True)
 
-class NetworkInfrastructure(maec.Entity):
+class NetworkInfrastructure(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.NetworkInfrastructureType
     _namespace = _namespace
@@ -187,7 +187,7 @@ class NetworkInfrastructure(maec.Entity):
         super(NetworkInfrastructure, self).__init__()
         self.captured_protocols = CapturedProtocolList()
 
-class AnalysisEnvironment(maec.Entity):
+class AnalysisEnvironment(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.AnalysisEnvironmentType
     _namespace = _namespace
@@ -199,7 +199,7 @@ class AnalysisEnvironment(maec.Entity):
     def __init__(self):
         super(AnalysisEnvironment, self).__init__()
 
-class Analysis(maec.Entity):
+class Analysis(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.AnalysisType
     _namespace = _namespace

@@ -10,7 +10,7 @@ from . import _namespace
 import stix111.maec.bindings.maec_bundle as bundle_binding
 
 
-class AVClassification(ToolInformation, maec.Entity):
+class AVClassification(ToolInformation, stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.AVClassificationType
@@ -65,7 +65,7 @@ class AVClassification(ToolInformation, maec.Entity):
         return av_classification_
 
 
-class AVClassifications(maec.EntityList):
+class AVClassifications(stix111.maec.EntityList):
     _binding_class = bundle_binding.AVClassificationsType
     _namespace = _namespace
     av_classification = fields.TypedField("AV_Classification", AVClassification, multiple=True)

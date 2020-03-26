@@ -10,7 +10,7 @@ from . import _namespace
 import stix111.maec.bindings.maec_package as package_binding
 from stix111.maec.bundle import ObjectReference
 
-class ObjectEquivalence(maec.Entity):
+class ObjectEquivalence(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.ObjectEquivalenceType
     _namespace = _namespace
@@ -22,7 +22,7 @@ class ObjectEquivalence(maec.Entity):
         super(ObjectEquivalence, self).__init__()
         self.id_ = id
 
-class ObjectEquivalenceList(maec.EntityList):
+class ObjectEquivalenceList(stix111.maec.EntityList):
     _binding_class = package_binding.ObjectEquivalenceListType
     _namespace = _namespace
     object_equivalence = fields.TypedField("Object_Equivalence", ObjectEquivalence, multiple=True)

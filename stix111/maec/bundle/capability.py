@@ -13,7 +13,7 @@ from stix111.maec.bundle import BehaviorReference
 from cybox.common import VocabString, String
 
 
-class CapabilityObjectiveReference(maec.Entity):
+class CapabilityObjectiveReference(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityObjectiveReferenceType
@@ -24,7 +24,7 @@ class CapabilityObjectiveReference(maec.Entity):
         super(CapabilityObjectiveReference, self).__init__()
 
 
-class CapabilityReference(maec.Entity):
+class CapabilityReference(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityReferenceType
@@ -35,7 +35,7 @@ class CapabilityReference(maec.Entity):
         super(CapabilityReference, self).__init__()
 
 
-class CapabilityObjectiveRelationship(maec.Entity):
+class CapabilityObjectiveRelationship(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityObjectiveRelationshipType
@@ -48,7 +48,7 @@ class CapabilityObjectiveRelationship(maec.Entity):
         self.objective_reference = []
 
 
-class CapabilityRelationship(maec.Entity):
+class CapabilityRelationship(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityRelationshipType
@@ -61,7 +61,7 @@ class CapabilityRelationship(maec.Entity):
         self.capability_reference = []
 
 
-class CapabilityProperty(maec.Entity):
+class CapabilityProperty(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityPropertyType
@@ -73,7 +73,7 @@ class CapabilityProperty(maec.Entity):
         super(CapabilityProperty, self).__init__()
 
 
-class CapabilityObjective(maec.Entity):
+class CapabilityObjective(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityObjectiveType
@@ -93,7 +93,7 @@ class CapabilityObjective(maec.Entity):
             self.id_ = idgen.create_id(prefix="capability_objective")
 
 
-class Capability(maec.Entity):
+class Capability(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityType
@@ -128,7 +128,7 @@ class Capability(maec.Entity):
         self.strategic_objective.append(strategic_objective)
 
 
-class CapabilityList(maec.Entity):
+class CapabilityList(stix111.maec.Entity):
     _namespace = _namespace
     _binding = bundle_binding
     _binding_class = bundle_binding.CapabilityListType

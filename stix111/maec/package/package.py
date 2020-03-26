@@ -11,7 +11,7 @@ import stix111.maec.bindings.maec_package as package_binding
 from stix111.maec.package import MalwareSubjectList, GroupingRelationshipList
 from . import _namespace
 
-class Package(maec.Entity):
+class Package(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.PackageType
     _namespace = _namespace

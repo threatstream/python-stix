@@ -13,7 +13,7 @@ from stix111.maec.bundle import ObjectReference, BehaviorReference
 from cybox.common import VocabString
 from cybox.core import ActionReference
 
-class MalwareEntity(maec.Entity):
+class MalwareEntity(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.MalwareEntityType
     _namespace = _namespace
@@ -25,7 +25,7 @@ class MalwareEntity(maec.Entity):
     def __init__(self):
         super(MalwareEntity, self).__init__()
 
-class CandidateIndicatorComposition(maec.Entity):
+class CandidateIndicatorComposition(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.CandidateIndicatorCompositionType
     _namespace = _namespace
@@ -42,7 +42,7 @@ class CandidateIndicatorComposition(maec.Entity):
 # Allow recursive definition of CandidateIndicatorCompositions
 CandidateIndicatorComposition.sub_composition.type_ = CandidateIndicatorComposition
 
-class CandidateIndicator(maec.Entity):
+class CandidateIndicator(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.CandidateIndicatorType
     _namespace = _namespace
@@ -65,7 +65,7 @@ class CandidateIndicator(maec.Entity):
         else:
             id_ = idgen.create_id(prefix="candidate_indicator")
 
-class CandidateIndicatorList(maec.EntityList):
+class CandidateIndicatorList(stix111.maec.EntityList):
     _binding_class = bundle_binding.CandidateIndicatorListType
     _namespace = _namespace
     candidate_indicator = fields.TypedField("Candidate_Indicator", CandidateIndicator, multiple=True)

@@ -108,7 +108,7 @@ class ProcessTreeNode(Process):
         self.parent_action_idref = parent_action_id
 
 
-class ProcessTree(maec.Entity):
+class ProcessTree(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.ProcessTreeType
     _namespace = _namespace

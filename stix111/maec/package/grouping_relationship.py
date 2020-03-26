@@ -12,7 +12,7 @@ from stix111.maec.package.malware_subject_reference import MalwareSubjectReferen
 from cybox.common import vocabs
 from stix111.maec.vocabs.vocabs import GroupingRelationship as GroupingRelationshipVocab
 
-class ClusterEdgeNodePair(maec.Entity):
+class ClusterEdgeNodePair(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.ClusterEdgeNodePairType
     _namespace = _namespace
@@ -25,7 +25,7 @@ class ClusterEdgeNodePair(maec.Entity):
     def __init__(self):
         super(ClusterEdgeNodePair, self).__init__()
 
-class ClusterComposition(maec.Entity):
+class ClusterComposition(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.ClusterCompositionType
     _namespace = _namespace
@@ -36,7 +36,7 @@ class ClusterComposition(maec.Entity):
     def __init__(self):
         super(ClusterComposition, self).__init__()
 
-class ClusteringAlgorithmParameters(maec.Entity):
+class ClusteringAlgorithmParameters(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.ClusteringAlgorithmParametersType
     _namespace = _namespace
@@ -47,7 +47,7 @@ class ClusteringAlgorithmParameters(maec.Entity):
     def __init__(self):
         super(ClusteringAlgorithmParameters, self).__init__()
 
-class ClusteringMetadata(maec.Entity):
+class ClusteringMetadata(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.ClusteringMetadataType
     _namespace = _namespace
@@ -62,7 +62,7 @@ class ClusteringMetadata(maec.Entity):
     def __init__(self):
         super(ClusteringMetadata, self).__init__()
 
-class GroupingRelationship(maec.Entity):
+class GroupingRelationship(stix111.maec.Entity):
     _binding = package_binding
     _binding_class = package_binding.GroupingRelationshipType
     _namespace = _namespace
@@ -75,7 +75,7 @@ class GroupingRelationship(maec.Entity):
     def __init__(self):
         super(GroupingRelationship, self).__init__()
 
-class GroupingRelationshipList(maec.EntityList):
+class GroupingRelationshipList(stix111.maec.EntityList):
     _binding_class = package_binding.GroupingRelationshipListType
     _namespace = _namespace
     grouping_relationship = fields.TypedField("Grouping_Relationship", GroupingRelationship, multiple=True)

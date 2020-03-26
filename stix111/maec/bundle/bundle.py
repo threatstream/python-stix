@@ -23,24 +23,24 @@ from .capability import CapabilityList
 from .object_history import ObjectHistory
 
 
-class BehaviorList(maec.EntityList):
+class BehaviorList(stix111.maec.EntityList):
     _binding_class = bundle_binding.BehaviorListType
     _namespace = _namespace
     behavior = fields.TypedField("Behavior", Behavior, multiple=True)
 
-class ActionList(maec.EntityList):
+class ActionList(stix111.maec.EntityList):
     _binding_class = bundle_binding.ActionListType
     _namespace = _namespace
     action = fields.TypedField("Action", MalwareAction, multiple=True)
 
 
-class ObjectList(maec.EntityList):
+class ObjectList(stix111.maec.EntityList):
     _binding_class = bundle_binding.ObjectListType
     _namespace = _namespace
     object = fields.TypedField("Object", Object, multiple=True)
 
 
-class BaseCollection(maec.Entity):
+class BaseCollection(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BaseCollectionType
     _namespace = _namespace
@@ -139,7 +139,7 @@ class CandidateIndicatorCollection(BaseCollection):
         self.candidate_indicator_list.append(candidate_indicator)
 
 
-class BehaviorCollectionList(maec.EntityList):
+class BehaviorCollectionList(stix111.maec.EntityList):
     _binding_class = bundle_binding.BehaviorCollectionListType
     _namespace = _namespace
     behavior_collection = fields.TypedField("Behavior_Collection", BehaviorCollection, multiple=True)
@@ -171,7 +171,7 @@ class BehaviorCollectionList(maec.EntityList):
         return None
 
 
-class ActionCollectionList(maec.EntityList):
+class ActionCollectionList(stix111.maec.EntityList):
     _binding_class = bundle_binding.ActionCollectionListType
     _namespace = _namespace
     action_collection = fields.TypedField("Action_Collection", ActionCollection, multiple=True)
@@ -204,7 +204,7 @@ class ActionCollectionList(maec.EntityList):
         return None
 
 
-class ObjectCollectionList(maec.EntityList):
+class ObjectCollectionList(stix111.maec.EntityList):
     _binding_class = bundle_binding.ObjectCollectionListType
     _namespace = _namespace
     object_collection = fields.TypedField("Object_Collection", ObjectCollection, multiple=True)
@@ -236,7 +236,7 @@ class ObjectCollectionList(maec.EntityList):
         return None
 
 
-class CandidateIndicatorCollectionList(maec.EntityList):
+class CandidateIndicatorCollectionList(stix111.maec.EntityList):
     _binding_class = bundle_binding.CandidateIndicatorCollectionListType
     _namespace = _namespace
     candidate_indicator_collection = fields.TypedField("Candidate_Indicator_Collection", CandidateIndicatorCollection, multiple=True)
@@ -268,7 +268,7 @@ class CandidateIndicatorCollectionList(maec.EntityList):
         return None
 
 
-class Collections(maec.Entity):
+class Collections(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.CollectionsType
     _namespace = _namespace
@@ -318,7 +318,7 @@ class Collections(maec.Entity):
         return False
 
 
-class BehaviorReference(maec.Entity):
+class BehaviorReference(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehaviorReferenceType
     _namespace = _namespace
@@ -326,7 +326,7 @@ class BehaviorReference(maec.Entity):
     behavior_idref = fields.TypedField('behavior_idref')
 
 
-class Bundle(maec.Entity):
+class Bundle(stix111.maec.Entity):
     _binding = bundle_binding
     _namespace = _namespace
     _binding_class = bundle_binding.BundleType

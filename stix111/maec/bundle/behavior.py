@@ -14,7 +14,7 @@ from cybox.common.measuresource import MeasureSource
 from cybox.common.platform_specification import PlatformSpecification
 from cybox.objects.code_object import Code
 
-class BehavioralActionEquivalenceReference(maec.Entity):
+class BehavioralActionEquivalenceReference(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehavioralActionEquivalenceReferenceType
     _namespace = _namespace
@@ -29,14 +29,14 @@ class BehavioralActionReference(ActionReference):
 
     behavioral_ordering = fields.TypedField('behavioral_ordering')
 
-class BehavioralAction(maec.Entity):
+class BehavioralAction(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehavioralActionType
     _namespace = _namespace
 
     behavioral_ordering = fields.TypedField('behavioral_ordering')
 
-class BehavioralActions(maec.Entity):
+class BehavioralActions(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehavioralActionsType
     _namespace = _namespace
@@ -47,13 +47,13 @@ class BehavioralActions(maec.Entity):
     action_reference = fields.TypedField('Action_Reference', BehavioralActionReference, multiple=True)
     action_equivalence_reference = fields.TypedField('Action_Equivalence_Reference', BehavioralActionEquivalenceReference, multiple=True)
 
-class PlatformList(maec.EntityList):
+class PlatformList(stix111.maec.EntityList):
     _binding = bundle_binding
     _binding_class = bundle_binding.PlatformListType
     _namespace = _namespace
     platform = fields.TypedField("Platform", PlatformSpecification, multiple=True)
 
-class CVEVulnerability(maec.Entity):
+class CVEVulnerability(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.CVEVulnerabilityType
     _namespace = _namespace
@@ -61,7 +61,7 @@ class CVEVulnerability(maec.Entity):
     cve_id = fields.TypedField('cve_id')
     description = fields.TypedField('Description')
 
-class Exploit(maec.Entity):
+class Exploit(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.ExploitType
     _namespace = _namespace
@@ -71,7 +71,7 @@ class Exploit(maec.Entity):
     cwe_id = fields.TypedField('CWE_ID', multiple=True)
     targeted_platforms = fields.TypedField('Targeted_Platforms', PlatformList)
 
-class BehaviorPurpose(maec.Entity):
+class BehaviorPurpose(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehaviorPurposeType
     _namespace = _namespace
@@ -79,13 +79,13 @@ class BehaviorPurpose(maec.Entity):
     description = fields.TypedField('Description')
     vulnerability_exploit = fields.TypedField('Vulnerability_Exploit', Exploit)
 
-class AssociatedCode(maec.EntityList):
+class AssociatedCode(stix111.maec.EntityList):
     _binding = bundle_binding
     _binding_class = bundle_binding.AssociatedCodeType
     _namespace = _namespace
     code_snippet = fields.TypedField("Code_Snippet", Code, multiple=True)
 
-class Behavior(maec.Entity):
+class Behavior(stix111.maec.Entity):
     _binding = bundle_binding
     _binding_class = bundle_binding.BehaviorType
     _namespace = _namespace
