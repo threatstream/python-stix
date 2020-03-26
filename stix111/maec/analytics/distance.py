@@ -10,14 +10,14 @@ except ImportError:
     sys.stdout.write("Error: unable to import required numpy module.\nSee https://pypi.python.org/pypi/numpy.")
 import os
 import subprocess
-import maec
+import stix111.maec
 import itertools
 import math
-from maec.package.package import Package
-from maec.package.malware_subject import MalwareSubject
-from maec.utils.deduplicator import BundleDeduplicator
-from maec.utils.merge import merge_malware_subjects
-from maec.analytics.static_features import static_features_dict
+from stix111.maec.package.package import Package
+from stix111.maec.package.malware_subject import MalwareSubject
+from stix111.maec.utils.deduplicator import BundleDeduplicator
+from stix111.maec.utils.merge import merge_malware_subjects
+from stix111.maec.analytics.static_features import static_features_dict
 
 class DynamicFeatureVector(object):
     '''Generate a feature vector for a Malware Subject based on its dynamic features'''

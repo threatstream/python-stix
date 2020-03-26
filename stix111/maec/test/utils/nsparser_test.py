@@ -3,7 +3,7 @@
 
 import unittest
 
-from maec.utils.nsparser import MAEC_NAMESPACES
+from stix111.maec.utils.nsparser import MAEC_NAMESPACES
 
 
 class NSParserTests(unittest.TestCase):

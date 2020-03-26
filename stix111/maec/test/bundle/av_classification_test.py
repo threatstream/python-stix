@@ -4,7 +4,7 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.bundle.av_classification import AVClassification
+from stix111.maec.bundle.av_classification import AVClassification
 
 class TestAVClassification(EntityTestCase, unittest.TestCase):
     klass = AVClassification

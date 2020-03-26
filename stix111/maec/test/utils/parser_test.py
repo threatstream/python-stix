@@ -7,9 +7,9 @@ import unittest
 from stix111.mixbox.parser import (UnknownVersionError, UnsupportedRootElementError,
                            UnsupportedVersionError)
 
-from maec.bundle import Bundle
-from maec.package import Package
-from maec.utils import EntityParser
+from stix111.maec.bundle import Bundle
+from stix111.maec.package import Package
+from stix111.maec.utils import EntityParser
 
 
 class ParserTests(unittest.TestCase):

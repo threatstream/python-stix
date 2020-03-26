@@ -6,9 +6,9 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_package as package_binding
+import stix111.maec.bindings.maec_package as package_binding
 from cybox.core import ActionReference
 
 class ActionEquivalence(maec.Entity):

@@ -9,9 +9,9 @@ from stix111.mixbox import idgen
 from cybox.core import Object
 from cybox.utils.normalize import normalize_object_properties
 
-import maec
-import maec.bindings.maec_bundle as bundle_binding
-from maec.utils import BundleComparator, BundleDeduplicator
+import stix111.maec
+import stix111.maec.bindings.maec_bundle as bundle_binding
+from stix111.maec.utils import BundleComparator, BundleDeduplicator
 
 from . import _namespace
 from .malware_action import MalwareAction

@@ -5,9 +5,9 @@
 
 from cybox.core import ActionReference
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_bundle as bundle_binding
+import stix111.maec.bindings.maec_bundle as bundle_binding
 from stix111.mixbox import fields
 
 class ActionReferenceList(maec.EntityList):

@@ -4,11 +4,11 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.bundle.bundle import Bundle
-from maec.bundle.malware_action import MalwareAction
+from stix111.maec.bundle.bundle import Bundle
+from stix111.maec.bundle.malware_action import MalwareAction
 from cybox.core import Object
-from maec.bundle.behavior import Behavior
-from maec.bundle.candidate_indicator import CandidateIndicator
+from stix111.maec.bundle.behavior import Behavior
+from stix111.maec.bundle.candidate_indicator import CandidateIndicator
 
 class TestBundle(EntityTestCase, unittest.TestCase):
     klass = Bundle

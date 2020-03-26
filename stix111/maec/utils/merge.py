@@ -13,8 +13,8 @@ from stix111.mixbox.vendor.six import iteritems
 from cybox.core import Object
 from cybox.common import HashList
 
-import maec
-from maec.package import (Package, MalwareSubject, MalwareConfigurationDetails,
+import stix111.maec
+from stix111.maec.package import (Package, MalwareSubject, MalwareConfigurationDetails,
                           FindingsBundleList, MetaAnalysis, Analyses,
                           MinorVariants, MalwareSubjectRelationshipList,
                           MalwareSubjectList)

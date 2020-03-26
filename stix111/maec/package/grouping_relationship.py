@@ -5,12 +5,12 @@
 
 from stix111.mixbox import fields
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_package as package_binding
-from maec.package.malware_subject_reference import MalwareSubjectReference
+import stix111.maec.bindings.maec_package as package_binding
+from stix111.maec.package.malware_subject_reference import MalwareSubjectReference
 from cybox.common import vocabs
-from maec.vocabs.vocabs import GroupingRelationship as GroupingRelationshipVocab
+from stix111.maec.vocabs.vocabs import GroupingRelationship as GroupingRelationshipVocab
 
 class ClusterEdgeNodePair(maec.Entity):
     _binding = package_binding

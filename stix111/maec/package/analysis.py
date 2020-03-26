@@ -10,10 +10,10 @@ from cybox.common import (PlatformSpecification, Personnel, StructuredText,
         ToolInformation)
 from cybox.objects.system_object import System
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_package as package_binding
-from maec.bundle import BundleReference
+import stix111.maec.bindings.maec_package as package_binding
+from stix111.maec.bundle import BundleReference
 
 class Source(maec.Entity):
     _binding = package_binding

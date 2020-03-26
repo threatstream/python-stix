@@ -6,10 +6,10 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_bundle as bundle_binding
-from maec.bundle import BehaviorReference
+import stix111.maec.bindings.maec_bundle as bundle_binding
+from stix111.maec.bundle import BehaviorReference
 from cybox.common import VocabString, String
 
 

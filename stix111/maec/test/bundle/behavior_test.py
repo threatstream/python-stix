@@ -4,7 +4,7 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.bundle.bundle import Behavior
+from stix111.maec.bundle.bundle import Behavior
 
 class TestBehavior(EntityTestCase, unittest.TestCase):
     klass = Behavior

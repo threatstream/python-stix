@@ -5,9 +5,9 @@
 from cybox.common import ToolInformation
 from stix111.mixbox import fields
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_bundle as bundle_binding
+import stix111.maec.bindings.maec_bundle as bundle_binding
 
 
 class AVClassification(ToolInformation, maec.Entity):

@@ -4,7 +4,7 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.bundle.process_tree import ProcessTree, ProcessTreeNode
+from stix111.maec.bundle.process_tree import ProcessTree, ProcessTreeNode
 
 class TestCapability(EntityTestCase, unittest.TestCase):
     klass = ProcessTree

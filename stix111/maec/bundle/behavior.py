@@ -6,9 +6,9 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_bundle as bundle_binding
+import stix111.maec.bindings.maec_bundle as bundle_binding
 from cybox.core.action_reference import ActionReference
 from cybox.common.measuresource import MeasureSource
 from cybox.common.platform_specification import PlatformSpecification
@@ -110,5 +110,5 @@ class Behavior(maec.Entity):
         self.description = description
 
 
-from maec.bundle.bundle import ActionCollection
+from stix111.maec.bundle.bundle import ActionCollection
 BehavioralActions.action_collection.type_ = ActionCollection

@@ -4,7 +4,7 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.bundle.capability import Capability
+from stix111.maec.bundle.capability import Capability
 
 class TestCapability(EntityTestCase, unittest.TestCase):
     klass = Capability

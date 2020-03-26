@@ -8,8 +8,8 @@ from stix111.mixbox.namespaces import ( get_xmlns_string,
     make_namespace_subset_from_uris, get_schemaloc_string, lookup_prefix)
 from stix111.mixbox.vendor.six import iteritems, string_types
 
-import maec
-from maec.utils import flip_dict, EntityParser
+import stix111.maec
+from stix111.maec.utils import flip_dict, EntityParser
 
 from .version import __version__  # noqa
 

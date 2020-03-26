@@ -5,7 +5,7 @@ import sys
 
 from stix111.mixbox.binding_utils import *
 
-from maec.bindings import maec_package as maec_package_schema
+from stix111.maec.bindings import maec_package as maec_package_schema
 
 class ContainerType(GeneratedsSuper):
     """The ContainerType encompasses all forms of MAEC data. Currently,

@@ -9,14 +9,14 @@ import unittest
 from stix111.mixbox import binding_utils
 from stix111.mixbox.vendor.six import text_type
 
-from maec.package.malware_subject import MalwareConfigurationParameter
-from maec.package.analysis import DynamicAnalysisMetadata
-from maec.package.grouping_relationship import GroupingRelationship
-from maec.bundle.bundle import Bundle
-from maec.bundle.av_classification import AVClassification
-from maec.bundle.behavior import Behavior
-from maec.bundle.capability import Capability
-import maec.utils
+from stix111.maec.package.malware_subject import MalwareConfigurationParameter
+from stix111.maec.package.analysis import DynamicAnalysisMetadata
+from stix111.maec.package.grouping_relationship import GroupingRelationship
+from stix111.maec.bundle.bundle import Bundle
+from stix111.maec.bundle.av_classification import AVClassification
+from stix111.maec.bundle.behavior import Behavior
+from stix111.maec.bundle.capability import Capability
+import stix111.maec.utils
 
 from cybox.test import round_trip
 

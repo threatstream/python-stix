@@ -4,7 +4,7 @@
 import unittest
 
 from cybox.test import EntityTestCase, round_trip
-from maec.package import Package
+from stix111.maec.package import Package
 
 class TestPackage(EntityTestCase, unittest.TestCase):
     klass = Package

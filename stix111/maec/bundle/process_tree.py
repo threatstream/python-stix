@@ -8,8 +8,8 @@ from stix111.mixbox import idgen
 
 from cybox.objects.process_object import Process
 
-import maec
-import maec.bindings.maec_bundle as bundle_binding
+import stix111.maec
+import stix111.maec.bindings.maec_bundle as bundle_binding
 
 from . import _namespace
 from .action_reference_list import ActionReferenceList

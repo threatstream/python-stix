@@ -30,8 +30,8 @@ class EntityParser(stix111.mixbox.parser.EntityParser):
 
     def get_entity_class(self, tag):
         if tag == TAG_MAEC_BUNDLE:
-            from maec.bundle import Bundle
+            from stix111.maec.bundle import Bundle
             return Bundle
         elif tag == TAG_MAEC_PACKAGE:
-            from maec.package import Package
+            from stix111.maec.package import Package
             return Package

@@ -5,8 +5,8 @@ import sys
 
 from stix111.mixbox.binding_utils import *
 
-from maec.bindings import maec_bundle as maec_bundle_schema
-from maec.bindings import mmdef_1_2 as metadatasharing
+from stix111.maec.bindings import maec_bundle as maec_bundle_schema
+from stix111.maec.bindings import mmdef_1_2 as metadatasharing
 from cybox.bindings import cybox_core
 from cybox.bindings import system_object
 from cybox.bindings import cybox_common

@@ -5,10 +5,10 @@
 
 from stix111.mixbox import fields
 
-import maec
+import stix111.maec
 from . import _namespace
-import maec.bindings.maec_package as package_binding
-from maec.bundle import ObjectReference
+import stix111.maec.bindings.maec_package as package_binding
+from stix111.maec.bundle import ObjectReference
 
 class ObjectEquivalence(maec.Entity):
     _binding = package_binding

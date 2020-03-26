@@ -6,9 +6,9 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-import maec
-import maec.bindings.maec_package as package_binding
-from maec.package import MalwareSubjectList, GroupingRelationshipList
+import stix111.maec
+import stix111.maec.bindings.maec_package as package_binding
+from stix111.maec.package import MalwareSubjectList, GroupingRelationshipList
 from . import _namespace
 
 class Package(maec.Entity):
@@ -54,7 +54,7 @@ class Package(maec.Entity):
         Parameters:
         xml_file - either a filename or a stream object
         '''
-        from maec.utils.parser import EntityParser
+        from stix111.maec.utils.parser import EntityParser
 
         parser = EntityParser()
         maec_package = parser.parse_xml(xml_file)
