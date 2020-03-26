@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.objects.address_object import Address, EmailAddress
 import stix111.cybox.test
@@ -34,7 +34,7 @@ class TestAddress(ObjectTestCase, unittest.TestCase):
         addr.category = category
         addr.is_spoofed = True
 
-        addr2 = cybox.test.round_trip(addr)
+        addr2 = stix111.cybox.test.round_trip(addr)
 
         self.assertEqual(addr.to_dict(), addr2.to_dict())
 
@@ -45,7 +45,7 @@ class TestAddress(ObjectTestCase, unittest.TestCase):
     def test_unicode(self):
         a = u("\u00fc\u00f1\u00ed\u00e7ode@example.com")
         addr = Address(a, Address.CAT_EMAIL)
-        addr2 = cybox.test.round_trip(addr)
+        addr2 = stix111.cybox.test.round_trip(addr)
         self.assertEqual(addr.to_dict(), addr2.to_dict())
 
 
@@ -60,7 +60,7 @@ class TestEmailAddress(unittest.TestCase):
 
         addr_dict = {'address_value': a, 'category': Address.CAT_EMAIL}
 
-        cybox.test.assert_equal_ignore(addr.to_dict(), addr_dict, ['xsi:type'])
+        stix111.cybox.test.assert_equal_ignore(addr.to_dict(), addr_dict, ['xsi:type'])
         self.assertNotEqual(addr.to_dict(), addr_dict)
 
     def test_istypeof(self):

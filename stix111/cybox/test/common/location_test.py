@@ -7,7 +7,7 @@ from stix111.cybox.common import Location
 import stix111.cybox.test
 
 
-class TestLocation(cybox.test.EntityTestCase, unittest.TestCase):
+class TestLocation(stix111.cybox.test.EntityTestCase, unittest.TestCase):
     klass = Location
     _full_dict = {
         'name': "Bedford, MA",

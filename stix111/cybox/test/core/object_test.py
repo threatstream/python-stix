@@ -4,7 +4,7 @@
 import logging
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 from stix111.cybox.core import Object, Observables, RelatedObject
 from stix111.cybox.objects.address_object import Address
 from stix111.cybox.objects.uri_object import URI

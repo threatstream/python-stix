@@ -7,7 +7,7 @@
 import unittest
 
 from stix111.mixbox.vendor import six
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import Contributor, String, MeasureSource
 from stix111.cybox.core import Observable

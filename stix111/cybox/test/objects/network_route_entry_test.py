@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.compat import long
 from stix111.cybox.objects.address_object import Address

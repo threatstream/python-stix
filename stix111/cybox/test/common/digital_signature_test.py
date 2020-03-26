@@ -27,7 +27,7 @@ class TestDigitalSignatureList(unittest.TestCase):
                 {'certificate_issuer': "IssuerA", 'signature_verified': True},
                 {'signature_description': "A Signature"},
             ]
-        siglist_list2 = cybox.test.round_trip_list(DigitalSignatureList,
+        siglist_list2 = stix111.cybox.test.round_trip_list(DigitalSignatureList,
                                                        siglist_list)
         self.assertEqual(siglist_list, siglist_list2)
 

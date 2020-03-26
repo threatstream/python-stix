@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import Hash, ToolInformation, ToolInformationList
 import stix111.cybox.test
@@ -47,7 +47,7 @@ class TestHashList(unittest.TestCase):
                 {'id': "example:Tool-A1", 'name': "Tool 1"},
                 {'id': "example:Tool-A2", 'name': "Tool 2"},
             ]
-        toolinfolist_list2 = cybox.test.round_trip_list(ToolInformationList,
+        toolinfolist_list2 = stix111.cybox.test.round_trip_list(ToolInformationList,
                                                        toolinfolist_list)
         self.assertEqual(toolinfolist_list, toolinfolist_list2)
 

@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.objects.win_network_share_object import WinNetworkShare
 from stix111.cybox.test.objects import ObjectTestCase

@@ -104,7 +104,7 @@ def round_trip(o, output=False, list_=False):
         logger.debug("-" * 40)
 
     # Before parsing the JSON, make sure the cache is clear
-    cybox.utils.cache_clear()
+    stix111.cybox.utils.cache_clear()
 
     # 3. JSON string -> dict/list
     d2 = json.loads(json_string)
@@ -131,7 +131,7 @@ def round_trip(o, output=False, list_=False):
         logger.debug("-" * 40)
 
     # Before parsing the XML, make sure the cache is clear
-    cybox.utils.cache_clear()
+    stix111.cybox.utils.cache_clear()
 
     #7. XML String -> Bindings Object
     xobj2 = klass._binding.parseString(xml_string)

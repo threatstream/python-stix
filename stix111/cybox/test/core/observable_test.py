@@ -4,7 +4,7 @@
 import logging
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import MeasureSource, ObjectProperties, String, StructuredText
 from stix111.cybox.core import (Event, Object, Observable, ObservableComposition,

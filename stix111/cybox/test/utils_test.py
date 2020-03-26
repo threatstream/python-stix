@@ -13,35 +13,35 @@ class NormalizationTest(unittest.TestCase):
         a = "A long##comma##long##comma##time ago"
         b = ["A long", "long", "time ago"]
 
-        self.assertEqual(cybox.utils.denormalize_from_xml(a, DELIM), b)
-        self.assertEqual(cybox.utils.normalize_to_xml(b, DELIM), a)
+        self.assertEqual(stix111.cybox.utils.denormalize_from_xml(a, DELIM), b)
+        self.assertEqual(stix111.cybox.utils.normalize_to_xml(b, DELIM), a)
 
     def test_delimiter_not_allowed_in_value(self):
         string = "test string with a ##comma## in it"
-        self.assertRaises(ValueError, cybox.utils.normalize_to_xml,
+        self.assertRaises(ValueError, stix111.cybox.utils.normalize_to_xml,
                           string, DELIM)
 
     def test_normalize_string_with_nondefault_delimiter(self):
-        s = cybox.utils.normalize_to_xml([1, 2, 3], ",")
+        s = stix111.cybox.utils.normalize_to_xml([1, 2, 3], ",")
         self.assertEqual("1,2,3", s)
 
-        s = cybox.utils.normalize_to_xml([1, 2, 3], "-")
+        s = stix111.cybox.utils.normalize_to_xml([1, 2, 3], "-")
         self.assertEqual("1-2-3", s)
 
-        self.assertRaises(ValueError, cybox.utils.normalize_to_xml,
+        self.assertRaises(ValueError, stix111.cybox.utils.normalize_to_xml,
                           [1, 2, 3], "1")
 
-        s = cybox.utils.normalize_to_xml(['a', 'b', 'c'], ",")
+        s = stix111.cybox.utils.normalize_to_xml(['a', 'b', 'c'], ",")
         self.assertEqual("a,b,c", s)
 
-        self.assertRaises(ValueError, cybox.utils.normalize_to_xml,
+        self.assertRaises(ValueError, stix111.cybox.utils.normalize_to_xml,
                           ['a,b', 'b,c', 'c,d'], ",")
 
 
 class TestDictCache(unittest.TestCase):
 
     def test_id_incrementing(self):
-        d = cybox.utils.DictCache()
+        d = stix111.cybox.utils.DictCache()
         self.assertEqual(0, d.put("a"))
         self.assertEqual(1, d.put("b"))
         self.assertEqual(3, d.put("c", 3))
@@ -49,7 +49,7 @@ class TestDictCache(unittest.TestCase):
         self.assertEqual(4, d.put("e"))
 
     def test_id_incrementing(self):
-        d = cybox.utils.DictCache()
+        d = stix111.cybox.utils.DictCache()
         self.assertEqual(0, d.count())
 
         d.put("a")

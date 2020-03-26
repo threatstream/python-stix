@@ -9,7 +9,7 @@ from stix111.cybox.common import StructuredText
 import stix111.cybox.test
 
 
-class TestStructuredText(cybox.test.EntityTestCase, unittest.TestCase):
+class TestStructuredText(stix111.cybox.test.EntityTestCase, unittest.TestCase):
     klass = StructuredText
     _full_dict = {
         'value': u("<html><p>WARNING \u26A0: Here is some structured text."),
@@ -21,13 +21,13 @@ class TestStructuredText(cybox.test.EntityTestCase, unittest.TestCase):
         text.value = "some text"
         text.structuring_format = "plain"
 
-        text2 = cybox.test.round_trip(text)
+        text2 = stix111.cybox.test.round_trip(text)
         self.assertEqual(text.to_dict(), text2.to_dict())
 
     def test_plain(self):
         text = StructuredText.from_dict("a string")
 
-        text2 = cybox.test.round_trip(text)
+        text2 = stix111.cybox.test.round_trip(text)
         self.assertEqual(text.to_dict(), text2.to_dict())
 
         text_dict = {'value': "a string"}

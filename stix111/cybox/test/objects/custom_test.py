@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.objects.custom_object import Custom
 from stix111.cybox.test.objects import ObjectTestCase

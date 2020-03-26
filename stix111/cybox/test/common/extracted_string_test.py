@@ -5,7 +5,7 @@ import binascii
 import unittest
 
 from stix111.mixbox.vendor import six
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import ExtractedString, Hash
 from stix111.cybox.test import EntityTestCase

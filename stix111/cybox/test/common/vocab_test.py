@@ -4,7 +4,7 @@
 import unittest
 
 from stix111.mixbox import entities
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.bindings import cybox_common as common_binding
 from stix111.cybox.common import HashName, VocabString
@@ -85,8 +85,8 @@ class TestVocabString(unittest.TestCase):
                         'trend': "test_k",
                      }
 
-        vocab_dict2 = cybox.test.round_trip_dict(VocabString, vocab_dict)
-        cybox.test.assert_equal_ignore(vocab_dict, vocab_dict2, ['xsi:type'])
+        vocab_dict2 = stix111.cybox.test.round_trip_dict(VocabString, vocab_dict)
+        stix111.cybox.test.assert_equal_ignore(vocab_dict, vocab_dict2, ['xsi:type'])
 
     # https://github.com/CybOXProject/python-cybox/issues/158
     def test_xsi_type_unicode(self):
@@ -97,7 +97,7 @@ class TestVocabString(unittest.TestCase):
                         'xsi:type': u("some_xsi_type"),
                      }
 
-        vocab_dict2 = cybox.test.round_trip_dict(VocabString, vocab_dict)
+        vocab_dict2 = stix111.cybox.test.round_trip_dict(VocabString, vocab_dict)
         self.assertEqual(vocab_dict, vocab_dict2)
         xml = VocabString.from_dict(vocab_dict).to_xml()
         string_utf8 = string.encode("utf-8")
@@ -111,8 +111,8 @@ class TestVocabString(unittest.TestCase):
                         'vocab_name': "Test",
                      }
 
-        vocab_dict2 = cybox.test.round_trip_dict(VocabString, vocab_dict)
-        cybox.test.assert_equal_ignore(vocab_dict, vocab_dict2, ['xsi:type'])
+        vocab_dict2 = stix111.cybox.test.round_trip_dict(VocabString, vocab_dict)
+        stix111.cybox.test.assert_equal_ignore(vocab_dict, vocab_dict2, ['xsi:type'])
 
     def test_add_bad_value(self):
         from stix111.cybox.common import Hash

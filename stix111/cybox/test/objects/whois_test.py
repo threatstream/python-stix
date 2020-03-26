@@ -4,7 +4,7 @@
 import unittest
 import uuid
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.bindings.cybox_common import StringObjectPropertyType
 from stix111.cybox.bindings.whois_object import (WhoisContactType,

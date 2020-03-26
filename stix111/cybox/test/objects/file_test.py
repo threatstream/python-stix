@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.objects.file_object import File, FilePath, Packer, SymLinksList
 
@@ -26,7 +26,7 @@ class TestFilePath(unittest.TestCase):
         fp = FilePath(self.path)
         fp.fully_qualified = True
 
-        fp2 = cybox.test.round_trip(fp, FilePath)
+        fp2 = stix111.cybox.test.round_trip(fp, FilePath)
         self.assertEqual(fp.to_dict(), fp2.to_dict())
 
     def test_xml_output(self):

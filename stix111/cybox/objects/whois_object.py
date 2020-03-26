@@ -2,7 +2,7 @@
 # See LICENSE.txt for complete terms.
 
 from stix111.mixbox import entities, fields
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 import stix111.cybox.bindings.whois_object as whois_binding
 

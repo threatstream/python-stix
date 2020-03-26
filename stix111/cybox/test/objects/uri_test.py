@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import AnyURI
 from stix111.cybox.objects.uri_object import URI
@@ -26,7 +26,7 @@ class TestURI(ObjectTestCase, unittest.TestCase):
         t = URI.TYPE_URL
 
         uri = URI(AnyURI(uri_str), t)
-        uri2 = cybox.test.round_trip(uri)
+        uri2 = stix111.cybox.test.round_trip(uri)
 
         self.assertEqual(uri.to_dict(), uri2.to_dict())
 
@@ -36,7 +36,7 @@ class TestURI(ObjectTestCase, unittest.TestCase):
     def test_unicode(self):
         unicode_uri = u("www.\u0395\u03a7\u0391\u039c\u03a1LE.com")
         uri = URI(unicode_uri, URI.TYPE_DOMAIN)
-        uri2 = cybox.test.round_trip(uri)
+        uri2 = stix111.cybox.test.round_trip(uri)
         self.assertEqual(uri.to_dict(), uri2.to_dict())
 
     def test_no_type(self):
@@ -49,13 +49,13 @@ class TestURI(ObjectTestCase, unittest.TestCase):
     def test_round_trip_without_xsi_type(self):
         uri_dict = {'value': "http://www.example.com",
                     'type': URI.TYPE_URL}
-        uri_dict2 = cybox.test.round_trip_dict(URI, uri_dict)
-        cybox.test.assert_equal_ignore(uri_dict, uri_dict2, ['xsi:type'])
+        uri_dict2 = stix111.cybox.test.round_trip_dict(URI, uri_dict)
+        stix111.cybox.test.assert_equal_ignore(uri_dict, uri_dict2, ['xsi:type'])
 
     def test4(self):
         uri_dict = {'value': "http://www.example.com"}
-        uri_dict2 = cybox.test.round_trip_dict(URI, uri_dict)
-        cybox.test.assert_equal_ignore(uri_dict, uri_dict2, ['xsi:type'])
+        uri_dict2 = stix111.cybox.test.round_trip_dict(URI, uri_dict)
+        stix111.cybox.test.assert_equal_ignore(uri_dict, uri_dict2, ['xsi:type'])
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ import unittest
 from zlib import compress
 
 from stix111.mixbox.vendor import six
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.objects.artifact_object import (Artifact, Base64Encoding,
                                            Bz2Compression, Encoding, EncodingFactory, Packaging, RawArtifact,

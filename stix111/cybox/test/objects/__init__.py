@@ -8,7 +8,7 @@ from stix111.cybox.objects import _OBJ_META, get_class_for_object_type
 import stix111.cybox.test
 
 
-class ObjectTestCase(cybox.test.EntityTestCase):
+class ObjectTestCase(stix111.cybox.test.EntityTestCase):
     """A base class for testing all subclasses of ObjectProperties.
 
     Each subclass of ObjectTestCase should subclass both unittest.TestCase
@@ -52,7 +52,7 @@ class ObjectTestCase(cybox.test.EntityTestCase):
 
         obj = self.klass.from_dict(self._full_dict)
         observable = Observable(obj)
-        observable2 = cybox.test.round_trip(observable, output=True)
+        observable2 = stix111.cybox.test.round_trip(observable, output=True)
         self.maxDiff = None
         self.assertEqual(observable.to_dict(), observable2.to_dict())
 
@@ -65,5 +65,5 @@ class ObjectTestCase(cybox.test.EntityTestCase):
         obj_dict['object_reference'] = "some:object-reference-1"
         obj_dict['xsi:type'] = klass._XSI_TYPE
 
-        obj_dict2 = cybox.test.round_trip_dict(klass, obj_dict)
+        obj_dict2 = stix111.cybox.test.round_trip_dict(klass, obj_dict)
         self.assertEqual(obj_dict, obj_dict2)

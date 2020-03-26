@@ -8,7 +8,7 @@ from stix111.cybox.common import DateWithPrecision, DateTimeWithPrecision
 import stix111.cybox.test
 
 
-class TestDateWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):
+class TestDateWithPrecision(stix111.cybox.test.EntityTestCase, unittest.TestCase):
     klass = DateWithPrecision
     _full_dict = {
         'value': "2014-01-01",
@@ -26,7 +26,7 @@ class TestDateWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):
         self.assertEqual(date, type(d.value))
         self.assertEqual(date_str, d.to_dict())
 
-        d2 = cybox.test.round_trip(d, output=True)
+        d2 = stix111.cybox.test.round_trip(d, output=True)
         self.assertEqual(d.to_dict(), d2.to_dict())
 
     def test_construction(self):
@@ -36,7 +36,7 @@ class TestDateWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):
 
         self.assertEqual(self._full_dict, d.to_dict())
 
-class TestDateTimeWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):
+class TestDateTimeWithPrecision(stix111.cybox.test.EntityTestCase, unittest.TestCase):
     klass = DateTimeWithPrecision
     _full_dict = {
         'value': "2014-02-04T08:21:33",
@@ -54,7 +54,7 @@ class TestDateTimeWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):
         self.assertEqual(datetime, type(d.value))
         self.assertEqual(date_str, d.to_dict())
 
-        d2 = cybox.test.round_trip(d, output=True)
+        d2 = stix111.cybox.test.round_trip(d, output=True)
         self.assertEqual(d.to_dict(), d2.to_dict())
 
     def test_construction(self):

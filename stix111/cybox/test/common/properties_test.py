@@ -5,7 +5,7 @@ import datetime
 import unittest
 
 from stix111.mixbox.vendor import six
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import (BaseProperty, DateTime, Integer, Long,
         NonNegativeInteger, PositiveInteger, String, UnsignedInteger,
@@ -35,12 +35,12 @@ class TestBaseProperty(unittest.TestCase):
 
     def test_string_with_comma(self):
         s = String("test_string,")
-        s2 = cybox.test.round_trip(s)
+        s2 = stix111.cybox.test.round_trip(s)
         self.assertEqual(s, s2)
 
     def test_list_of_strings_with_comma(self):
         s = String([u("string,1"), u("string,1"), u("string,3")])
-        s2 = cybox.test.round_trip(s)
+        s2 = stix111.cybox.test.round_trip(s)
         self.assertEqual(s, s2)
 
     def test_delimiter(self):
@@ -125,7 +125,7 @@ class TestBaseProperty(unittest.TestCase):
 
         # Using `String` class explicity since the `BaseProperty` class does
         # not define _binding_class
-        prop_dict2 = cybox.test.round_trip_dict(String, prop_dict)
+        prop_dict2 = stix111.cybox.test.round_trip_dict(String, prop_dict)
         self.assertEqual(prop_dict, prop_dict2)
 
     def test_round_trip_list(self):
@@ -134,7 +134,7 @@ class TestBaseProperty(unittest.TestCase):
                         'condition': "Equals",
                         'apply_condition': "ALL",
                     }
-        prop_dict2 = cybox.test.round_trip_dict(String, prop_dict)
+        prop_dict2 = stix111.cybox.test.round_trip_dict(String, prop_dict)
         self.assertEqual(prop_dict, prop_dict2)
 
     def test_coerce_to_string(self):
@@ -151,15 +151,15 @@ class TestBaseProperty(unittest.TestCase):
 
     def test_numerics(self):
         p = PositiveInteger(42)
-        p2 = cybox.test.round_trip(p)
+        p2 = stix111.cybox.test.round_trip(p)
         self.assertEqual(p.to_dict(), p2.to_dict())
 
         i = Integer(42)
-        i2 = cybox.test.round_trip(i)
+        i2 = stix111.cybox.test.round_trip(i)
         self.assertEqual(i.to_dict(), i2.to_dict())
 
         u = UnsignedLong(42)
-        u2 = cybox.test.round_trip(u)
+        u2 = stix111.cybox.test.round_trip(u)
         self.assertEqual(u.to_dict(), u2.to_dict())
 
         u3 = UnsignedLong("42")

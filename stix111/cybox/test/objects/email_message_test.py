@@ -5,7 +5,7 @@ import datetime
 import logging
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import String, DateTime
 from stix111.cybox.objects.address_object import Address, EmailAddress
@@ -41,7 +41,7 @@ class TestLinks(EntityTestCase, unittest.TestCase):
         l = Links()
         l.append("example:URI-watchlist1")
         l.append("example:URI-watchlist2")
-        l2 = cybox.test.round_trip(l, list_=True)
+        l2 = stix111.cybox.test.round_trip(l, list_=True)
         self.assertEqual(l.to_list(), l2.to_list())
 
 
@@ -53,7 +53,7 @@ class TestAttachments(EntityTestCase, unittest.TestCase):
         a = Attachments()
         a.append("example:File-A1")
         a.append("example:File-A3")
-        a2 = cybox.test.round_trip(a, list_=True)
+        a2 = stix111.cybox.test.round_trip(a, list_=True)
         self.assertEqual(a.to_list(), a2.to_list())
 
 
@@ -75,12 +75,12 @@ class TestReceivedLine(EntityTestCase, unittest.TestCase):
                         'from': "bad.mail.server",
                         'for': "victim@example.com",
                      }
-        rline_dict2 = cybox.test.round_trip_dict(ReceivedLine, rline_dict)
+        rline_dict2 = stix111.cybox.test.round_trip_dict(ReceivedLine, rline_dict)
         self.assertEqual(rline_dict, rline_dict2)
 
     def test_empty_round_trip(self):
         rline_dict = {}
-        rline_dict2 = cybox.test.round_trip_dict(ReceivedLine, rline_dict)
+        rline_dict2 = stix111.cybox.test.round_trip_dict(ReceivedLine, rline_dict)
         self.assertEqual(rline_dict, rline_dict2)
 
 
@@ -89,7 +89,7 @@ class TestReceivedLineList(unittest.TestCase):
     def test_round_trip(self):
         rline_list = [{'from': "a", 'by': "b", 'for': 'c'},
                       {'from': "d", 'by': "e", 'for': 'f'}]
-        rline_list2 = cybox.test.round_trip_list(ReceivedLineList, rline_list)
+        rline_list2 = stix111.cybox.test.round_trip_list(ReceivedLineList, rline_list)
         self.assertEqual(rline_list, rline_list2)
 
 
@@ -127,7 +127,7 @@ class TestEmailRecipients(unittest.TestCase):
         self._compare(recips)
 
     def _compare(self, recips):
-        recips2 = cybox.test.round_trip(recips, list_=True)
+        recips2 = stix111.cybox.test.round_trip(recips, list_=True)
         self.assertEqual(2, len(recips2))
 
         recips_list = recips2.to_list()

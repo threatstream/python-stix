@@ -34,7 +34,7 @@ class TestByteRuns(unittest.TestCase):
                         {'byte_run_data': "aeiou",
                          'length': 5},
                       ]
-        byteruns_list2 = cybox.test.round_trip_list(ByteRuns, byteruns_list)
+        byteruns_list2 = stix111.cybox.test.round_trip_list(ByteRuns, byteruns_list)
         self.assertEqual(byteruns_list, byteruns_list2)
 
 if __name__ == "__main__":

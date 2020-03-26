@@ -4,7 +4,7 @@
 import logging
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import Hash, HashList, HashName, HexBinary
 import stix111.cybox.test
@@ -121,7 +121,7 @@ class TestHash(unittest.TestCase):
 
         h = Hash(self.md5, t)
 
-        hash2 = cybox.test.round_trip(h)
+        hash2 = stix111.cybox.test.round_trip(h)
 
         self.assertEqual(hash2.simple_hash_value, self.md5)
         #TODO: make this really pass
@@ -136,7 +136,7 @@ class TestHash(unittest.TestCase):
 
     def test_xml_output(self):
         h = Hash(self.md5)
-        h2 = cybox.test.round_trip(h)
+        h2 = stix111.cybox.test.round_trip(h)
         self.assertEqual(str(h2), EMPTY_MD5)
 
         s = h2.to_xml()

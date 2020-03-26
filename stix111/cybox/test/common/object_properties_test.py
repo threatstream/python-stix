@@ -3,7 +3,7 @@
 
 import unittest
 
-from stix111.mixbox import u
+from stix111.mixbox.vendor.six import u
 
 from stix111.cybox.common import ObjectProperties, Property
 from stix111.cybox.common.object_properties import ObjectPropertiesFactory
