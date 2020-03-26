@@ -3,7 +3,7 @@
 
 from __future__ import absolute_import
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 import stix111.utils as utils
@@ -13,7 +13,7 @@ from .datetimewithprecision import validate_precision
 from .confidence import Confidence
 from .structured_text import StructuredText
 from .vocabs import VocabField, HighMediumLow
-import mixbox
+import stix111.mixbox
 from stix111.common.vocabs import VocabString
 
 
@@ -42,7 +42,7 @@ class Statement(stix111.Entity):
         self.confidence = None
 
 
-class StatementField(mixbox.fields.TypedField):
+class StatementField(stix111.mixbox.fields.TypedField):
     def __init__(self, *args, **kwargs):
         self._vocab_type = kwargs.pop("vocab_type")
         super(StatementField, self).__init__(*args, **kwargs)

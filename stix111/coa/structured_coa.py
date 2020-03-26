@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 
 # external
-from mixbox import entities
-from mixbox import fields
+from stix111.mixbox import entities
+from stix111.mixbox import fields
 
 # internal
 import stix111

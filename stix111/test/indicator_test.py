@@ -6,8 +6,8 @@ import unittest
 
 from cybox.core import Observable, ObservableComposition
 from cybox.objects.file_object import File
-import mixbox.typedlist
-from mixbox.vendor.six import text_type
+import stix111.mixbox.typedlist
+from stix111.mixbox.vendor.six import text_type
 
 from stix111.common.vocabs import IndicatorType, VocabString
 from stix111.indicator import Indicator, RelatedCampaignRefs, ValidTime
@@ -485,7 +485,7 @@ class IndicatorTest(EntityTestCase, unittest.TestCase):
         o2 = Observable()
 
         i.observables = [o1, o2]
-        self.assertEqual(mixbox.typedlist.TypedList, type(i.observables))
+        self.assertEqual(stix111.mixbox.typedlist.TypedList, type(i.observables))
         self.assertEqual(2, len(i.observables))
 
     def test_set_indicator_observables_to_list_of_one_observable(self):

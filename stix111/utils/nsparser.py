@@ -1,12 +1,12 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 """
-This module automatically registers all STIX namespaces into mixbox.
+This module automatically registers all STIX namespaces into stix111.mixbox.
 """
 
-import mixbox.namespaces
+import stix111.mixbox.namespaces
 
-Namespace = mixbox.namespaces.Namespace
+Namespace = stix111.mixbox.namespaces.Namespace
 
 NS_CAMPAIGN_OBJECT = Namespace("http://stix.mitre.org/Campaign-1", "campaign", "http://stix.mitre.org/XMLSchema/campaign/1.1.1/campaign.xsd")
 NS_CAPEC_OBJECT = Namespace("http://capec.mitre.org/capec-2", "capec", "")
@@ -43,10 +43,10 @@ NS_XNL_OBJECT = Namespace("urn:oasis:names:tc:ciq:xnl:3", "xnl", "http://stix.mi
 NS_XPIL_OBJECT = Namespace("urn:oasis:names:tc:ciq:xpil:3", "xpil", "http://stix.mitre.org/XMLSchema/external/oasis_ciq_3.0/xPIL.xsd")
 NS_YARATM_OBJECT = Namespace("http://stix.mitre.org/extensions/TestMechanism#YARA-1", "yaraTM", "http://stix.mitre.org/XMLSchema/extensions/test_mechanism/yara/1.1.1/yara_test_mechanism.xsd")
 
-STIX_NAMESPACES = mixbox.namespaces.NamespaceSet()
+STIX_NAMESPACES = stix111.mixbox.namespaces.NamespaceSet()
 
 # Magic to automatically register all Namespaces defined in this module.
 for k, v in list(globals().items()):
     if k.startswith('NS_'):
-        mixbox.namespaces.register_namespace(v)
+        stix111.mixbox.namespaces.register_namespace(v)
         STIX_NAMESPACES.add_namespace(v)

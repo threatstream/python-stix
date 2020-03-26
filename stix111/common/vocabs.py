@@ -4,8 +4,8 @@
 # stdlib
 from functools import partial
 
-# mixbox
-from mixbox import entities, fields, typedlist
+# stix111.mixbox
+from stix111.mixbox import entities, fields, typedlist
 
 # cybox
 from cybox.common import vocabs

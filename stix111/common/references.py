@@ -3,7 +3,7 @@
 
 import collections
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 from stix111.bindings import stix_common as stix_common_binding

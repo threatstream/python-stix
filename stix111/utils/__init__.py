@@ -8,9 +8,9 @@ import warnings
 
 import lxml.etree
 
-from mixbox.entities import Entity, EntityList
-import mixbox.xml
-from mixbox.vendor.six import iteritems, string_types
+from stix111.mixbox.entities import Entity, EntityList
+import stix111.mixbox.xml
+from stix111.mixbox.vendor.six import iteritems, string_types
 
 import stix111
 
@@ -147,14 +147,14 @@ def is_cybox(entity):
 
 def is_entity(entity):
     """Returns true if `entity` is an instance of :class:`.Entity` or
-    :class:`mixbox.Entity`.
+    :class:`stix111.mixbox.Entity`.
     """
     return isinstance(entity, (Entity, stix111.Entity))
 
 
 def is_entitylist(entity):
     """Returns true if `entity` is an instance of :class:`.EntityList`
-    or :class:`mixbox.entities.EntityList`.
+    or :class:`stix111.mixbox.entities.EntityList`.
 
     """
     return isinstance(entity, (EntityList, stix111.EntityList))
@@ -318,7 +318,7 @@ def to_dict(entity, skip=()):
             d[key] = dates.serialize_value(field)
         elif is_date(field):
             d[key] = dates.serialize_date(field)
-        elif mixbox.xml.is_element(field) or mixbox.xml.is_etree(field):
+        elif stix111.mixbox.xml.is_element(field) or mixbox.xml.is_etree(field):
             d[key] = lxml.etree.tostring(field)
         elif is_sequence(field):
             d[key] = dict_iter(field)
@@ -337,10 +337,10 @@ def xml_bool(value):
     if value is None:
         return None
 
-    if value in mixbox.xml.FALSE:
+    if value in stix111.mixbox.xml.FALSE:
         return False
 
-    if value in mixbox.xml.TRUE:
+    if value in stix111.mixbox.xml.TRUE:
         return True
 
     error = "Unable to determine the xml boolean value of '{0}'".format(value)

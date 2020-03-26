@@ -5,8 +5,8 @@
 """Tests for various encoding issues throughout the library"""
 
 import unittest
-from mixbox.vendor.six import BytesIO, text_type
-from mixbox import binding_utils
+from stix111.mixbox.vendor.six import BytesIO, text_type
+from stix111.mixbox import binding_utils
 
 from stix111.core import STIXHeader, STIXPackage
 from stix111.campaign import Campaign

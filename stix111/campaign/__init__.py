@@ -1,7 +1,7 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 import stix111.bindings.campaign as campaign_binding
@@ -73,7 +73,7 @@ class Campaign(stix111.BaseCoreComponent):
 
     Args:
         id_ (optional): An identifier. If ``None``, a value will be generated
-            via ``mixbox.idgen.create_id()``. If set, this will unset the
+            via ``stix111.mixbox.idgen.create_id()``. If set, this will unset the
             ``idref`` property.
         idref (optional): An identifier reference. If set this will unset the
             ``id_`` property.

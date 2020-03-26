@@ -4,8 +4,8 @@
 # stdlib
 from functools import partial
 
-# mixbox
-from mixbox import fields
+# stix111.mixbox
+from stix111.mixbox import fields
 
 # base import
 import stix111

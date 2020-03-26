@@ -8,7 +8,7 @@ from stix111.common import StructuredText
 # bindings
 import stix111.bindings.ttp as ttp_binding
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 
 class AttackPattern(stix111.Entity):

@@ -6,12 +6,12 @@ import contextlib
 import collections
 from sys import version_info
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 import stix111.utils as utils
 import stix111.bindings.stix_common as stix_common_binding
-from mixbox.vendor.six import text_type
+from stix111.mixbox.vendor.six import text_type
 
 
 class StructuredText(stix111.Entity):

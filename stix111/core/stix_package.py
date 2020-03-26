@@ -1,9 +1,9 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-# mixbox
-from mixbox import idgen
-from mixbox import fields
+# stix111.mixbox
+from stix111.mixbox import idgen
+from stix111.mixbox import fields
 
 # cybox
 from cybox.core import Observable, Observables
@@ -34,7 +34,7 @@ from . import (Campaigns, CoursesOfAction, ExploitTargets, Incidents,
 
 # binding imports
 import stix111.bindings.stix_core as stix_core_binding
-import mixbox.entities
+import stix111.mixbox.entities
 
 
 class STIXPackage(stix111.Entity):
@@ -42,7 +42,7 @@ class STIXPackage(stix111.Entity):
 
     Args:
         id_ (optional): An identifier. If ``None``, a value will be generated
-            via ``mixbox.idgen.create_id()``. If set, this will unset the
+            via ``stix111.mixbox.idgen.create_id()``. If set, this will unset the
             ``idref`` property.
         idref: An identifier reference. If set this will unset
             the ``id_`` property.

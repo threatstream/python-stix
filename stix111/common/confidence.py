@@ -3,7 +3,7 @@
 
 from __future__ import absolute_import
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 import stix111.utils as utils

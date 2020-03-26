@@ -9,7 +9,7 @@ import stix111
 import stix111.bindings.ttp as ttp_binding
 from stix111.common import vocabs
 from stix111.common.identity import Identity, IdentityFactory
-from mixbox import fields
+from stix111.mixbox import fields
 
 
 class VictimTargeting(stix111.Entity):

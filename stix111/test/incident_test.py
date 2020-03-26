@@ -3,7 +3,7 @@
 
 import unittest
 
-from mixbox.vendor.six import StringIO
+from stix111.mixbox.vendor.six import StringIO
 
 from cybox.common import StructuredText
 

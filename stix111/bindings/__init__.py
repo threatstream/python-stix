@@ -4,7 +4,7 @@
 import collections
 
 from lxml import etree as etree_
-import mixbox.xml
+import stix111.mixbox.xml
 
 
 TypeInfo = collections.namedtuple("TypeInfo", ('ns', 'typename'))
@@ -23,7 +23,7 @@ def get_type_info(node):
         KeyError: If `node` does not have an ``xsi:type`` attribute.
 
     """
-    xsi_type = node.attrib[mixbox.xml.TAG_XSI_TYPE]
+    xsi_type = node.attrib[stix111.mixbox.xml.TAG_XSI_TYPE]
     typeinfo = xsi_type.split(":")
 
     if len(typeinfo) == 2:
@@ -95,7 +95,7 @@ def has_xsi_type(node):
     """Returns ``True`` if `node` does not have an xsi:type attribute.
 
     """
-    return mixbox.xml.TAG_XSI_TYPE in node.attrib
+    return stix111.mixbox.xml.TAG_XSI_TYPE in node.attrib
 
 
 __all__ = [

@@ -6,7 +6,7 @@ import itertools
 
 # external
 from cybox.common import ObjectProperties
-from mixbox.vendor.six import iteritems
+from stix111.mixbox.vendor.six import iteritems
 
 # internal
 from . import is_entity, is_entitylist, attr_name, is_sequence

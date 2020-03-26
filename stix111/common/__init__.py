@@ -4,8 +4,8 @@
 from __future__ import absolute_import
 from sys import version_info
 
-from mixbox.fields import TypedField, CDATAField
-from mixbox.vendor.six import text_type
+from stix111.mixbox.fields import TypedField, CDATAField
+from stix111.mixbox.vendor.six import text_type
 
 from .structured_text import StructuredText  # noqa
 from .vocabs import VocabString   # noqa

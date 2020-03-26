@@ -5,7 +5,7 @@
 from .base import (Entity, EntityList, TypedCollection, TypedList,  # noqa
                    BaseCoreComponent)
 
-from mixbox.vendor.six import string_types, iteritems
+from stix111.mixbox.vendor.six import string_types, iteritems
 
 #: Mapping of xsi:types to implementation/extension classes
 _EXTENSION_MAP = {}

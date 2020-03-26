@@ -5,13 +5,13 @@
 import collections
 import itertools
 
-# mixbox
-from mixbox import idgen
-from mixbox import entities
-from mixbox import fields
-from mixbox import binding_utils
-from mixbox import namespaces
-from mixbox.vendor.six import StringIO, iteritems, itervalues, text_type, binary_type
+# stix111.mixbox
+from stix111.mixbox import idgen
+from stix111.mixbox import entities
+from stix111.mixbox import fields
+from stix111.mixbox import binding_utils
+from stix111.mixbox import namespaces
+from stix111.mixbox.vendor.six import StringIO, iteritems, itervalues, text_type, binary_type
 
 # internal
 from . import utils
@@ -127,7 +127,7 @@ class Entity(entities.Entity):
 
         """
 
-        from mixbox.entities import NamespaceCollector
+        from stix111.mixbox.entities import NamespaceCollector
 
         if (not auto_namespace) and (not ns_dict):
             raise Exception(

@@ -18,8 +18,8 @@ program imports this module before beginning to parse any STIX documents:
 
 """
 
-from mixbox import fields
-from mixbox.namespaces import Namespace
+from stix111.mixbox import fields
+from stix111.mixbox.namespaces import Namespace
 
 import stix111.bindings.extensions.marking.ais as ais_binding
 import stix111.data_marking
@@ -127,10 +127,10 @@ NAMESPACES = [
 def _update_namespaces():
     # Update the python-stix namespace dictionary
     from stix111.utils import nsparser
-    import mixbox.namespaces
+    import stix111.mixbox.namespaces
 
     nsparser.STIX_NAMESPACES.add_namespace(NAMESPACES[0])
-    mixbox.namespaces.register_namespace(NAMESPACES[0])
+    stix111.mixbox.namespaces.register_namespace(NAMESPACES[0])
 
 
 _update_namespaces()

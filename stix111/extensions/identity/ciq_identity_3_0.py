@@ -8,7 +8,7 @@ import stix111.utils as utils
 import stix111.common as common
 import stix111.bindings.extensions.identity.ciq_identity_3_0 as ciq_identity_binding
 
-from mixbox.vendor.six import string_types
+from stix111.mixbox.vendor.six import string_types
 
 
 XML_NS_XPIL     = "urn:oasis:names:tc:ciq:xpil:3"

@@ -4,9 +4,9 @@
 # stdlib
 import functools
 
-# mixbox
-from mixbox import fields
-from mixbox import typedlist
+# stix111.mixbox
+from stix111.mixbox import fields
+from stix111.mixbox import typedlist
 
 # cybox
 from cybox.core import Observable

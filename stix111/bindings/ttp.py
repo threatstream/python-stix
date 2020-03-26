@@ -11,7 +11,7 @@
 import sys
 
 import cybox.bindings.cybox_core as cybox_core_binding
-from mixbox.binding_utils import *
+from stix111.mixbox.binding_utils import *
 
 from stix111.bindings import lookup_extension, register_extension
 import stix111.bindings.stix_common as stix_common_binding
@@ -1556,7 +1556,7 @@ def parseEtree(inFileName):
     return rootObj, rootElement
 
 def parseString(inString):
-    from mixbox.vendor.six import StringIO
+    from stix111.mixbox.vendor.six import StringIO
     doc = parsexml_(StringIO(inString))
     rootNode = doc.getroot()
     rootTag, rootClass = get_root_tag(rootNode)

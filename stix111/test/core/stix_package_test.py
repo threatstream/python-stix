@@ -4,7 +4,7 @@
 import copy
 import unittest
 
-from mixbox.vendor.six import BytesIO
+from stix111.mixbox.vendor.six import BytesIO
 
 from stix111.test import EntityTestCase
 from stix111.test.common import kill_chains_test, related_test

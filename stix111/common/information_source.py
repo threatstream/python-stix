@@ -2,7 +2,7 @@
 # See LICENSE.txt for complete terms.
 
 # external
-from mixbox import fields
+from stix111.mixbox import fields
 import cybox.common
 from cybox.common.tools import ToolInformationList
 

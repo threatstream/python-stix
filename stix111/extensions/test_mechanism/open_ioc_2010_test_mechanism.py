@@ -3,9 +3,9 @@
 
 # external
 from lxml import etree
-import mixbox.xml
-from mixbox.fields import TypedField
-from mixbox.vendor.six import BytesIO, iteritems
+import stix111.mixbox.xml
+from stix111.mixbox.fields import TypedField
+from stix111.mixbox.vendor.six import BytesIO, iteritems
 
 # internal
 import stix111
@@ -32,7 +32,7 @@ class OpenIOCTestMechanism(_BaseTestMechanism):
 
     def _collect_schemalocs(self, node):
         try:
-            schemaloc = mixbox.xml.get_schemaloc_pairs(node)
+            schemaloc = stix111.mixbox.xml.get_schemaloc_pairs(node)
             self.__input_schemalocations__ = dict(schemaloc)
         except KeyError:
             self.__input_schemalocations__ = {}
@@ -56,8 +56,8 @@ class OpenIOCTestMechanism(_BaseTestMechanism):
         if self.ioc is None:
             return None
 
-        tree = mixbox.xml.get_etree(self.ioc)
-        root = mixbox.xml.get_etree_root(tree)
+        tree = stix111.mixbox.xml.get_etree(self.ioc)
+        root = stix111.mixbox.xml.get_etree_root(tree)
 
         if root.tag != self._TAG_IOC:
             self._cast_ioc(root)
@@ -91,7 +91,7 @@ class OpenIOCTestMechanism(_BaseTestMechanism):
         return_obj = super(OpenIOCTestMechanism, cls).from_dict(d)
 
         if 'ioc' in d:
-            parser = mixbox.xml.get_xml_parser()
+            parser = stix111.mixbox.xml.get_xml_parser()
             return_obj.ioc = etree.parse(BytesIO(d['ioc']), parser=parser)
         
         return return_obj

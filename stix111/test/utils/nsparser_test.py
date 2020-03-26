@@ -6,10 +6,10 @@ import unittest
 
 # external
 import lxml.etree
-from mixbox.vendor.six import StringIO
+from stix111.mixbox.vendor.six import StringIO
 
 # internal
-import mixbox.namespaces
+import stix111.mixbox.namespaces
 from stix111.core import STIXPackage
 from stix111.utils import silence_warnings
 
@@ -49,7 +49,7 @@ class NamespaceInfoTests(unittest.TestCase):
         bad = {'bad:ns': 'stix'}  # 'stix' is already default ns prefix
 
         self.assertRaises(
-            mixbox.namespaces.DuplicatePrefixError,
+            stix111.mixbox.namespaces.DuplicatePrefixError,
             p.to_xml,
             ns_dict=bad
         )
@@ -74,7 +74,7 @@ class NamespaceInfoTests(unittest.TestCase):
 
         # Exporting should raise an error.
         self.assertRaises(
-            mixbox.namespaces.DuplicatePrefixError,
+            stix111.mixbox.namespaces.DuplicatePrefixError,
             p.to_xml
         )
 

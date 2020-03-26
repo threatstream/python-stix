@@ -1,14 +1,14 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-from mixbox import fields
-from mixbox import typedlist
+from stix111.mixbox import fields
+from stix111.mixbox import typedlist
 
 # internal
 import stix111
 import stix111.bindings.stix_common as common_binding
 
-from mixbox.vendor.six import string_types
+from stix111.mixbox.vendor.six import string_types
 
 
 class KillChain(stix111.Entity):

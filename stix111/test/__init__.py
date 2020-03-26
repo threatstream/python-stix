@@ -8,9 +8,9 @@ import json
 import warnings
 
 import cybox.utils
-from mixbox.binding_utils import ExternalEncoding
-from mixbox.entities import NamespaceCollector
-from mixbox.vendor.six import iteritems, text_type
+from stix111.mixbox.binding_utils import ExternalEncoding
+from stix111.mixbox.entities import NamespaceCollector
+from stix111.mixbox.vendor.six import iteritems, text_type
 
 from stix111.utils import silence_warnings
 

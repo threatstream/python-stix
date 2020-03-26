@@ -1,9 +1,9 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-# mixbox
-from mixbox import fields
-from mixbox import typedlist
+# stix111.mixbox
+from stix111.mixbox import fields
+from stix111.mixbox import typedlist
 
 # internal
 import stix111

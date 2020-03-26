@@ -1,7 +1,7 @@
 # Copyright (c) 2016, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-from mixbox import fields
+from stix111.mixbox import fields
 
 import stix111
 from stix111.common import InformationSource, StructuredText, Profiles

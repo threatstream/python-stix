@@ -4,16 +4,16 @@
 import stix111
 from stix111.xmlconst import TAG_STIX_PACKAGE
 
-import mixbox.parser
-# Import these from mixbox for backward compatibility
-from mixbox.parser import (UnknownVersionError, UnsupportedVersionError,
+import stix111.mixbox.parser
+# Import these from stix111.mixbox for backward compatibility
+from stix111.mixbox.parser import (UnknownVersionError, UnsupportedVersionError,
                            UnsupportedRootElementError)
 
 # Alias for backwards compatibility
 UnsupportedRootElement = UnsupportedRootElementError
 
 
-class EntityParser(mixbox.parser.EntityParser):
+class EntityParser(stix111.mixbox.parser.EntityParser):
 
     def supported_tags(self):
         return [TAG_STIX_PACKAGE]
