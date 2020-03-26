@@ -7,9 +7,9 @@ import functools
 from stix111.mixbox import entities, fields, typedlist
 from stix111.mixbox.vendor import six
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import PatternFieldGroup
-from cybox.utils import normalize_to_xml, denormalize_from_xml
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import PatternFieldGroup
+from stix111.cybox.utils import normalize_to_xml, denormalize_from_xml
 
 
 def validate_value(instance, value):

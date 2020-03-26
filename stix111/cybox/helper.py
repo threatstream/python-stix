@@ -10,11 +10,11 @@ An api for creating observables for common indicators:
 ipv4 addresses, domain names, file hashes, and urls.
 '''
 
-from cybox.core import Observable
-from cybox.common import Hash
-from cybox.objects.address_object import Address
-from cybox.objects.file_object import File
-from cybox.objects.uri_object import URI
+from stix111.cybox.core import Observable
+from stix111.cybox.common import Hash
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.file_object import File
+from stix111.cybox.objects.uri_object import URI
 
 
 def create_ipv4_observable(ipv4_address):

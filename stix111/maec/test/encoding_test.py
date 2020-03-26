@@ -18,7 +18,7 @@ from stix111.maec.bundle.behavior import Behavior
 from stix111.maec.bundle.capability import Capability
 import stix111.maec.utils
 
-from cybox.test import round_trip
+from stix111.cybox.test import round_trip
 
 UNICODE_STR = u"❤ ♎ ☀ ★ ☂ ♞ ☯ ☭ ☢ €☎⚑ ❄♫✂"
 

@@ -5,10 +5,10 @@ import sys
 
 from stix111.mixbox.binding_utils import *
 
-from cybox.bindings import cybox_core
-from cybox.bindings import cybox_common
-from cybox.bindings import code_object
-from cybox.bindings import process_object
+from stix111.cybox.bindings import cybox_core
+from stix111.cybox.bindings import cybox_common
+from stix111.cybox.bindings import code_object
+from stix111.cybox.bindings import process_object
 
 class BehaviorType(GeneratedsSuper):
     """The BehaviorType is one of the foundational MAEC types, and serves

@@ -1,7 +1,7 @@
 # Copyright (c) 2018, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-from cybox.common.vocabs import VocabString, register_vocab
+from stix111.cybox.common.vocabs import VocabString, register_vocab
 
 @register_vocab
 class MalwareCapability(VocabString):

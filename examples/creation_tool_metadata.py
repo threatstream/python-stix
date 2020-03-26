@@ -9,7 +9,7 @@ Description: Build a STIX Document with Tool Information
 from pprint import pprint
 
 # python-cybox
-from cybox.common import ToolInformationList, ToolInformation
+from stix111.cybox.common import ToolInformationList, ToolInformation
 
 # python-stix
 from stix111.core import STIXPackage, STIXHeader

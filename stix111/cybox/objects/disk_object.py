@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.disk_object as disk_binding
-from cybox.objects.disk_partition_object import DiskPartition
-from cybox.common import ObjectProperties, String, UnsignedLong
+import stix111.cybox.bindings.disk_object as disk_binding
+from stix111.cybox.objects.disk_partition_object import DiskPartition
+from stix111.cybox.common import ObjectProperties, String, UnsignedLong
 
 
 class PartitionList(entities.EntityList):

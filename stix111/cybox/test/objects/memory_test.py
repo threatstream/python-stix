@@ -5,11 +5,11 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.memory_object import Memory
+from stix111.cybox.objects.memory_object import Memory
 
-from cybox.compat import long
-from cybox.test.common.hash_test import EMPTY_MD5
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.test.common.hash_test import EMPTY_MD5
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestMemory(ObjectTestCase, unittest.TestCase):

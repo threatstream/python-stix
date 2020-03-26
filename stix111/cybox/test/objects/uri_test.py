@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import AnyURI
-from cybox.objects.uri_object import URI
-import cybox.test
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.common import AnyURI
+from stix111.cybox.objects.uri_object import URI
+import stix111.cybox.test
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestURI(ObjectTestCase, unittest.TestCase):

@@ -5,11 +5,11 @@ import logging
 import unittest
 
 from stix111.mixbox import u
-from cybox.core import Object, Observables, RelatedObject
-from cybox.objects.address_object import Address
-from cybox.objects.uri_object import URI
-from cybox.test import EntityTestCase, round_trip, round_trip_dict
-from cybox.utils import CacheMiss
+from stix111.cybox.core import Object, Observables, RelatedObject
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.test import EntityTestCase, round_trip, round_trip_dict
+from stix111.cybox.utils import CacheMiss
 
 logger = logging.getLogger(__name__)
 

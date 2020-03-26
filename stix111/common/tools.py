@@ -4,8 +4,8 @@
 # external
 from stix111.mixbox import fields
 
-import cybox.common
-from cybox.common.vocabs import VocabField
+import stix111.cybox.common
+from stix111.cybox.common.vocabs import VocabField
 
 # internal
 import stix111
@@ -16,7 +16,7 @@ from .structured_text import StructuredText
 from .vocabs import AttackerToolType
 
 
-class ToolInformation(stix111.Entity, cybox.common.ToolInformation):
+class ToolInformation(stix111.Entity, stix111.cybox.common.ToolInformation):
     _namespace = 'http://stix.mitre.org/common-1'
     _binding = common_binding
     _binding_class = common_binding.ToolInformationType

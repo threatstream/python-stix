@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_volume_object as win_volume_binding
-from cybox.objects.volume_object import Volume
-from cybox.common import String
+import stix111.cybox.bindings.win_volume_object as win_volume_binding
+from stix111.cybox.objects.volume_object import Volume
+from stix111.cybox.common import String
 
 
 class WindowsVolumeAttributesList(entities.EntityList):

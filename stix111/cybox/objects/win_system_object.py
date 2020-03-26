@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_system_object as win_system_binding
-from cybox.objects.system_object import System
-from cybox.objects.win_handle_object import WinHandleList
-from cybox.common import String, HexBinary
+import stix111.cybox.bindings.win_system_object as win_system_binding
+from stix111.cybox.objects.system_object import System
+from stix111.cybox.objects.win_handle_object import WinHandleList
+from stix111.cybox.common import String, HexBinary
 
 
 class GlobalFlag(entities.Entity):

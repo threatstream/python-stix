@@ -3,7 +3,7 @@
 
 import unittest
 
-from cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test import EntityTestCase, round_trip
 from stix111.maec.bundle.bundle import Behavior
 
 class TestBehavior(EntityTestCase, unittest.TestCase):

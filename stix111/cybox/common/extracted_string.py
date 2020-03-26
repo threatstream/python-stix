@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import (
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import (
     vocabs, String, HexBinary, PositiveInteger, HashList
 )
-from cybox.common.vocabs import CharacterEncoding
+from stix111.cybox.common.vocabs import CharacterEncoding
 
 
 class ExtractedString(entities.Entity):

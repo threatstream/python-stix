@@ -3,7 +3,7 @@
 
 from stix111.mixbox import entities, dates, fields
 
-import cybox.bindings.cybox_common as common_binding
+import stix111.cybox.bindings.cybox_common as common_binding
 
 DATE_PRECISION_VALUES = ("year", "month", "day")
 TIME_PRECISION_VALUES = ("hour", "minute", "second")

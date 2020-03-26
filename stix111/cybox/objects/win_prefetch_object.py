@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_prefetch_object as win_prefetch_binding
-from cybox.objects.device_object import Device
-from cybox.objects.win_volume_object import WinVolume
-from cybox.common import String, DateTime, Long, ObjectProperties
+import stix111.cybox.bindings.win_prefetch_object as win_prefetch_binding
+from stix111.cybox.objects.device_object import Device
+from stix111.cybox.objects.win_volume_object import WinVolume
+from stix111.cybox.common import String, DateTime, Long, ObjectProperties
 
 
 class AccessedFileList(entities.EntityList):

@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_driver_object as win_driver_binding
-from cybox.objects.win_executable_file_object import WinExecutableFile
-from cybox.common import String, HexBinary, UnsignedLong
+import stix111.cybox.bindings.win_driver_object as win_driver_binding
+from stix111.cybox.objects.win_executable_file_object import WinExecutableFile
+from stix111.cybox.common import String, HexBinary, UnsignedLong
 
 
 class DeviceObjectStruct(entities.Entity):

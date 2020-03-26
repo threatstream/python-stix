@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_system_restore_object as win_system_restore_binding
-from cybox.common import String, Long, DateTime, ObjectProperties
+import stix111.cybox.bindings.win_system_restore_object as win_system_restore_binding
+from stix111.cybox.common import String, Long, DateTime, ObjectProperties
 
 
 class HiveList(entities.EntityList):

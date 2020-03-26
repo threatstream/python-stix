@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.x509_certificate_object as x509_certificate_binding
-from cybox.common import ObjectProperties, String, Integer, DateTime, NonNegativeInteger
+import stix111.cybox.bindings.x509_certificate_object as x509_certificate_binding
+from stix111.cybox.common import ObjectProperties, String, Integer, DateTime, NonNegativeInteger
 
 
 class Validity(entities.Entity):

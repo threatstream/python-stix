@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_hook_object import WinHook
+from stix111.cybox.objects.win_hook_object import WinHook
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinHook(ObjectTestCase, unittest.TestCase):

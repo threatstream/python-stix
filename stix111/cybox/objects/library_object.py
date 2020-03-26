@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.library_object as library_binding
-from cybox.common.extracted_features import ExtractedFeatures
-from cybox.common import ObjectProperties, String, UnsignedLong, HexBinary
+import stix111.cybox.bindings.library_object as library_binding
+from stix111.cybox.common.extracted_features import ExtractedFeatures
+from stix111.cybox.common import ObjectProperties, String, UnsignedLong, HexBinary
 
 
 class Library(ObjectProperties):

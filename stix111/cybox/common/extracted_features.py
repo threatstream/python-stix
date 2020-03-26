@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common.object_properties import ObjectProperties, ObjectPropertiesFactory
-from cybox.common import ExtractedStrings, String
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common.object_properties import ObjectProperties, ObjectPropertiesFactory
+from stix111.cybox.common import ExtractedStrings, String
 
 
 class Imports(entities.EntityList):

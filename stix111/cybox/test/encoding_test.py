@@ -9,11 +9,11 @@ import unittest
 from stix111.mixbox.vendor import six
 from stix111.mixbox import u
 
-from cybox.common import Contributor, String, MeasureSource
-from cybox.core import Observable
-from cybox.objects.code_object import Code, CodeSegmentXOR
-from cybox.objects.whois_object import WhoisEntry
-from cybox.test import round_trip
+from stix111.cybox.common import Contributor, String, MeasureSource
+from stix111.cybox.core import Observable
+from stix111.cybox.objects.code_object import Code, CodeSegmentXOR
+from stix111.cybox.objects.whois_object import WhoisEntry
+from stix111.cybox.test import round_trip
 
 #UNICODE_STR = six.u("❤ ♎ ☀ ★ ☂ ♞ ☯ ☭ ☢ €☎⚑ ❄♫✂")
 if six.PY2:

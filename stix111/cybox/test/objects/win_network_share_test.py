@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_network_share_object import WinNetworkShare
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_network_share_object import WinNetworkShare
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinNetworkShare(ObjectTestCase, unittest.TestCase):

@@ -3,10 +3,10 @@
 
 import unittest
 
-from cybox.objects.sms_message_object import SMSMessage
+from stix111.cybox.objects.sms_message_object import SMSMessage
 
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestSMSMessage(ObjectTestCase, unittest.TestCase):

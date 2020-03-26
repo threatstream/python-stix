@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields, idgen
 
-from cybox import Unicode
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import MeasureSource, ObjectProperties, StructuredText
-from cybox.core import Object, Event
+from stix111.cybox import Unicode
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import MeasureSource, ObjectProperties, StructuredText
+from stix111.cybox.core import Object, Event
 
 
 def validate_operator(instance, value):
@@ -73,11 +73,11 @@ class Observable(entities.Entity):
     description = fields.TypedField("Description", StructuredText)
     object_ = fields.TypedField("Object", Object, preset_hook=validate_object)  # TODO: Add preset hook
     event = fields.TypedField("Event", Event, preset_hook=validate_event)
-    observable_composition = fields.TypedField("Observable_Composition", type_="cybox.core.ObservableComposition", preset_hook=validate_observable_composition)
+    observable_composition = fields.TypedField("Observable_Composition", type_="stix111.cybox.core.ObservableComposition", preset_hook=validate_observable_composition)
     sighting_count = fields.TypedField("sighting_count")
     observable_source = fields.TypedField("Observable_Source", MeasureSource, multiple=True)
     keywords = fields.TypedField("Keywords", Keywords)
-    pattern_fidelity = fields.TypedField("Pattern_Fidelity", type_="cybox.core.PatternFidelity")
+    pattern_fidelity = fields.TypedField("Pattern_Fidelity", type_="stix111.cybox.core.PatternFidelity")
 
     def __init__(self, item=None, id_=None, idref=None, title=None, description=None):
         """Create an Observable out of 'item'.
@@ -131,7 +131,7 @@ class Observables(entities.EntityList):
 
     observable_package_source = fields.TypedField("Observable_Package_Source", MeasureSource)
     observables = fields.TypedField("Observable", Observable, multiple=True, key_name="observables")
-    pools = fields.TypedField("Pools", type_="cybox.core.pool.Pools")
+    pools = fields.TypedField("Pools", type_="stix111.cybox.core.pool.Pools")
 
     def __init__(self, observables=None):
         super(Observables, self).__init__(observables)
@@ -141,7 +141,7 @@ class Observables(entities.EntityList):
         self._update_version = 0
 
     def add(self, object_):
-        from cybox.core.pool import Pools
+        from stix111.cybox.core.pool import Pools
         if not object_:
             return
         elif isinstance(object_, MeasureSource):

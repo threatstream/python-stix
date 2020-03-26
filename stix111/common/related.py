@@ -9,7 +9,7 @@ from stix111.mixbox import fields
 from stix111.mixbox import typedlist
 
 # cybox
-from cybox.core import Observable
+from stix111.cybox.core import Observable
 
 # internal
 import stix111

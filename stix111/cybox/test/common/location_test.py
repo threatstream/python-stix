@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.common import Location
-import cybox.test
+from stix111.cybox.common import Location
+import stix111.cybox.test
 
 
 class TestLocation(cybox.test.EntityTestCase, unittest.TestCase):

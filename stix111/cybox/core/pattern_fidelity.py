@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import StructuredText
-from cybox.core.observable import Observables
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import StructuredText
+from stix111.cybox.core.observable import Observables
 
 
 class ObfuscationTechnique(entities.Entity):

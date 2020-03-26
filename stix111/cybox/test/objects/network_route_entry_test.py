@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.compat import long
-from cybox.objects.address_object import Address
-from cybox.objects.network_route_entry_object import NetworkRouteEntry
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.network_route_entry_object import NetworkRouteEntry
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestNetworkRouteEntry(ObjectTestCase, unittest.TestCase):

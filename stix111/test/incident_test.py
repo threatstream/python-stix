@@ -5,7 +5,7 @@ import unittest
 
 from stix111.mixbox.vendor.six import StringIO
 
-from cybox.common import StructuredText
+from stix111.cybox.common import StructuredText
 
 from stix111.test import EntityTestCase
 from stix111.test import data_marking_test
@@ -440,7 +440,7 @@ class IncidentTest(EntityTestCase, unittest.TestCase):
         self.assertTrue("A Description" in xml, "Description not exported")
 
     def test_add_related_observable(self):
-        from cybox.core import Observable
+        from stix111.cybox.core import Observable
         from stix111.common.related import RelatedObservable
 
         i = self.klass()

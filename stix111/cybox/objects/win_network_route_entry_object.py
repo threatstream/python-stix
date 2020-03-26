@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_network_route_entry_object as win_network_route_entry_binding
-from cybox.objects.network_route_entry_object import NetworkRouteEntry
-from cybox.common import String
+import stix111.cybox.bindings.win_network_route_entry_object as win_network_route_entry_binding
+from stix111.cybox.objects.network_route_entry_object import NetworkRouteEntry
+from stix111.cybox.common import String
 
 
 class WinNetworkRouteEntry(NetworkRouteEntry):

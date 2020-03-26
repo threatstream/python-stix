@@ -3,11 +3,11 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.socket_address_object as socket_address_binding
-from cybox.objects.address_object import Address
-from cybox.objects.port_object import Port
-from cybox.objects.hostname_object import Hostname
-from cybox.common import ObjectProperties
+import stix111.cybox.bindings.socket_address_object as socket_address_binding
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.port_object import Port
+from stix111.cybox.objects.hostname_object import Hostname
+from stix111.cybox.common import ObjectProperties
 
 
 class SocketAddress(ObjectProperties):

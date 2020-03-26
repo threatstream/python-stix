@@ -6,7 +6,7 @@ from stix111.mixbox import idgen
 from stix111.mixbox import fields
 
 # cybox
-from cybox.core import Observable, Observables
+from stix111.cybox.core import Observable, Observables
 
 # base
 import stix111

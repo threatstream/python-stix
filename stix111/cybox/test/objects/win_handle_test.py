@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.win_handle_object import WinHandle
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinHandle(ObjectTestCase, unittest.TestCase):

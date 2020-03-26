@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.domain_name_object as domainname_binding
-from cybox.common import ObjectProperties, String
+import stix111.cybox.bindings.domain_name_object as domainname_binding
+from stix111.cybox.common import ObjectProperties, String
 
 
 class DomainName(ObjectProperties):

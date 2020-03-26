@@ -2,9 +2,9 @@
 # See LICENSE.txt for complete terms.
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import HashList, StructuredText
-from cybox.common.vocabs import VocabField, ToolType
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import HashList, StructuredText
+from stix111.cybox.common.vocabs import VocabField, ToolType
 
 
 class ToolInformation(entities.Entity):

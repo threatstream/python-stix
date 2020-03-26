@@ -5,7 +5,7 @@ import sys
 
 from stix111.mixbox.binding_utils import *
 from . import cybox_common
-import cybox.objects
+import stix111.cybox.objects
 
 
 class ProductObjectType(cybox_common.ObjectPropertiesType):

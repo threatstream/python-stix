@@ -7,11 +7,11 @@ import unittest
 from stix111.mixbox.vendor import six
 from stix111.mixbox import u
 
-from cybox.common import (BaseProperty, DateTime, Integer, Long,
+from stix111.cybox.common import (BaseProperty, DateTime, Integer, Long,
         NonNegativeInteger, PositiveInteger, String, UnsignedInteger,
         UnsignedLong, BINDING_CLASS_MAPPING, DEFAULT_DELIM)
-import cybox.test
-from cybox.utils import normalize_to_xml
+import stix111.cybox.test
+from stix111.cybox.utils import normalize_to_xml
 
 
 NUMERIC_TYPES = (Integer, PositiveInteger, UnsignedInteger, NonNegativeInteger,
@@ -192,7 +192,7 @@ class TestEmptyNumerics(unittest.TestCase):
         # Integer, Long, UnsignedLong, PositiveInteger
 
         for cls in NUMERIC_TYPES:
-            # Rather than importing from cybox.bindings directly, just
+            # Rather than importing from stix111.cybox.bindings directly, just
             # reference the corresponding _binding_class.
             binding_obj = cls._binding_class()
 

@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.gui_window_object as gui_window_binding
-from cybox.objects.gui_object import GUI
-from cybox.common import String
+import stix111.cybox.bindings.gui_window_object as gui_window_binding
+from stix111.cybox.objects.gui_object import GUI
+from stix111.cybox.common import String
 
 
 class GUIWindow(GUI):

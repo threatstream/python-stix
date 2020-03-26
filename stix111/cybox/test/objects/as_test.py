@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.as_object import AutonomousSystem
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.as_object import AutonomousSystem
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestAccount(ObjectTestCase, unittest.TestCase):

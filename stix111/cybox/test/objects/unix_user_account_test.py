@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.unix_user_account_object import UnixUserAccount
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.unix_user_account_object import UnixUserAccount
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestUnixUserAccount(ObjectTestCase, unittest.TestCase):

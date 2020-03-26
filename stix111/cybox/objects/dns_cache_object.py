@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.dns_cache_object as dns_cache_binding
-from cybox.common import ObjectProperties, PositiveInteger
-from cybox.objects.dns_record_object import DNSRecord
+import stix111.cybox.bindings.dns_cache_object as dns_cache_binding
+from stix111.cybox.common import ObjectProperties, PositiveInteger
+from stix111.cybox.objects.dns_record_object import DNSRecord
 
 
 class DNSCacheEntry(entities.Entity):

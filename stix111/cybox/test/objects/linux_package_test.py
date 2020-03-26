@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.linux_package_object import LinuxPackage
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.linux_package_object import LinuxPackage
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestLinuxPackage(ObjectTestCase, unittest.TestCase):

@@ -9,7 +9,7 @@ from stix111.mixbox import idgen
 import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_package as package_binding
-from cybox.core import ActionReference
+from stix111.cybox.core import ActionReference
 
 class ActionEquivalence(stix111.maec.Entity):
     _binding = package_binding

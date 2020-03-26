@@ -442,7 +442,7 @@ class MeasureSourceType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CIQAddress3.0InstanceType":
-                    import cybox.bindings.extensions.location.ciq_address_3_0 as ciq_address_binding
+                    import stix111.cybox.bindings.extensions.location.ciq_address_3_0 as ciq_address_binding
                     obj_ = ciq_address_binding.CIQAddress3_0InstanceType.factory()
             else:
                 obj_ = LocationType.factory()
@@ -505,7 +505,7 @@ class MeasureSourceType(GeneratedsSuper):
                     type_name_ = type_names_[1]
 
                 if type_name_ == "CIQAddress3.0InstanceType":
-                    import cybox.bindings.extensions.location.ciq_address_3_0 as ciq_address_binding
+                    import stix111.cybox.bindings.extensions.location.ciq_address_3_0 as ciq_address_binding
                     obj_ = ciq_address_binding.CIQAddress3_0InstanceType.factory()
             else:
                 obj_ = LocationType.factory()

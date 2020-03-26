@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.address_object import Address
-from cybox.objects.arp_cache_object import ARPCache
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.arp_cache_object import ARPCache
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestARPCache(ObjectTestCase, unittest.TestCase):

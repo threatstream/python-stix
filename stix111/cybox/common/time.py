@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import DateTimeWithPrecision
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import DateTimeWithPrecision
 
 
 class Time(entities.Entity):

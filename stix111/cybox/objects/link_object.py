@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.link_object as link_binding
-from cybox.objects.uri_object import URI
-from cybox.common import String
+import stix111.cybox.bindings.link_object as link_binding
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.common import String
 
 
 class Link(URI):

@@ -3,11 +3,11 @@
 
 import unittest
 
-from cybox.objects.win_driver_object import WinDriver
+from stix111.cybox.objects.win_driver_object import WinDriver
 
-from cybox.compat import long
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinDriver(ObjectTestCase, unittest.TestCase):

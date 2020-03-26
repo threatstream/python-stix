@@ -4,8 +4,8 @@
 from datetime import datetime
 import unittest
 
-from cybox.core import Observable, ObservableComposition
-from cybox.objects.file_object import File
+from stix111.cybox.core import Observable, ObservableComposition
+from stix111.cybox.objects.file_object import File
 import stix111.mixbox.typedlist
 from stix111.mixbox.vendor.six import text_type
 

@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import Property
-from cybox.core import Action, Event, Object
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import Property
+from stix111.cybox.core import Action, Event, Object
 
 
 class EventPool(entities.Entity):

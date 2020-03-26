@@ -4,7 +4,7 @@
 from stix111.mixbox import fields
 
 # external
-from cybox.core import Observables
+from stix111.cybox.core import Observables
 
 # internal
 import stix111

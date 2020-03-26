@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.as_object as as_binding
-from cybox.common import NonNegativeInteger, ObjectProperties, String
+import stix111.cybox.bindings.as_object as as_binding
+from stix111.cybox.common import NonNegativeInteger, ObjectProperties, String
 
 
 class AutonomousSystem(ObjectProperties):

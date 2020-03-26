@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.network_connection_object as network_connection_binding
-from cybox.common import ObjectProperties, String, DateTime
-from cybox.objects.socket_address_object import SocketAddress
-from cybox.objects.http_session_object import HTTPSession
-from cybox.objects.dns_query_object import DNSQuery
+import stix111.cybox.bindings.network_connection_object as network_connection_binding
+from stix111.cybox.common import ObjectProperties, String, DateTime
+from stix111.cybox.objects.socket_address_object import SocketAddress
+from stix111.cybox.objects.http_session_object import HTTPSession
+from stix111.cybox.objects.dns_query_object import DNSQuery
 
 
 class Layer7Connections(entities.Entity):

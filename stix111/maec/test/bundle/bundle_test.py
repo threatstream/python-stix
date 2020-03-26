@@ -3,10 +3,10 @@
 
 import unittest
 
-from cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test import EntityTestCase, round_trip
 from stix111.maec.bundle.bundle import Bundle
 from stix111.maec.bundle.malware_action import MalwareAction
-from cybox.core import Object
+from stix111.cybox.core import Object
 from stix111.maec.bundle.behavior import Behavior
 from stix111.maec.bundle.candidate_indicator import CandidateIndicator
 

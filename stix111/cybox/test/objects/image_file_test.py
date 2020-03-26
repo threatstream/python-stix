@@ -5,11 +5,11 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.image_file_object import ImageFile
+from stix111.cybox.objects.image_file_object import ImageFile
 
-from cybox.common import Hash
-from cybox.compat import long
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.common import Hash
+from stix111.cybox.compat import long
+from stix111.cybox.test.objects import ObjectTestCase
 
 class TestImageFile(ObjectTestCase, unittest.TestCase):
     object_type = "ImageFileObjectType"

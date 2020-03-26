@@ -4,8 +4,8 @@
 import unittest
 import uuid
 
-from cybox.objects.dns_query_object import DNSQuestion
-from cybox.test import EntityTestCase
+from stix111.cybox.objects.dns_query_object import DNSQuestion
+from stix111.cybox.test import EntityTestCase
 
 
 class TestQuestion(EntityTestCase, unittest.TestCase):

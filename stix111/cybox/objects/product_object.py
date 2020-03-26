@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.product_object as product_binding
-from cybox.common import ObjectProperties, String
-from cybox.common.object_properties import ObjectPropertiesFactory
+import stix111.cybox.bindings.product_object as product_binding
+from stix111.cybox.common import ObjectProperties, String
+from stix111.cybox.common.object_properties import ObjectPropertiesFactory
 
 
 class Product(ObjectProperties):

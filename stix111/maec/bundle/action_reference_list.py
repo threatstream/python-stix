@@ -3,7 +3,7 @@
 #Copyright (c) 2018, The MITRE Corporation
 #All rights reserved
 
-from cybox.core import ActionReference
+from stix111.cybox.core import ActionReference
 
 import stix111.maec
 from . import _namespace

@@ -6,10 +6,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.bindings.cybox_core import parseString
-from cybox.core import Action, ActionRelationship
-from cybox.common import VocabString
-from cybox.test import EntityTestCase, round_trip
+from stix111.cybox.bindings.cybox_core import parseString
+from stix111.cybox.core import Action, ActionRelationship
+from stix111.cybox.common import VocabString
+from stix111.cybox.test import EntityTestCase, round_trip
 
 
 class TestAction(EntityTestCase, unittest.TestCase):

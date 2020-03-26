@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.win_kernel_hook_object import WinKernelHook
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_kernel_hook_object import WinKernelHook
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinKernelHook(ObjectTestCase, unittest.TestCase):

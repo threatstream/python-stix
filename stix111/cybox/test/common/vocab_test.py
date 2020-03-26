@@ -6,12 +6,12 @@ import unittest
 from stix111.mixbox import entities
 from stix111.mixbox import u
 
-from cybox.bindings import cybox_common as common_binding
-from cybox.common import HashName, VocabString
-from cybox.common.vocabs import VocabField
-from cybox.common.vocabs import HashName as HashNameVocab  # Backwards compatibility
+from stix111.cybox.bindings import cybox_common as common_binding
+from stix111.cybox.common import HashName, VocabString
+from stix111.cybox.common.vocabs import VocabField
+from stix111.cybox.common.vocabs import HashName as HashNameVocab  # Backwards compatibility
 
-import cybox.test
+import stix111.cybox.test
 
 
 class MultipleHash(entities.Entity):
@@ -115,7 +115,7 @@ class TestVocabString(unittest.TestCase):
         cybox.test.assert_equal_ignore(vocab_dict, vocab_dict2, ['xsi:type'])
 
     def test_add_bad_value(self):
-        from cybox.common import Hash
+        from stix111.cybox.common import Hash
 
         h = Hash()
         self.assertRaises(
@@ -127,8 +127,8 @@ class TestVocabString(unittest.TestCase):
         )
 
     def test_add_vocabstring(self):
-        from cybox.common import Hash
-        from cybox.common.vocabs import ActionName
+        from stix111.cybox.common import Hash
+        from stix111.cybox.common.vocabs import ActionName
 
         action = ActionName(ActionName.TERM_ADD_USER)
         h = Hash()
@@ -137,18 +137,18 @@ class TestVocabString(unittest.TestCase):
         self.assertEqual(action, h.type_)
 
     def test_to_dict(self):
-        from cybox.common.vocabs import ActionName
+        from stix111.cybox.common.vocabs import ActionName
         d = ActionName(ActionName.TERM_ADD_USER).to_dict()
         self.assertEqual(d['xsi:type'], ActionName._XSI_TYPE)
         self.assertEqual(d['value'], ActionName.TERM_ADD_USER)
 
     def test_vocab_is_plain_false(self):
-        from cybox.common.vocabs import ActionName
+        from stix111.cybox.common.vocabs import ActionName
         action = ActionName(ActionName.TERM_ADD_USER)
         self.assertFalse(action.is_plain())
 
     def test_vocab_is_plain_true(self):
-        from cybox.common.vocabs import VocabString
+        from stix111.cybox.common.vocabs import VocabString
         vocab = VocabString(value="foo")
         self.assertTrue(vocab.is_plain())
 

@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import StructuredText, MeasureSource, Location
-from cybox.common.vocabs import EventType, VocabField
-from cybox.core import Actions, Frequency
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import StructuredText, MeasureSource, Location
+from stix111.cybox.common.vocabs import EventType, VocabField
+from stix111.cybox.core import Actions, Frequency
 
 
 class Event(entities.Entity):

@@ -2,9 +2,9 @@
 # See LICENSE.txt for complete terms.
 
 import unittest
-import cybox.bindings.cybox_common as common_binding
-import cybox.bindings.mutex_object as mutex_binding
-from cybox.objects.mutex_object import Mutex
+import stix111.cybox.bindings.cybox_common as common_binding
+import stix111.cybox.bindings.mutex_object as mutex_binding
+from stix111.cybox.objects.mutex_object import Mutex
 
 
 class MutexTest(unittest.TestCase):

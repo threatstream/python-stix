@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.address_object import Address, EmailAddress
-import cybox.test
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.address_object import Address, EmailAddress
+import stix111.cybox.test
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestAddress(ObjectTestCase, unittest.TestCase):

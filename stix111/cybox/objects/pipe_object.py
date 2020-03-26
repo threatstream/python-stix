@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.pipe_object as pipe_binding
-from cybox.common import ObjectProperties, String
+import stix111.cybox.bindings.pipe_object as pipe_binding
+from stix111.cybox.common import ObjectProperties, String
 
 
 class Pipe(ObjectProperties):

@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.http_session_object as http_session_binding
-from cybox.objects.uri_object import URI
-from cybox.objects.address_object import EmailAddress
-from cybox.objects.port_object import Port
-from cybox.common import ObjectProperties, String, DateTime, PositiveInteger, Integer
+import stix111.cybox.bindings.http_session_object as http_session_binding
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.objects.address_object import EmailAddress
+from stix111.cybox.objects.port_object import Port
+from stix111.cybox.common import ObjectProperties, String, DateTime, PositiveInteger, Integer
 
 
 class HTTPRequestLine(entities.Entity):

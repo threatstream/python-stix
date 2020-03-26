@@ -3,21 +3,21 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import StructuredText, MeasureSource
-from cybox.common.vocabs import VocabField
-from cybox.core import ActionReference, AssociatedObject, Frequency
+import stix111.cybox
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import StructuredText, MeasureSource
+from stix111.cybox.common.vocabs import VocabField
+from stix111.cybox.core import ActionReference, AssociatedObject, Frequency
 
-from cybox.common.vocabs import ActionName, ActionType
-from cybox.common.vocabs import ActionArgumentName as ArgumentName
+from stix111.cybox.common.vocabs import ActionName, ActionType
+from stix111.cybox.common.vocabs import ActionArgumentName as ArgumentName
 
 
 class ActionAliases(entities.EntityList):
     _binding = core_binding
     _binding_class = core_binding.ActionAliasesType
     _namespace = 'http://cybox.mitre.org/cybox-2'
-    action_alias = fields.TypedField("Action_Alias", cybox.Unicode, multiple=True)
+    action_alias = fields.TypedField("Action_Alias", stix111.cybox.Unicode, multiple=True)
 
 
 class ActionArgument(entities.Entity):

@@ -3,7 +3,7 @@
 
 import unittest
 
-from cybox.objects import _ObjectMetadata, UnknownObjectType
+from stix111.cybox.objects import _ObjectMetadata, UnknownObjectType
 
 
 class ObjectTypeTest(unittest.TestCase):

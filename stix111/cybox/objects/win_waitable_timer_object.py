@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_waitable_timer_object as win_waitable_timer_binding
-from cybox.common import String, ObjectProperties
+import stix111.cybox.bindings.win_waitable_timer_object as win_waitable_timer_binding
+from stix111.cybox.common import String, ObjectProperties
 
 
 class WinWaitableTimer(ObjectProperties):

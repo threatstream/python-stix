@@ -9,8 +9,8 @@ import copy
 
 from stix111.mixbox import entities
 
-from cybox.core import RelatedObject, AssociatedObject
-from cybox.common.properties import BaseProperty
+from stix111.cybox.core import RelatedObject, AssociatedObject
+from stix111.cybox.common.properties import BaseProperty
 from stix111.mixbox.vendor.six import iteritems
 
 

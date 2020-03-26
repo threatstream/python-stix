@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.address_object import Address
-from cybox.objects.http_session_object import HTTPSession
-from cybox.objects.uri_object import URI
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.http_session_object import HTTPSession
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestHTTPSession(ObjectTestCase, unittest.TestCase):

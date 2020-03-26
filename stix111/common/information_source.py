@@ -3,8 +3,8 @@
 
 # external
 from stix111.mixbox import fields
-import cybox.common
-from cybox.common.tools import ToolInformationList
+import stix111.cybox.common
+from stix111.cybox.common.tools import ToolInformationList
 
 # internal
 import stix111
@@ -16,7 +16,6 @@ from .references import References
 from .identity import Identity, IdentityFactory
 from .structured_text import StructuredText
 
-
 class InformationSource(stix111.Entity):
     _binding = stix_common_binding
     _binding_class = stix_common_binding.InformationSourceType
@@ -25,7 +24,7 @@ class InformationSource(stix111.Entity):
     identity = fields.TypedField("Identity", type_=Identity, factory=IdentityFactory)
     description = fields.TypedField("Description", StructuredText)
     contributing_sources = fields.TypedField("Contributing_Sources", type_="stix111.common.information_source.ContributingSources")
-    time = fields.TypedField("Time", cybox.common.Time)
+    time = fields.TypedField("Time", stix111.cybox.common.Time)
     roles = VocabField("Role", multiple=True, key_name="roles")
     tools = fields.TypedField("Tools", ToolInformationList)
     references = fields.TypedField("References", References)

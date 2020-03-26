@@ -1,12 +1,12 @@
 # Copyright (c) 2017, The MITRE Corporation. All rights reserved.
 # See LICENSE.txt for complete terms.
 
-from cybox.core import Object
-from cybox.common.vocabs import VocabField
-import cybox.bindings.cybox_core as core_binding
+from stix111.cybox.core import Object
+from stix111.cybox.common.vocabs import VocabField
+import stix111.cybox.bindings.cybox_core as core_binding
 
 # backwards compatibility
-from cybox.common.vocabs import ActionObjectAssociationType as AssociationType  # noqa
+from stix111.cybox.common.vocabs import ActionObjectAssociationType as AssociationType  # noqa
 
 
 class AssociatedObject(Object):

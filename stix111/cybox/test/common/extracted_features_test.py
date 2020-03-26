@@ -5,13 +5,13 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import ExtractedFeatures
-from cybox.objects.address_object import Address
-from cybox.test import EntityTestCase
+from stix111.cybox.common import ExtractedFeatures
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.test import EntityTestCase
 
 # Need to do this so the binding class is registered.
-import cybox.bindings.cybox_common
-from cybox.bindings.address_object import AddressObjectType
+import stix111.cybox.bindings.cybox_common
+from stix111.cybox.bindings.address_object import AddressObjectType
 setattr(cybox.bindings.cybox_common, "AddressObjectType", AddressObjectType)
 
 class TestExtractedFeatures(EntityTestCase, unittest.TestCase):

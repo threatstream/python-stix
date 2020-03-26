@@ -4,8 +4,8 @@
 import logging
 import unittest
 
-from cybox.core import ActionReference
-from cybox.test import EntityTestCase
+from stix111.cybox.core import ActionReference
+from stix111.cybox.test import EntityTestCase
 
 logger = logging.getLogger(__name__)
 

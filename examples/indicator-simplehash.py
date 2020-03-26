@@ -7,8 +7,8 @@ does NOT create an Indicator and instead will add the File Hash Observable
 to the top-level Observables collection found in the STIX Package.
 """
 # python-cybox
-from cybox.common import Hash
-from cybox.objects.file_object import File
+from stix111.cybox.common import Hash
+from stix111.cybox.objects.file_object import File
 
 # python-stix
 from stix111.core import STIXPackage, STIXHeader

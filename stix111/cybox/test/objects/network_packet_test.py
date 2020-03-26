@@ -5,14 +5,14 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.bindings.cybox_core import parseString
-from cybox.core import Observables
-from cybox.objects.address_object import Address
-from cybox.objects.network_packet_object import (ARP, EthernetInterface,
+from stix111.cybox.bindings.cybox_core import parseString
+from stix111.cybox.core import Observables
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.network_packet_object import (ARP, EthernetInterface,
         ICMPv4Packet, ICMPv6Packet, IPv4Packet, IPv6Packet, NDP, NDPPrefixInfo,
         NDPLinkAddr, NetworkPacket, TCP, UDP)
-from cybox.test import EntityTestCase
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestNetworkPacket(ObjectTestCase, unittest.TestCase):

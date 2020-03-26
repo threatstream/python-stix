@@ -3,9 +3,9 @@
 
 import unittest
 
-from cybox.objects.pdf_file_object import PDFFile
+from stix111.cybox.objects.pdf_file_object import PDFFile
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestPDFFileInstance(ObjectTestCase, unittest.TestCase):

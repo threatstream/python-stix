@@ -10,7 +10,7 @@ from stix111.mixbox.binding_utils import ExternalEncoding
 from stix111.mixbox.entities import Entity
 from stix111.mixbox.vendor import six
 
-import cybox.utils
+import stix111.cybox.utils
 
 logger = logging.getLogger(__name__)
 

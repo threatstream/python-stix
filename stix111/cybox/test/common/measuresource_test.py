@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import MeasureSource
-from cybox.test import EntityTestCase
+from stix111.cybox.common import MeasureSource
+from stix111.cybox.test import EntityTestCase
 
 
 class TestMeasureSource(EntityTestCase, unittest.TestCase):

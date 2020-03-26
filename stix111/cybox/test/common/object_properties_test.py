@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import ObjectProperties, Property
-from cybox.common.object_properties import ObjectPropertiesFactory
-from cybox.objects.address_object import Address
-from cybox.test import EntityTestCase
+from stix111.cybox.common import ObjectProperties, Property
+from stix111.cybox.common.object_properties import ObjectPropertiesFactory
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.test import EntityTestCase
 
 
 class TestProperty(EntityTestCase, unittest.TestCase):

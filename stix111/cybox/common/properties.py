@@ -3,11 +3,11 @@
 from stix111.mixbox import entities, fields
 from stix111.mixbox.vendor import six
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common.attribute_groups import PatternFieldGroup
-from cybox.common.datetimewithprecision import (validate_date_precision,
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common.attribute_groups import PatternFieldGroup
+from stix111.cybox.common.datetimewithprecision import (validate_date_precision,
     validate_time_precision, validate_datetime_precision)
-from cybox.utils import normalize_to_xml, denormalize_from_xml
+from stix111.cybox.utils import normalize_to_xml, denormalize_from_xml
 
 DATE_PRECISION_VALUES = ("year", "month", "day")
 TIME_PRECISION_VALUES = ("hour", "minute", "second")

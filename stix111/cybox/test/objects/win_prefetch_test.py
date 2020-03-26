@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_prefetch_object import WinPrefetch
+from stix111.cybox.objects.win_prefetch_object import WinPrefetch
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinPrefetch(ObjectTestCase, unittest.TestCase):

@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common.object_properties import ObjectPropertiesFactory, ObjectProperties
-from cybox.common import (Personnel, PlatformSpecification, StructuredText,
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common.object_properties import ObjectPropertiesFactory, ObjectProperties
+from stix111.cybox.common import (Personnel, PlatformSpecification, StructuredText,
     Time, ToolInformationList, ToolType)
-from cybox.common.vocabs import InformationSourceType, VocabField
+from stix111.cybox.common.vocabs import InformationSourceType, VocabField
 
 
 class MeasureSource(entities.Entity):

@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.volume_object as volume_binding
-from cybox.common import ObjectProperties, String, DateTime, UnsignedLong, PositiveInteger, UnsignedInteger
+import stix111.cybox.bindings.volume_object as volume_binding
+from stix111.cybox.common import ObjectProperties, String, DateTime, UnsignedLong, PositiveInteger, UnsignedInteger
 
 
 class FileSystemFlagList(entities.EntityList):

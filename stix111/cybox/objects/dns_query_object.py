@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.dns_query_object as dns_query_binding
-from cybox.common import DateTime, ObjectProperties, String, HexBinary
-from cybox.objects.uri_object import URI
-from cybox.objects.dns_record_object import DNSRecord
+import stix111.cybox.bindings.dns_query_object as dns_query_binding
+from stix111.cybox.common import DateTime, ObjectProperties, String, HexBinary
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.objects.dns_record_object import DNSRecord
 
 
 class DNSResourceRecords(entities.EntityList):

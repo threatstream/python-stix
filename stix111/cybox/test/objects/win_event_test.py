@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_event_object import WinEvent
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_event_object import WinEvent
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinEvent(ObjectTestCase, unittest.TestCase):

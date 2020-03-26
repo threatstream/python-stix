@@ -5,15 +5,15 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.file_object import File, FilePath, Packer, SymLinksList
+from stix111.cybox.objects.file_object import File, FilePath, Packer, SymLinksList
 
-from cybox.common import Hash, String
-from cybox.compat import long
-import cybox.test
-from cybox.test import EntityTestCase
-from cybox.test.common.hash_test import (EMPTY_MD5, EMPTY_SHA1, EMPTY_SHA224,
+from stix111.cybox.common import Hash, String
+from stix111.cybox.compat import long
+import stix111.cybox.test
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.common.hash_test import (EMPTY_MD5, EMPTY_SHA1, EMPTY_SHA224,
         EMPTY_SHA256, EMPTY_SHA384, EMPTY_SHA512)
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestFilePath(unittest.TestCase):

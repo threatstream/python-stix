@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_event_log_object as win_event_log_binding
-from cybox.common import ObjectProperties, String, Base64Binary, DateTime, Long 
+import stix111.cybox.bindings.win_event_log_object as win_event_log_binding
+from stix111.cybox.common import ObjectProperties, String, Base64Binary, DateTime, Long 
 
 
 class UnformattedMessageList(entities.EntityList):

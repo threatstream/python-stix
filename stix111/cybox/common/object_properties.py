@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-import cybox.objects
+import stix111.cybox.bindings.cybox_common as common_binding
+import stix111.cybox.objects
 
 from .properties import String
 
@@ -46,7 +46,7 @@ class ObjectPropertiesFactory(entities.EntityFactory):
     def entity_class(cls, key):
         if not key:
             raise ValueError("Must provide an xsi:type key for ObjectProperties.")
-        return cybox.objects.get_class_for_object_type(key)
+        return stix111.cybox.objects.get_class_for_object_type(key)
 
 
 class ObjectProperties(entities.Entity):
@@ -65,17 +65,17 @@ class ObjectProperties(entities.Entity):
 
     @property
     def parent(self):
-        import cybox.core
+        import stix111.cybox.core
 
         if not self._parent:
-            self._parent = cybox.core.Object(self)
+            self._parent = stix111.cybox.core.Object(self)
         return self._parent
 
     @parent.setter
     def parent(self, value):
-        import cybox.core
+        import stix111.cybox.core
 
-        if value and not isinstance(value, cybox.core.Object):
+        if value and not isinstance(value, stix111.cybox.core.Object):
             raise ValueError("Must be an Object")
         self._parent = value
 

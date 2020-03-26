@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.pdf_file_object as pdf_file_binding
-from cybox.objects.file_object import File
-from cybox.common import (DateTime, HashList, PositiveInteger, String,
+import stix111.cybox.bindings.pdf_file_object as pdf_file_binding
+from stix111.cybox.objects.file_object import File
+from stix111.cybox.common import (DateTime, HashList, PositiveInteger, String,
                           NonNegativeInteger, Double, HexBinary, Integer)
 
 

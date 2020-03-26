@@ -8,8 +8,8 @@ from stix111.mixbox import entities, fields
 from stix111.mixbox.vendor import six
 from stix111.mixbox.compat import xor
 
-import cybox.bindings.artifact_object as artifact_binding
-from cybox.common import ObjectProperties, String, HashList
+import stix111.cybox.bindings.artifact_object as artifact_binding
+from stix111.cybox.common import ObjectProperties, String, HashList
 
 _COMPRESSION_EXT_MAP = {}   # Maps compression_mechanism property to implementation/extension classes
 _ENCRYPTION_EXT_MAP = {}    # Maps encryption_mechanism property to implementation/extension classes

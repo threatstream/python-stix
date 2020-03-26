@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.memory_object as memory_binding
-from cybox.common import (ExtractedFeatures, HashList, HexBinary,
+import stix111.cybox.bindings.memory_object as memory_binding
+from stix111.cybox.common import (ExtractedFeatures, HashList, HexBinary,
         ObjectProperties, String, UnsignedLong)
 
 

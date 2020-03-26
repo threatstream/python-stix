@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_task_object as win_task_binding
-from cybox.common import (Base64Binary, DateTime, Duration, HashList, Long,
+import stix111.cybox.bindings.win_task_object as win_task_binding
+from stix111.cybox.common import (Base64Binary, DateTime, Duration, HashList, Long,
         ObjectProperties, String, UnsignedLong)
-from cybox.objects.email_message_object import EmailMessage
+from stix111.cybox.objects.email_message_object import EmailMessage
 
 
 class Trigger(entities.Entity):

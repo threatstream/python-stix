@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_user_account_object as win_user_binding
-from cybox.common import String
-from cybox.objects.user_account_object import (Group, GroupList, Privilege,
+import stix111.cybox.bindings.win_user_account_object as win_user_binding
+from stix111.cybox.common import String
+from stix111.cybox.objects.user_account_object import (Group, GroupList, Privilege,
                                                PrivilegeList, UserAccount)
 
 

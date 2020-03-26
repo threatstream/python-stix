@@ -3,10 +3,10 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_semaphore_object as semaphore_binding
-from cybox.common import String
-from cybox.objects.win_handle_object import WinHandle
-from cybox.objects.semaphore_object import Semaphore
+import stix111.cybox.bindings.win_semaphore_object as semaphore_binding
+from stix111.cybox.common import String
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.objects.semaphore_object import Semaphore
 
 
 class WinSemaphore(Semaphore):

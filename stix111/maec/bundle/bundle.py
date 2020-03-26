@@ -6,8 +6,8 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-from cybox.core import Object
-from cybox.utils.normalize import normalize_object_properties
+from stix111.cybox.core import Object
+from stix111.cybox.utils.normalize import normalize_object_properties
 
 import stix111.maec
 import stix111.maec.bindings.maec_bundle as bundle_binding

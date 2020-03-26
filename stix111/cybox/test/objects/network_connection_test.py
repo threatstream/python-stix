@@ -5,11 +5,11 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.address_object import Address
-from cybox.objects.network_connection_object import (Layer7Connections,
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.network_connection_object import (Layer7Connections,
         NetworkConnection)
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestNetworkConnection(ObjectTestCase, unittest.TestCase):

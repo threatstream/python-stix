@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.core import Frequency
-from cybox.test import EntityTestCase
+from stix111.cybox.core import Frequency
+from stix111.cybox.test import EntityTestCase
 
 
 class TestFrequency(EntityTestCase, unittest.TestCase):

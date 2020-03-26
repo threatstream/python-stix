@@ -12,13 +12,13 @@ In other words, do this:
 
 .. code-block:: python
 
-    from cybox.common import String
+    from stix111.cybox.common import String
 
 rather than:
 
 .. code-block:: python
 
-    from cybox.common.properties import String
+    from stix111.cybox.common.properties import String
 
 """
 

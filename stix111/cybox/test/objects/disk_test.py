@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.disk_object import Disk
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.disk_object import Disk
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestDisk(ObjectTestCase, unittest.TestCase):

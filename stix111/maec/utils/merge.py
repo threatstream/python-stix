@@ -10,8 +10,8 @@ from stix111.mixbox import idgen
 from stix111.mixbox.namespaces import Namespace
 from stix111.mixbox.vendor.six import iteritems
 
-from cybox.core import Object
-from cybox.common import HashList
+from stix111.cybox.core import Object
+from stix111.cybox.common import HashList
 
 import stix111.maec
 from stix111.maec.package import (Package, MalwareSubject, MalwareConfigurationDetails,

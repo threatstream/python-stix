@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.device_object import Device
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.device_object import Device
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestAccount(ObjectTestCase, unittest.TestCase):

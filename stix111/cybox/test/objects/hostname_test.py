@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.hostname_object import Hostname
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.hostname_object import Hostname
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestHostname(ObjectTestCase, unittest.TestCase):

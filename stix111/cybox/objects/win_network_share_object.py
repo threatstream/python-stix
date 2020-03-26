@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_network_share_object as win_network_share_binding
-from cybox.common import ObjectProperties, String, NonNegativeInteger
+import stix111.cybox.bindings.win_network_share_object as win_network_share_binding
+from stix111.cybox.common import ObjectProperties, String, NonNegativeInteger
 
 
 class WinNetworkShare(ObjectProperties):

@@ -10,7 +10,7 @@ import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_bundle as bundle_binding
 from stix111.maec.bundle import BehaviorReference
-from cybox.common import VocabString, String
+from stix111.cybox.common import VocabString, String
 
 
 class CapabilityObjectiveReference(stix111.maec.Entity):

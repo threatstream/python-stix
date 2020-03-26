@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.code_object import Code
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.code_object import Code
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestCode(ObjectTestCase, unittest.TestCase):

@@ -8,11 +8,11 @@ from zlib import compress
 from stix111.mixbox.vendor import six
 from stix111.mixbox import u
 
-from cybox.objects.artifact_object import (Artifact, Base64Encoding,
+from stix111.cybox.objects.artifact_object import (Artifact, Base64Encoding,
                                            Bz2Compression, Encoding, EncodingFactory, Packaging, RawArtifact,
                                            XOREncryption, ZlibCompression)
-from cybox.test import round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestRawArtifact(unittest.TestCase):

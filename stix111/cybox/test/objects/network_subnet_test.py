@@ -3,10 +3,10 @@
 
 import unittest
 
-from cybox.objects.network_subnet_object import NetworkSubnet
+from stix111.cybox.objects.network_subnet_object import NetworkSubnet
 
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestNetworkSubnet(ObjectTestCase, unittest.TestCase):

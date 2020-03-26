@@ -3,13 +3,13 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_process_object as win_process_binding
-from cybox.common import String, Integer, PositiveInteger
-from cybox.objects.process_object import Process
-from cybox.objects.win_handle_object import WinHandleList
-from cybox.objects.win_handle_object import WinHandle
-from cybox.objects.win_thread_object import WinThread
-from cybox.objects.memory_object import Memory
+import stix111.cybox.bindings.win_process_object as win_process_binding
+from stix111.cybox.common import String, Integer, PositiveInteger
+from stix111.cybox.objects.process_object import Process
+from stix111.cybox.objects.win_handle_object import WinHandleList
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.objects.win_thread_object import WinThread
+from stix111.cybox.objects.memory_object import Memory
 
 
 class MemorySectionList(entities.EntityList):

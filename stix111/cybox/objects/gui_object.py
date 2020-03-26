@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.gui_object as gui_binding
-from cybox.common import ObjectProperties, Integer
+import stix111.cybox.bindings.gui_object as gui_binding
+from stix111.cybox.common import ObjectProperties, Integer
 
 
 class GUI(ObjectProperties):

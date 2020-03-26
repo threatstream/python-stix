@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_waitable_timer_object import WinWaitableTimer
+from stix111.cybox.objects.win_waitable_timer_object import WinWaitableTimer
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinWaitableTimer(ObjectTestCase, unittest.TestCase):

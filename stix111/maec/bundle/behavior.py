@@ -9,10 +9,10 @@ from stix111.mixbox import idgen
 import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_bundle as bundle_binding
-from cybox.core.action_reference import ActionReference
-from cybox.common.measuresource import MeasureSource
-from cybox.common.platform_specification import PlatformSpecification
-from cybox.objects.code_object import Code
+from stix111.cybox.core.action_reference import ActionReference
+from stix111.cybox.common.measuresource import MeasureSource
+from stix111.cybox.common.platform_specification import PlatformSpecification
+from stix111.cybox.objects.code_object import Code
 
 class BehavioralActionEquivalenceReference(stix111.maec.Entity):
     _binding = bundle_binding

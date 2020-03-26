@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_memory_page_region_object as win_memory_page_region_binding
-from cybox.common import String, HashList, UnsignedLong, HexBinary, ExtractedFeatures
-from cybox.objects.memory_object import Memory
+import stix111.cybox.bindings.win_memory_page_region_object as win_memory_page_region_binding
+from stix111.cybox.common import String, HashList, UnsignedLong, HexBinary, ExtractedFeatures
+from stix111.cybox.objects.memory_object import Memory
 
 
 class WinMemoryPageRegion(Memory):

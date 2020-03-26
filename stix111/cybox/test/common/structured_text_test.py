@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox.vendor.six import text_type, u
 
-from cybox.common import StructuredText
-import cybox.test
+from stix111.cybox.common import StructuredText
+import stix111.cybox.test
 
 
 class TestStructuredText(cybox.test.EntityTestCase, unittest.TestCase):

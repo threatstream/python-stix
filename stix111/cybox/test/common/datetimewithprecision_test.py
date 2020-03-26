@@ -4,8 +4,8 @@
 from datetime import date, datetime
 import unittest
 
-from cybox.common import DateWithPrecision, DateTimeWithPrecision
-import cybox.test
+from stix111.cybox.common import DateWithPrecision, DateTimeWithPrecision
+import stix111.cybox.test
 
 
 class TestDateWithPrecision(cybox.test.EntityTestCase, unittest.TestCase):

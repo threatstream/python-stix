@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.semaphore_object as semaphore_binding
-from cybox.common import (ObjectProperties, String, UnsignedInteger,
+import stix111.cybox.bindings.semaphore_object as semaphore_binding
+from stix111.cybox.common import (ObjectProperties, String, UnsignedInteger,
                           PositiveInteger)
 
 

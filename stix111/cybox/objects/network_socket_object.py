@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.network_socket_object as network_socket_binding
-from cybox.objects.socket_address_object import SocketAddress
-from cybox.common import ObjectProperties, String, UnsignedInteger, NonNegativeInteger
+import stix111.cybox.bindings.network_socket_object as network_socket_binding
+from stix111.cybox.objects.socket_address_object import SocketAddress
+from stix111.cybox.common import ObjectProperties, String, UnsignedInteger, NonNegativeInteger
 
 
 class SocketOptions(entities.Entity):

@@ -3,10 +3,10 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_hook_object as win_hook_binding
-from cybox.objects.library_object import Library
-from cybox.objects.win_handle_object import WinHandle
-from cybox.common import ObjectProperties, String, NonNegativeInteger
+import stix111.cybox.bindings.win_hook_object as win_hook_binding
+from stix111.cybox.objects.library_object import Library
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.common import ObjectProperties, String, NonNegativeInteger
 
 
 class WinHook(ObjectProperties):

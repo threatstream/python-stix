@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.port_object import Port
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.port_object import Port
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestPort(ObjectTestCase, unittest.TestCase):

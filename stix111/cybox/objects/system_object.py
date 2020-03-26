@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.system_object as system_binding
-from cybox.common import PlatformSpecification, ObjectProperties, String, UnsignedLong, Date, DateTime, Duration, EnvironmentVariableList
-from cybox.common.properties import Time
-from cybox.objects.address_object import Address
+import stix111.cybox.bindings.system_object as system_binding
+from stix111.cybox.common import PlatformSpecification, ObjectProperties, String, UnsignedLong, Date, DateTime, Duration, EnvironmentVariableList
+from stix111.cybox.common.properties import Time
+from stix111.cybox.objects.address_object import Address
 
 
 class DHCPServerList(entities.EntityList):

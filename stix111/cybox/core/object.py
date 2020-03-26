@@ -2,13 +2,13 @@
 # See LICENSE.txt for complete terms.
 from stix111.mixbox import entities, fields, idgen
 
-import cybox
-import cybox.utils
-import cybox.bindings.cybox_core as core_binding
-from cybox.common import StructuredText
-from cybox.common.object_properties import ObjectPropertiesFactory, ObjectProperties
-from cybox.common.vocabs import VocabField
-from cybox.common.vocabs import ObjectRelationship as Relationship
+import stix111.cybox
+import stix111.cybox.utils
+import stix111.cybox.bindings.cybox_core as core_binding
+from stix111.cybox.common import StructuredText
+from stix111.cybox.common.object_properties import ObjectPropertiesFactory, ObjectProperties
+from stix111.cybox.common.vocabs import VocabField
+from stix111.cybox.common.vocabs import ObjectRelationship as Relationship
 
 
 _EXTERNAL_CLASSES = {}  # Maps xsi:type values to binding
@@ -41,7 +41,7 @@ def _modify_properties_parent(instance, value=None):
 
 def _cache_object(instance, value=None):
     if instance.id_:
-        cybox.utils.cache_put(instance)
+        stix111.cybox.utils.cache_put(instance)
 
 
 class Object(entities.Entity):
@@ -78,8 +78,8 @@ class Object(entities.Entity):
     state = VocabField("State")
     description = fields.TypedField("Description", StructuredText)
     properties = fields.TypedField("Properties", ObjectProperties, factory=ObjectPropertiesFactory, postset_hook=_modify_properties_parent)
-    domain_specific_object_properties = fields.TypedField("Domain_Specific_Object_Properties", "cybox.core.object.DomainSpecificObjectProperties", factory=ExternalTypeFactory)
-    related_objects = fields.TypedField("Related_Objects", "cybox.core.object.RelatedObjects")
+    domain_specific_object_properties = fields.TypedField("Domain_Specific_Object_Properties", "stix111.cybox.core.object.DomainSpecificObjectProperties", factory=ExternalTypeFactory)
+    related_objects = fields.TypedField("Related_Objects", "stix111.cybox.core.object.RelatedObjects")
 
     def __init__(self, properties=None, id_=None, idref=None):
         super(Object, self).__init__()

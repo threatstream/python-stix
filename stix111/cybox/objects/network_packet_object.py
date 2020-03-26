@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.network_packet_object as network_packet_binding
-from cybox.common import (DataSegment, HexBinary, Integer, ObjectProperties,
+import stix111.cybox.bindings.network_packet_object as network_packet_binding
+from stix111.cybox.common import (DataSegment, HexBinary, Integer, ObjectProperties,
         PositiveInteger, String, UnsignedInteger)
-from cybox.objects.address_object import Address
-from cybox.objects.port_object import Port
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.port_object import Port
 
 
 class TypeLength(entities.Entity):

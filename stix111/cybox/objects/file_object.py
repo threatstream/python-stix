@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.file_object as file_binding
-from cybox.common import (ByteRuns, DateTime, DigitalSignatureList, Double,
+import stix111.cybox.bindings.file_object as file_binding
+from stix111.cybox.common import (ByteRuns, DateTime, DigitalSignatureList, Double,
         ExtractedFeatures, HashList, HexBinary, ObjectProperties, String,
         UnsignedLong, Integer)
 

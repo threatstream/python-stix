@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_executable_file_object as win_executable_file_binding
-from cybox.common import (DateTime, DigitalSignature, Float, HashList,
+import stix111.cybox.bindings.win_executable_file_object as win_executable_file_binding
+from stix111.cybox.common import (DateTime, DigitalSignature, Float, HashList,
                           HexBinary, Integer, Long, NonNegativeInteger, String, PositiveInteger)
-from cybox.objects.win_file_object import WinFile
+from stix111.cybox.objects.win_file_object import WinFile
 
 
 class Entropy(entities.Entity):

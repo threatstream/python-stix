@@ -3,11 +3,11 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.dns_record_object as dns_record_binding
-from cybox.common import (Integer, HexBinary, ObjectProperties, String,
+import stix111.cybox.bindings.dns_record_object as dns_record_binding
+from stix111.cybox.common import (Integer, HexBinary, ObjectProperties, String,
         StructuredText, DateTime)
-from cybox.objects.address_object import Address
-from cybox.objects.uri_object import URI
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.uri_object import URI
 
 
 class DNSRecord(ObjectProperties):

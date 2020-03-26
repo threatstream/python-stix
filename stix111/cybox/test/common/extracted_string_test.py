@@ -7,8 +7,8 @@ import unittest
 from stix111.mixbox.vendor import six
 from stix111.mixbox import u
 
-from cybox.common import ExtractedString, Hash
-from cybox.test import EntityTestCase
+from stix111.cybox.common import ExtractedString, Hash
+from stix111.cybox.test import EntityTestCase
 
 STRING = u("This is a string")
 HEX_STRING = six.text_type(binascii.hexlify(STRING.encode("ascii")))

@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.gui_dialogbox_object as gui_dialogbox_binding
-from cybox.common import String
-from cybox.objects.gui_object import GUI
+import stix111.cybox.bindings.gui_dialogbox_object as gui_dialogbox_binding
+from stix111.cybox.common import String
+from stix111.cybox.objects.gui_object import GUI
 
 
 class GUIDialogbox(GUI):

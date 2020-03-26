@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.compat import long
-from cybox.objects.win_task_object import WinTask
-from cybox.test.common.hash_test import TEST_HASH_LIST
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.objects.win_task_object import WinTask
+from stix111.cybox.test.common.hash_test import TEST_HASH_LIST
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinTask(ObjectTestCase, unittest.TestCase):

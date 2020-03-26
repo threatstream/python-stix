@@ -5,7 +5,7 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_core as core_binding
+import stix111.cybox.bindings.cybox_core as core_binding
 
 
 class ActionReference(entities.Entity):

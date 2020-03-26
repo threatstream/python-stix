@@ -3,10 +3,10 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_thread_object as win_thread_binding
-from cybox.common import (DateTime, HexBinary, NonNegativeInteger,
+import stix111.cybox.bindings.win_thread_object as win_thread_binding
+from stix111.cybox.common import (DateTime, HexBinary, NonNegativeInteger,
         ObjectProperties, String, UnsignedInteger)
-from cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.objects.win_handle_object import WinHandle
 
 
 class WinThread(ObjectProperties):

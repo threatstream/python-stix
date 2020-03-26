@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.account_object as account_binding
-from cybox.common import ObjectProperties, String, DateTime
-from cybox.common.vocabs import VocabField
+import stix111.cybox.bindings.account_object as account_binding
+from stix111.cybox.common import ObjectProperties, String, DateTime
+from stix111.cybox.common.vocabs import VocabField
 
 
 class StructuredAuthenticationMechanism(entities.Entity):

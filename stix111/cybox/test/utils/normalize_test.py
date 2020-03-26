@@ -4,11 +4,11 @@
 
 import unittest
 
-from cybox.utils.normalize import normalize_object_properties
-from cybox.objects.file_object import File
-from cybox.objects.win_registry_key_object import WinRegistryKey, RegistryValues, RegistryValue
-from cybox.objects.process_object import Process, ImageInfo
-from cybox.objects.mutex_object import Mutex
+from stix111.cybox.utils.normalize import normalize_object_properties
+from stix111.cybox.objects.file_object import File
+from stix111.cybox.objects.win_registry_key_object import WinRegistryKey, RegistryValues, RegistryValue
+from stix111.cybox.objects.process_object import Process, ImageInfo
+from stix111.cybox.objects.mutex_object import Mutex
 
 class TestNormalization(unittest.TestCase):
 

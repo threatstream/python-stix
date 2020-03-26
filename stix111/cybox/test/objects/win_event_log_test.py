@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.win_event_log_object import WinEventLog
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_event_log_object import WinEventLog
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinEventLog(ObjectTestCase, unittest.TestCase):

@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.core import Observables
-from cybox.objects.link_object import Link
-from cybox.objects.uri_object import URI
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.core import Observables
+from stix111.cybox.objects.link_object import Link
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestLink(ObjectTestCase, unittest.TestCase):

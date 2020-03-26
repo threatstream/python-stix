@@ -5,11 +5,11 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.compat import long
-from cybox.objects.win_file_object import WinFile, Stream
-from cybox.test.common.hash_test import EMPTY_MD5
-from cybox.test import EntityTestCase
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.objects.win_file_object import WinFile, Stream
+from stix111.cybox.test.common.hash_test import EMPTY_MD5
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestStream(EntityTestCase, unittest.TestCase):

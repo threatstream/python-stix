@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.compat import long
-from cybox.objects.win_filemapping_object import WinFilemapping
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.objects.win_filemapping_object import WinFilemapping
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinFilemapping(ObjectTestCase, unittest.TestCase):

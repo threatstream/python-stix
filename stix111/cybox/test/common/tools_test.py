@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import Hash, ToolInformation, ToolInformationList
-import cybox.test
-from cybox.test import EntityTestCase
-from cybox.test.common.hash_test import EMPTY_MD5
+from stix111.cybox.common import Hash, ToolInformation, ToolInformationList
+import stix111.cybox.test
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.common.hash_test import EMPTY_MD5
 
 
 class TestToolInformation(EntityTestCase, unittest.TestCase):

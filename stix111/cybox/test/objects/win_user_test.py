@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_user_object import WinUser
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_user_object import WinUser
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinUser(ObjectTestCase, unittest.TestCase):

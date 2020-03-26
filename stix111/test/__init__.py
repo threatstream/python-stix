@@ -7,7 +7,7 @@ import itertools
 import json
 import warnings
 
-import cybox.utils
+import stix111.cybox.utils
 from stix111.mixbox.binding_utils import ExternalEncoding
 from stix111.mixbox.entities import NamespaceCollector
 from stix111.mixbox.vendor.six import iteritems, text_type
@@ -90,7 +90,7 @@ def round_trip(o, output=False, list_=False):
         print("-" * 40)
 
     # Before parsing the JSON, make sure the cache is clear
-    cybox.utils.cache_clear()
+    stix111.cybox.utils.cache_clear()
 
     # 3. JSON string -> dict/list
     d2 = json.loads(json_string)
@@ -123,7 +123,7 @@ def round_trip(o, output=False, list_=False):
         print("-" * 40)
 
     # Before parsing the XML, make sure the cache is clear
-    cybox.utils.cache_clear()
+    stix111.cybox.utils.cache_clear()
 
     # 7. XML String -> Bindings Object
     xobj2 = klass._binding.parseString(xml_string)

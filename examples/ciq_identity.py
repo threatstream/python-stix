@@ -10,7 +10,7 @@ Indicator.
 from pprint import pprint
 
 # python-cybox
-from cybox.objects.file_object import File
+from stix111.cybox.objects.file_object import File
 
 # python-stix
 import stix111.utils as utils

@@ -5,7 +5,7 @@
 import itertools
 
 # external
-from cybox.common import ObjectProperties
+from stix111.cybox.common import ObjectProperties
 from stix111.mixbox.vendor.six import iteritems
 
 # internal

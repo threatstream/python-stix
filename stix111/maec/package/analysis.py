@@ -6,9 +6,9 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-from cybox.common import (PlatformSpecification, Personnel, StructuredText,
+from stix111.cybox.common import (PlatformSpecification, Personnel, StructuredText,
         ToolInformation)
-from cybox.objects.system_object import System
+from stix111.cybox.objects.system_object import System
 
 import stix111.maec
 from . import _namespace

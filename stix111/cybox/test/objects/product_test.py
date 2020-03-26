@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.product_object import Product
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.product_object import Product
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestProduct(ObjectTestCase, unittest.TestCase):

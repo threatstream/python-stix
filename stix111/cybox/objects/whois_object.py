@@ -4,11 +4,11 @@
 from stix111.mixbox import entities, fields
 from stix111.mixbox import u
 
-import cybox.bindings.whois_object as whois_binding
+import stix111.cybox.bindings.whois_object as whois_binding
 
-from cybox.common import ObjectProperties, BaseProperty, String, DateTime, Date
-from cybox.objects.address_object import Address, EmailAddress
-from cybox.objects.uri_object import URI
+from stix111.cybox.common import ObjectProperties, BaseProperty, String, DateTime, Date
+from stix111.cybox.objects.address_object import Address, EmailAddress
+from stix111.cybox.objects.uri_object import URI
 
 
 class WhoisNameservers(entities.EntityList):

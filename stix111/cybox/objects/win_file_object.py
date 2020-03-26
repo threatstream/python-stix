@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_file_object as win_file_binding
-from cybox.objects.file_object import File, FileAttribute, FilePermissions
-from cybox.common import DateTime, Hash, String, UnsignedLong
+import stix111.cybox.bindings.win_file_object as win_file_binding
+from stix111.cybox.objects.file_object import File, FileAttribute, FilePermissions
+from stix111.cybox.common import DateTime, Hash, String, UnsignedLong
 
 
 class Stream(entities.Entity):

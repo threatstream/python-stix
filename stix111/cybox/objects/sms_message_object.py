@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.sms_message_object as sms_binding
-from cybox.common import ObjectProperties, HexBinary, String, DateTime, Integer, PositiveInteger
+import stix111.cybox.bindings.sms_message_object as sms_binding
+from stix111.cybox.common import ObjectProperties, HexBinary, String, DateTime, Integer, PositiveInteger
 
 
 class SMSMessage(ObjectProperties):

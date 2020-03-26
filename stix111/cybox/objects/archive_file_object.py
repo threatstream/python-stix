@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.archive_file_object as archive_binding
-from cybox.common import Integer, String
-from cybox.objects.file_object import File
+import stix111.cybox.bindings.archive_file_object as archive_binding
+from stix111.cybox.common import Integer, String
+from stix111.cybox.objects.file_object import File
 
 
 class ArchiveFile(File):

@@ -10,7 +10,7 @@ from stix111.mixbox.vendor.six import StringIO
 class CIQAddressTests(unittest.TestCase):
 
     def test_can_load_ciq_extension(self):
-        from cybox.bindings.extensions.location import ciq_address_3_0
+        from stix111.cybox.bindings.extensions.location import ciq_address_3_0
         addr = ciq_address_3_0.CIQAddress3_0InstanceType()
 
         # Really basic test to verify the extension works.

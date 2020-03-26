@@ -2,8 +2,8 @@
 # See LICENSE.txt for complete terms.
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import Integer, String
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import Integer, String
 
 
 class DataSize(String):

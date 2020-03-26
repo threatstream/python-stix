@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_network_route_entry_object import WinNetworkRouteEntry
+from stix111.cybox.objects.win_network_route_entry_object import WinNetworkRouteEntry
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinNetworkRouteEntry(ObjectTestCase, unittest.TestCase):

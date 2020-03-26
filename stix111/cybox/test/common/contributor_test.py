@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.common import Contributor
-from cybox.test import EntityTestCase
+from stix111.cybox.common import Contributor
+from stix111.cybox.test import EntityTestCase
 
 
 class TestContributor(EntityTestCase, unittest.TestCase):

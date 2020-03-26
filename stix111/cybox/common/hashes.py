@@ -4,9 +4,9 @@
 from stix111.mixbox import entities, fields
 from stix111.mixbox.vendor.six import u
 
-import cybox.bindings.cybox_common as common_binding
-from cybox.common import HexBinary, String, VocabString
-from cybox.common.vocabs import HashName, VocabField
+import stix111.cybox.bindings.cybox_common as common_binding
+from stix111.cybox.common import HexBinary, String, VocabString
+from stix111.cybox.common.vocabs import HashName, VocabField
 
 
 def _set_hash_type(entity, value):

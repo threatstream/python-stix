@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.code_object as code_binding
-from cybox.common import (ObjectProperties, String, HexBinary, StructuredText,
+import stix111.cybox.bindings.code_object as code_binding
+from stix111.cybox.common import (ObjectProperties, String, HexBinary, StructuredText,
         MeasureSource, PlatformSpecification, ExtractedFeatures, DigitalSignatureList)
 
 

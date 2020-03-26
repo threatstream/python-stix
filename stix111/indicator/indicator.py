@@ -7,8 +7,8 @@ from stix111.mixbox import entities
 from stix111.mixbox import typedlist
 
 # cybox
-from cybox.core import Observable, ObservableComposition
-from cybox.common import Time
+from stix111.cybox.core import Observable, ObservableComposition
+from stix111.cybox.common import Time
 
 # internal
 import stix111

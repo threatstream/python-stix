@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_filemapping_object as win_filemapping_binding
-from cybox.objects.win_handle_object import WinHandle
-from cybox.common import ObjectProperties, String, UnsignedLong
+import stix111.cybox.bindings.win_filemapping_object as win_filemapping_binding
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.common import ObjectProperties, String, UnsignedLong
 
 
 class WinFilemapping(ObjectProperties):

@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.unix_user_account_object as unix_user_account_binding
-from cybox.common import String, NonNegativeInteger, UnsignedInteger
-from cybox.objects.user_account_object import (Group, GroupList, Privilege,
+import stix111.cybox.bindings.unix_user_account_object as unix_user_account_binding
+from stix111.cybox.common import String, NonNegativeInteger, UnsignedInteger
+from stix111.cybox.objects.user_account_object import (Group, GroupList, Privilege,
                                                PrivilegeList, UserAccount)
 
 

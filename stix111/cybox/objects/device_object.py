@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.device_object as device_binding
-from cybox.common import ObjectProperties, String, StructuredText
+import stix111.cybox.bindings.device_object as device_binding
+from stix111.cybox.common import ObjectProperties, String, StructuredText
 
 
 class Device(ObjectProperties):

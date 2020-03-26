@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_computer_account_object as account_binding
-from cybox.common import HexBinary, String, UnsignedLong
-from cybox.objects.account_object import Account
-from cybox.objects.port_object import Port
+import stix111.cybox.bindings.win_computer_account_object as account_binding
+from stix111.cybox.common import HexBinary, String, UnsignedLong
+from stix111.cybox.objects.account_object import Account
+from stix111.cybox.objects.port_object import Port
 
 
 class FullyQualifiedName(entities.Entity):

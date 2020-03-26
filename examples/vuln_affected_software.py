@@ -10,8 +10,8 @@ on the stix.exploit_target.vulnerability.Vulnerability class.
 
 """
 # python-cybox
-from cybox.core import Observable
-from cybox.objects.product_object import Product
+from stix111.cybox.core import Observable
+from stix111.cybox.objects.product_object import Product
 
 # python-stix
 from stix111.core import STIXPackage

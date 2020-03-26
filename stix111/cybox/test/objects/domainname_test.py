@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.domain_name_object import DomainName
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.domain_name_object import DomainName
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestDomainName(ObjectTestCase, unittest.TestCase):

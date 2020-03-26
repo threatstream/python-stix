@@ -7,15 +7,15 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import String, DateTime
-from cybox.objects.address_object import Address, EmailAddress
-from cybox.objects.email_message_object import (AttachmentReference,
+from stix111.cybox.common import String, DateTime
+from stix111.cybox.objects.address_object import Address, EmailAddress
+from stix111.cybox.objects.email_message_object import (AttachmentReference,
         Attachments, EmailHeader, EmailMessage, EmailRecipients, LinkReference,
         Links, ReceivedLine, ReceivedLineList)
-from cybox.objects.uri_object import URI
-import cybox.test
-from cybox.test import EntityTestCase
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.uri_object import URI
+import stix111.cybox.test
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 class TestEmailHeaderDateList(unittest.TestCase):
 
     def test_list_of_dates_in_email_header(self):
-        from cybox.objects.email_message_object import EmailHeader
+        from stix111.cybox.objects.email_message_object import EmailHeader
         hdr = EmailHeader()
         hdr.date = [datetime.datetime.now(), datetime.datetime.now()]
         hdr.date.condition = "Equals"

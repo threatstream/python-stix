@@ -4,7 +4,7 @@
 from stix111.mixbox import fields
 
 # external
-from cybox.common import Contributor
+from stix111.cybox.common import Contributor
 
 # internal
 import stix111

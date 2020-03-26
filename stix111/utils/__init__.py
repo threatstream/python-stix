@@ -140,7 +140,7 @@ def is_stix(entity):
 def is_cybox(entity):
     """Returns true if `entity` is a Cybox object"""
     try:
-        return entity.__module__.startswith("cybox.")
+        return entity.__module__.startswith("stix111.cybox.")
     except AttributeError:
         return False
 

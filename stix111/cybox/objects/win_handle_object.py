@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_handle_object as win_handle_binding
-from cybox.common import (ObjectProperties, String, UnsignedLong,
+import stix111.cybox.bindings.win_handle_object as win_handle_binding
+from stix111.cybox.common import (ObjectProperties, String, UnsignedLong,
         UnsignedInteger)
 
 

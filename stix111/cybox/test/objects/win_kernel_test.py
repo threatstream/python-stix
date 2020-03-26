@@ -3,10 +3,10 @@
 
 import unittest
 
-from cybox.objects.win_kernel_object import WinKernel
+from stix111.cybox.objects.win_kernel_object import WinKernel
 
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinKernel(ObjectTestCase, unittest.TestCase):

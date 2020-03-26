@@ -9,7 +9,7 @@ import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_package as package_binding
 from stix111.maec.package.malware_subject_reference import MalwareSubjectReference
-from cybox.common import vocabs
+from stix111.cybox.common import vocabs
 from stix111.maec.vocabs.vocabs import GroupingRelationship as GroupingRelationshipVocab
 
 class ClusterEdgeNodePair(stix111.maec.Entity):

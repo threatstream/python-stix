@@ -3,7 +3,7 @@
 
 import uuid
 import contextlib
-import cybox.utils
+import stix111.cybox.utils
 
 
 #: Default "example" namespace used for identifiers when no other namespace is

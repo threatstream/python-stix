@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.port_object as port_binding
-from cybox.common import ObjectProperties, String, PositiveInteger
+import stix111.cybox.bindings.port_object as port_binding
+from stix111.cybox.common import ObjectProperties, String, PositiveInteger
 
 
 class Port(ObjectProperties):

@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.common import DEFAULT_DELIM as DELIM
-import cybox.utils
+from stix111.cybox.common import DEFAULT_DELIM as DELIM
+import stix111.cybox.utils
 
 
 class NormalizationTest(unittest.TestCase):

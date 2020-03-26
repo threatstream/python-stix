@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_memory_page_region_object import WinMemoryPageRegion
+from stix111.cybox.objects.win_memory_page_region_object import WinMemoryPageRegion
 
-from cybox.compat import long
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinMemoryPageRegion(ObjectTestCase, unittest.TestCase):

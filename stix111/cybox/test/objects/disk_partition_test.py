@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.disk_partition_object import DiskPartition
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.disk_partition_object import DiskPartition
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestDiskPartition(ObjectTestCase, unittest.TestCase):

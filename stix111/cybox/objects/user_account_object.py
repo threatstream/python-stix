@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.user_account_object as user_account_binding
-from cybox.common import DateTime, Duration, String
-from cybox.objects.account_object import Account
+import stix111.cybox.bindings.user_account_object as user_account_binding
+from stix111.cybox.common import DateTime, Duration, String
+from stix111.cybox.objects.account_object import Account
 
 
 class Group(entities.Entity):

@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_critical_section_object import WinCriticalSection
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_critical_section_object import WinCriticalSection
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinCriticalSection(ObjectTestCase, unittest.TestCase):

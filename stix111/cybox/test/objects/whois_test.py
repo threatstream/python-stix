@@ -6,16 +6,16 @@ import uuid
 
 from stix111.mixbox import u
 
-from cybox.bindings.cybox_common import StringObjectPropertyType
-from cybox.bindings.whois_object import (WhoisContactType,
+from stix111.cybox.bindings.cybox_common import StringObjectPropertyType
+from stix111.cybox.bindings.whois_object import (WhoisContactType,
         WhoisRegistrantInfoType)
 
-from cybox.objects.address_object import Address
-from cybox.objects.uri_object import URI
-from cybox.objects.whois_object import (WhoisEntry, WhoisContact,
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.uri_object import URI
+from stix111.cybox.objects.whois_object import (WhoisEntry, WhoisContact,
         WhoisRegistrar, WhoisRegistrant)
-from cybox.test import EntityTestCase
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWhois(ObjectTestCase, unittest.TestCase):

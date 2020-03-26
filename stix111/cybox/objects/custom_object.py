@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.custom_object as custom_binding
-from cybox.common import ObjectProperties, StructuredText
+import stix111.cybox.bindings.custom_object as custom_binding
+from stix111.cybox.common import ObjectProperties, StructuredText
 
 
 class Custom(ObjectProperties):

@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_thread_object import WinThread
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_thread_object import WinThread
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinThread(ObjectTestCase, unittest.TestCase):

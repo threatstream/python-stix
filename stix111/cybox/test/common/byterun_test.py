@@ -3,9 +3,9 @@
 
 import unittest
 
-from cybox.common import ByteRun, ByteRuns, Hash
-import cybox.test
-from cybox.test import EntityTestCase
+from stix111.cybox.common import ByteRun, ByteRuns, Hash
+import stix111.cybox.test
+from stix111.cybox.test import EntityTestCase
 
 
 class TestByteRun(EntityTestCase, unittest.TestCase):

@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.pipe_object import Pipe
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.pipe_object import Pipe
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestPipe(ObjectTestCase, unittest.TestCase):

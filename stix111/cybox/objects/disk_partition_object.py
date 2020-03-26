@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.disk_partition_object as disk_partition_binding
-from cybox.common import (DateTime, Integer, Name, ObjectProperties, String,
+import stix111.cybox.bindings.disk_partition_object as disk_partition_binding
+from stix111.cybox.common import (DateTime, Integer, Name, ObjectProperties, String,
         UnsignedLong)
 
 

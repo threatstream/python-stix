@@ -3,11 +3,11 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_registry_key_object as win_registry_key_binding
+import stix111.cybox.bindings.win_registry_key_object as win_registry_key_binding
 
-from cybox.common import (ByteRuns, DateTime, ObjectProperties, String,
+from stix111.cybox.common import (ByteRuns, DateTime, ObjectProperties, String,
         UnsignedInteger)
-from cybox.objects.win_handle_object import WinHandleList
+from stix111.cybox.objects.win_handle_object import WinHandleList
 
 
 class RegistryValue(entities.Entity):
@@ -34,7 +34,7 @@ class RegistrySubkeys(entities.EntityList):
     _binding_class = win_registry_key_binding.RegistrySubkeysType
     _namespace = "http://cybox.mitre.org/objects#WinRegistryKeyObject-2"
 
-    subkey = fields.TypedField("Subkey", type_="cybox.objects.win_registry_key_object.WinRegistryKey", multiple=True)
+    subkey = fields.TypedField("Subkey", type_="stix111.cybox.objects.win_registry_key_object.WinRegistryKey", multiple=True)
 
 
 class WinRegistryKey(ObjectProperties):

@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.arp_cache_object as arp_binding
-from cybox.objects.address_object import Address
-from cybox.objects.system_object import NetworkInterface
-from cybox.common import ObjectProperties, String
+import stix111.cybox.bindings.arp_cache_object as arp_binding
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.system_object import NetworkInterface
+from stix111.cybox.common import ObjectProperties, String
 
 
 class ARPCacheEntry(entities.Entity):

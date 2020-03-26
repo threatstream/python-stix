@@ -3,10 +3,10 @@
 
 import unittest
 
-from cybox.objects.api_object import API
+from stix111.cybox.objects.api_object import API
 
-from cybox.test import EntityTestCase, round_trip
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test import EntityTestCase, round_trip
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestAPI(ObjectTestCase, unittest.TestCase):

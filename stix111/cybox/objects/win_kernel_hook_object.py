@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_kernel_hook_object as win_kernel_hook_binding
-from cybox.common import (DigitalSignature, ObjectProperties, String,
+import stix111.cybox.bindings.win_kernel_hook_object as win_kernel_hook_binding
+from stix111.cybox.common import (DigitalSignature, ObjectProperties, String,
         UnsignedLong)
 
 

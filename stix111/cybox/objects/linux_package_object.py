@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.linux_package_object as linux_package_binding
-from cybox.common import ObjectProperties, String, VocabString
-from cybox.common.vocabs import VocabField
+import stix111.cybox.bindings.linux_package_object as linux_package_binding
+from stix111.cybox.common import ObjectProperties, String, VocabString
+from stix111.cybox.common.vocabs import VocabField
 
 
 class LinuxPackageArchitecture(VocabString):

@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.compat import long
-from cybox.objects.win_semaphore_object import WinSemaphore
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.compat import long
+from stix111.cybox.objects.win_semaphore_object import WinSemaphore
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinSemaphore(ObjectTestCase, unittest.TestCase):

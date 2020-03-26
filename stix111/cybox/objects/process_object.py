@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.process_object as process_binding
-from cybox.common import ObjectProperties, String, DateTime, UnsignedInteger, Duration, EnvironmentVariableList, ExtractedFeatures
-from cybox.objects.network_connection_object import NetworkConnection
-from cybox.objects.port_object import Port
+import stix111.cybox.bindings.process_object as process_binding
+from stix111.cybox.common import ObjectProperties, String, DateTime, UnsignedInteger, Duration, EnvironmentVariableList, ExtractedFeatures
+from stix111.cybox.objects.network_connection_object import NetworkConnection
+from stix111.cybox.objects.port_object import Port
 
 
 class PortList(entities.EntityList):

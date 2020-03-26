@@ -5,7 +5,7 @@ import sys
 
 from stix111.mixbox.binding_utils import *
 
-import cybox.bindings.cybox_common as cybox_common
+import stix111.cybox.bindings.cybox_common as cybox_common
 
 XML_NS = "http://cybox.mitre.org/extensions/Address#CIQAddress3.0-1"
 

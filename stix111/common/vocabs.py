@@ -8,7 +8,7 @@ from functools import partial
 from stix111.mixbox import entities, fields, typedlist
 
 # cybox
-from cybox.common import vocabs
+from stix111.cybox.common import vocabs
 
 # stix
 import stix111

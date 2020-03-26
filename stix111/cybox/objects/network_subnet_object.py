@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.network_subnet_object as network_subnet_binding
-from cybox.objects.network_route_entry_object import NetworkRouteEntry
-from cybox.common import ObjectProperties, String, StructuredText, Integer
+import stix111.cybox.bindings.network_subnet_object as network_subnet_binding
+from stix111.cybox.objects.network_route_entry_object import NetworkRouteEntry
+from stix111.cybox.common import ObjectProperties, String, StructuredText, Integer
 
 
 class Routes(entities.EntityList):

@@ -7,11 +7,11 @@ from stix111.mixbox.binding_utils import *
 
 from stix111.maec.bindings import maec_bundle as maec_bundle_schema
 from stix111.maec.bindings import mmdef_1_2 as metadatasharing
-from cybox.bindings import cybox_core
-from cybox.bindings import system_object
-from cybox.bindings import cybox_common
-from cybox.bindings import file_object
-from cybox.bindings import uri_object
+from stix111.cybox.bindings import cybox_core
+from stix111.cybox.bindings import system_object
+from stix111.cybox.bindings import cybox_common
+from stix111.cybox.bindings import file_object
+from stix111.cybox.bindings import uri_object
 
 class AnalysisEnvironmentType(GeneratedsSuper):
     """The AnalysisEnvironmentType provides mechanisms for characterizing

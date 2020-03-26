@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.win_system_restore_object import WinSystemRestore
+from stix111.cybox.objects.win_system_restore_object import WinSystemRestore
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinSystemRestore(ObjectTestCase, unittest.TestCase):

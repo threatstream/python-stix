@@ -3,7 +3,7 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.cybox_common as common_binding
+import stix111.cybox.bindings.cybox_common as common_binding
 
 
 class Location(entities.Entity):

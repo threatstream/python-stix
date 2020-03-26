@@ -4,9 +4,9 @@
 from stix111.mixbox import entities, fields
 from stix111.mixbox.vendor import six
 
-import cybox.bindings.email_message_object as email_message_binding
-from cybox.common import ObjectProperties, String, PositiveInteger, DateTime
-from cybox.objects.address_object import Address, EmailAddress
+import stix111.cybox.bindings.email_message_object as email_message_binding
+from stix111.cybox.common import ObjectProperties, String, PositiveInteger, DateTime
+from stix111.cybox.objects.address_object import Address, EmailAddress
 
 
 class _Reference(object):

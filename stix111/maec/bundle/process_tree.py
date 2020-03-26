@@ -6,7 +6,7 @@
 from stix111.mixbox import fields
 from stix111.mixbox import idgen
 
-from cybox.objects.process_object import Process
+from stix111.cybox.objects.process_object import Process
 
 import stix111.maec
 import stix111.maec.bindings.maec_bundle as bundle_binding

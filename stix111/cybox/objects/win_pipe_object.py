@@ -3,10 +3,10 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.win_pipe_object as win_pipe_binding
-from cybox.objects.pipe_object import Pipe
-from cybox.objects.win_handle_object import WinHandle
-from cybox.common import String, NonNegativeInteger, HexBinary
+import stix111.cybox.bindings.win_pipe_object as win_pipe_binding
+from stix111.cybox.objects.pipe_object import Pipe
+from stix111.cybox.objects.win_handle_object import WinHandle
+from stix111.cybox.common import String, NonNegativeInteger, HexBinary
 
 
 class WinPipe(Pipe):

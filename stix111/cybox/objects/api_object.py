@@ -3,8 +3,8 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.api_object as api_binding
-from cybox.common import ObjectProperties, String, HexBinary, StructuredText, PlatformSpecification
+import stix111.cybox.bindings.api_object as api_binding
+from stix111.cybox.common import ObjectProperties, String, HexBinary, StructuredText, PlatformSpecification
 
 
 class API(ObjectProperties):

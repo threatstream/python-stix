@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.semaphore_object import Semaphore
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.semaphore_object import Semaphore
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestSemaphore(ObjectTestCase, unittest.TestCase):

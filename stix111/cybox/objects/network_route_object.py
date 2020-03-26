@@ -3,9 +3,9 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.network_route_object as network_route_binding
-from cybox.common import Duration, ObjectProperties, StructuredText
-from cybox.objects.network_route_entry_object import NetworkRouteEntry
+import stix111.cybox.bindings.network_route_object as network_route_binding
+from stix111.cybox.common import Duration, ObjectProperties, StructuredText
+from stix111.cybox.objects.network_route_entry_object import NetworkRouteEntry
 
 
 class NetworkRouteEntries(entities.EntityList):

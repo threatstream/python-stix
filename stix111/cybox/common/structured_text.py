@@ -4,7 +4,7 @@
 from stix111.mixbox import entities, fields
 from stix111.mixbox.vendor import six
 
-import cybox.bindings.cybox_common as common_binding
+import stix111.cybox.bindings.cybox_common as common_binding
 
 
 @six.python_2_unicode_compatible

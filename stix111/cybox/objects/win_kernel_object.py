@@ -3,8 +3,8 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_kernel_object as win_kernel_binding
-from cybox.common import ObjectProperties, HexBinary, NonNegativeInteger
+import stix111.cybox.bindings.win_kernel_object as win_kernel_binding
+from stix111.cybox.common import ObjectProperties, HexBinary, NonNegativeInteger
 
 
 class IDTEntry(entities.Entity):

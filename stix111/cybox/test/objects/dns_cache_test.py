@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.dns_cache_object import DNSCache, DNSCacheEntry
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.dns_cache_object import DNSCache, DNSCacheEntry
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestAccount(ObjectTestCase, unittest.TestCase):

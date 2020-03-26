@@ -2,7 +2,7 @@
 # Copyright (c) 2018, The MITRE Corporation
 # All rights reserved
 
-from cybox.common import ToolInformation
+from stix111.cybox.common import ToolInformation
 from stix111.mixbox import fields
 
 import stix111.maec

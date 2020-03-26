@@ -3,10 +3,10 @@
 
 from stix111.mixbox import entities, fields
 
-import cybox.bindings.win_service_object as win_service_binding
-from cybox.common import HashList
-from cybox.objects.win_process_object import WinProcess
-from cybox.common import String
+import stix111.cybox.bindings.win_service_object as win_service_binding
+from stix111.cybox.common import HashList
+from stix111.cybox.objects.win_process_object import WinProcess
+from stix111.cybox.common import String
 
 
 class ServiceDescriptionList(entities.EntityList):

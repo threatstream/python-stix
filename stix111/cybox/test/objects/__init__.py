@@ -3,9 +3,9 @@
 
 from stix111.mixbox.namespaces import lookup_name
 
-from cybox.core import Observable
-from cybox.objects import _OBJ_META, get_class_for_object_type
-import cybox.test
+from stix111.cybox.core import Observable
+from stix111.cybox.objects import _OBJ_META, get_class_for_object_type
+import stix111.cybox.test
 
 
 class ObjectTestCase(cybox.test.EntityTestCase):

@@ -6,8 +6,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.common import Hash, HashList, HashName, HexBinary
-import cybox.test
+from stix111.cybox.common import Hash, HashList, HashName, HexBinary
+import stix111.cybox.test
 
 logger = logging.getLogger(__name__)
 

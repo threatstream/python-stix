@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.image_file_object as image_binding
-from cybox.common import String, Integer, PositiveInteger
-from cybox.objects.file_object import File
+import stix111.cybox.bindings.image_file_object as image_binding
+from stix111.cybox.common import String, Integer, PositiveInteger
+from stix111.cybox.objects.file_object import File
 
 
 class ImageFile(File):

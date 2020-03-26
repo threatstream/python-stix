@@ -3,8 +3,8 @@
 
 import unittest
 
-from cybox.objects.win_mailslot_object import WinMailslot
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.win_mailslot_object import WinMailslot
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestWinMailslot(ObjectTestCase, unittest.TestCase):

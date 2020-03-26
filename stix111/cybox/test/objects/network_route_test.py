@@ -5,9 +5,9 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.network_route_object import NetRoute
+from stix111.cybox.objects.network_route_object import NetRoute
 
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestNetworkRoute(ObjectTestCase, unittest.TestCase):

@@ -5,7 +5,7 @@ import unittest
 
 from stix111.mixbox import entities, fields
 
-from cybox.objects.address_object import Address
+from stix111.cybox.objects.address_object import Address
 
 
 class DummyEntity(entities.Entity):

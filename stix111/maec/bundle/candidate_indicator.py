@@ -10,8 +10,8 @@ import stix111.maec
 from . import _namespace
 import stix111.maec.bindings.maec_bundle as bundle_binding
 from stix111.maec.bundle import ObjectReference, BehaviorReference
-from cybox.common import VocabString
-from cybox.core import ActionReference
+from stix111.cybox.common import VocabString
+from stix111.cybox.core import ActionReference
 
 class MalwareEntity(stix111.maec.Entity):
     _binding = bundle_binding

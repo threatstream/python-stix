@@ -5,8 +5,8 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.core import Event, Observable
-from cybox.test import EntityTestCase
+from stix111.cybox.core import Event, Observable
+from stix111.cybox.test import EntityTestCase
 
 
 class TestEvent(EntityTestCase, unittest.TestCase):

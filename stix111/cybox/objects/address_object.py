@@ -4,8 +4,8 @@
 from stix111.mixbox import fields
 from stix111.mixbox.vendor import six
 
-import cybox.bindings.address_object as address_binding
-from cybox.common import ObjectProperties, String, Integer
+import stix111.cybox.bindings.address_object as address_binding
+from stix111.cybox.common import ObjectProperties, String, Integer
 
 
 @six.python_2_unicode_compatible

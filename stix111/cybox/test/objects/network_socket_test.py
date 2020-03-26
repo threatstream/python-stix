@@ -5,10 +5,10 @@ import unittest
 
 from stix111.mixbox import u
 
-from cybox.objects.address_object import Address
-from cybox.objects.network_socket_object import NetworkSocket, SocketOptions
-from cybox.test import EntityTestCase
-from cybox.test.objects import ObjectTestCase
+from stix111.cybox.objects.address_object import Address
+from stix111.cybox.objects.network_socket_object import NetworkSocket, SocketOptions
+from stix111.cybox.test import EntityTestCase
+from stix111.cybox.test.objects import ObjectTestCase
 
 
 class TestSocketOptions(EntityTestCase, unittest.TestCase):

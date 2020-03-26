@@ -5,10 +5,10 @@
 # See LICENSE.txt for complete terms.
 
 import re
-from cybox.objects.file_object import File
-from cybox.objects.win_registry_key_object import WinRegistryKey
-from cybox.objects.process_object import Process
-from cybox.objects.mutex_object import Mutex
+from stix111.cybox.objects.file_object import File
+from stix111.cybox.objects.win_registry_key_object import WinRegistryKey
+from stix111.cybox.objects.process_object import Process
+from stix111.cybox.objects.mutex_object import Mutex
 
 # Normalization-related mappings
 

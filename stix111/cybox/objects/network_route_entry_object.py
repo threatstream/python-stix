@@ -3,9 +3,9 @@
 
 from stix111.mixbox import fields
 
-import cybox.bindings.network_route_entry_object as network_route_entry_binding
-from cybox.common import ObjectProperties, String, UnsignedLong, Duration
-from cybox.objects.address_object import Address
+import stix111.cybox.bindings.network_route_entry_object as network_route_entry_binding
+from stix111.cybox.common import ObjectProperties, String, UnsignedLong, Duration
+from stix111.cybox.objects.address_object import Address
 
 
 class NetworkRouteEntry(ObjectProperties):
