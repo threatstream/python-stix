@@ -12,7 +12,7 @@ from stix111.cybox.test import EntityTestCase
 # Need to do this so the binding class is registered.
 import stix111.cybox.bindings.cybox_common
 from stix111.cybox.bindings.address_object import AddressObjectType
-setattr(cybox.bindings.cybox_common, "AddressObjectType", AddressObjectType)
+setattr(stix111.cybox.bindings.cybox_common, "AddressObjectType", AddressObjectType)
 
 class TestExtractedFeatures(EntityTestCase, unittest.TestCase):
     klass = ExtractedFeatures

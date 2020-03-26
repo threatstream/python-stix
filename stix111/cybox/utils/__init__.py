@@ -80,4 +80,4 @@ def _import_all():
     # Everything in common should be imported by cybox.common.__init__
     # Everything in core should be imported by cybox.core.__init__
     import stix111.cybox.objects
-    _import_submodules(cybox.objects)
+    _import_submodules(stix111.cybox.objects)
