@@ -30,10 +30,28 @@ def get_long_description():
 install_requires = [
     'lxml>=2.2.3 ; python_version == "2.7" or python_version >= "3.5"',
     'lxml>=2.2.3,<4.4.0 ; python_version > "2.7" and python_version < "3.5"',
-    'mixbox>=1.0.2',
     'cybox>=2.1.0.13,<2.1.1.0',
     'python-dateutil',
 ]
+
+###########################################
+# req from from mixbox
+install_requires.append('ordered-set')
+# Some required modules/packages don't exist in all versions of Python.
+# Luckily, backports exist in PyPI.
+backports = {
+    # WeakMethod was introduced in Python 3.4
+    "weakrefmethod>=1.0.3": "from weakref import WeakMethod",
+    "importlib": "import importlib",
+    "weakrefset": "from weakref import WeakSet"
+}
+
+for package, importstmt in backports.items():
+    try:
+        exec(importstmt)
+    except ImportError:
+        install_requires.append(package)
+###########################################
 
 
 setup(
