@@ -134,7 +134,7 @@ class RelatedObject(Object):
         if self.properties:
             return self.properties
         elif self.idref:
-            return cybox.utils.cache_get(self.idref).properties
+            return stix111.cybox.utils.cache_get(self.idref).properties
         else:
             return None
 

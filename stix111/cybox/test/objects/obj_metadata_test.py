@@ -12,7 +12,7 @@ class ObjectTypeTest(unittest.TestCase):
         obj_list = [
             ("!!MissingAPIClass", None, None, None, None),
             ("!!MissingModule", 'some.nonexistent.module', None, None, None),
-            ("!!BadClassName", 'cybox.NonexistentClass', None, None, None),
+            ("!!BadClassName", 'stix111.cybox.NonexistentClass', None, None, None),
         ]
         self.meta = _ObjectMetadata(obj_list)
 

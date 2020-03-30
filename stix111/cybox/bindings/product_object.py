@@ -143,7 +143,7 @@ class ProductObjectType(cybox_common.ObjectPropertiesType):
                     type_name_ = type_names_[0]
                 else:
                     type_name_ = type_names_[1]
-                class_ = cybox.objects.get_class_for_object_type(type_name_)._binding_class
+                class_ = stix111.cybox.objects.get_class_for_object_type(type_name_)._binding_class
                 obj_ = class_.factory()
                 obj_.build(child_)
             else:
